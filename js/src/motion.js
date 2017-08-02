@@ -1,8 +1,21 @@
 /* global NexT: true */
+
+// custom setting
 window.onresize = function(){
-  document.body.offsetWidth < 975 && $('body').velocity('stop').velocity({paddingLeft: 0},0);
-  document.body.offsetWidth >= 975 && document.getElementById('sidebar').style.width=='320px' && $('body').velocity('stop').velocity({paddingLeft: 320},0);
+    var mtw=document.body.offsetWidth;
+    var live2d=document.getElementById('live2dcanvas');
+    if(live2d){
+        if(mtw < 750) live2d.style.visibility="hidden";
+        else live2d.style.visibility="visible";
+    }
+    mtw < 975 && $('body').velocity('stop').velocity({paddingLeft: 0},0);
+    mtw >= 975 && document.getElementById('sidebar').style.width=='350px' && $('body').velocity('stop').velocity({paddingLeft: 350},0);
 }
+
+document.querySelector('.site-author-image').onclick=function(){window.location.href="http://mashirosorata.vicp.io";};
+
+
+// end custom
 
 $(document).ready(function () {
   NexT.motion = {};
@@ -58,22 +71,25 @@ $(document).ready(function () {
   var sidebarToggleLine1st = new SidebarToggleLine({
     el: '.sidebar-toggle-line-first',
     status: {
-      arrow: {width: '50%', rotateZ: '-45deg', top: '2px'},
-      close: {width: '100%', rotateZ: '-45deg', top: '5px'}
+      arrow: {width: '50%', rotateZ: '45deg', top: '2px', left: '6px'},
+      // close: {width: '100%', rotateZ: '-45deg', top: '5px', left: '0px'} //叉字形
+      close: {width: '50%', rotateZ: '-45deg', top: '2px', left: '0px'} //箭头形
     }
   });
   var sidebarToggleLine2nd = new SidebarToggleLine({
     el: '.sidebar-toggle-line-middle',
     status: {
       arrow: {width: '90%'},
-      close: {opacity: 0}
+      // close: {opacity: 0}  //箭头形
+      close: {width: '90%'}
     }
   });
   var sidebarToggleLine3rd = new SidebarToggleLine({
     el: '.sidebar-toggle-line-last',
     status: {
-      arrow: {width: '50%', rotateZ: '45deg', top: '-2px'},
-      close: {width: '100%', rotateZ: '45deg', top: '-5px'}
+      arrow: {width: '50%', rotateZ: '-45deg', top: '-2px', left: '6px'},
+      // close: {width: '100%', rotateZ: '45deg', top: '-5px', left: '0px'} //叉字形
+      close: {width: '50%', rotateZ: '45deg', top: '-2px', left: '0px'} //箭头形
     }
   });
 
@@ -81,7 +97,7 @@ $(document).ready(function () {
   sidebarToggleLines.push(sidebarToggleLine2nd);
   sidebarToggleLines.push(sidebarToggleLine3rd);
 
-  var SIDEBAR_WIDTH = '320px';
+  var SIDEBAR_WIDTH = '350px';
   var SIDEBAR_DISPLAY_DURATION = 200;
 
   var sidebarToggleMotion = {

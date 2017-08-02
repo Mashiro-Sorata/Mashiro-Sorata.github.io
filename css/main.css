@@ -1652,6 +1652,7 @@ pre .javascript .function {
   max-width: 96px;
   height: auto;
   border: 2px solid #333;
+  cursor: pointer;
 }
 .site-author-name {
   margin: 5px 0 0;
@@ -1845,7 +1846,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #3eff91;
+  background: #33ffc1;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2934,7 +2935,7 @@ hr {
   }
 }
 body {
-  background: url("http://oty1v077k.bkt.clouddn.com/white_body_bgp.jpg");
+  background: url("http://oty1v077k.bkt.clouddn.com/body_girlasideflower.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -2957,6 +2958,20 @@ body {
 }
 .footer-inner {
   color: #adff2f;
+}
+#sidebar {
+  background: url("http://oty1v077k.bkt.clouddn.com/sidebar-sitboy.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#sidebar p,
+#sidebar span,
+#sidebar a {
+  color: #f5f5f5;
+}
+#mydivshow {
+  opacity: 0;
 }
 #posts * {
   color: #282828;
