@@ -6,16 +6,6 @@ $(document).ready(function () {
   NexT.motion = {};
 
   // my custom code begin
-  window.onresize = function(){
-      var bwos=document.body.offsetWidth;
-      var live2d=document.getElementById('live2dcanvas');
-      if(live2d){
-          bwos < 750 ? live2d.style.visibility="hidden" : live2d.style.visibility="visible";
-      }
-      bwos < 975 && $('body').velocity('stop').velocity({paddingLeft: 0},0);
-      $('aside#sidebar').css("display") != "none" && $('body').velocity('stop').velocity({paddingLeft: 350},0);
-  }
-
   window.onload=function(){
       var bwol=document.body.offsetWidth;
       console.log(bwol);
@@ -27,6 +17,18 @@ $(document).ready(function () {
       // NexT.utils.isDesktop() ? live2d.style.visibility="visible" : live2d.style.visibility="hidden";
       bwol < 750 ? live2d.style.visibility="hidden" : live2d.style.visibility="visible";
   }
+
+  window.onresize = function(){
+      var bwos=document.body.offsetWidth;
+      var live2d=document.getElementById('live2dcanvas');
+      if(live2d){
+          bwos < 750 ? live2d.style.visibility="hidden" : live2d.style.visibility="visible";
+      }
+      bwos < 975 && $('body').velocity('stop').velocity({paddingLeft: 0},0);
+      $('aside#sidebar').css("display") != "none" && $('body').velocity('stop').velocity({paddingLeft: 350},0);
+  }
+
+
   document.querySelector('.site-author-image').onclick=function(){window.location.href="http://mashirosorata.vicp.io";};
 
 
