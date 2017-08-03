@@ -25,7 +25,8 @@ $(document).ready(function () {
           bwos < 750 ? live2d.style.visibility="hidden" : live2d.style.visibility="visible";
       }
       bwos < 975 && $('body').velocity('stop').velocity({paddingLeft: 0},0);
-      $('aside#sidebar').css("display") != "none" && $('body').velocity('stop').velocity({paddingLeft: 350},0);
+      if($('aside#sidebar').css("display") != "none" && $('aside#sidebar').css("width")!="0px")
+          $('body').velocity('stop').velocity({paddingLeft: 350},0);
   }
 
 
