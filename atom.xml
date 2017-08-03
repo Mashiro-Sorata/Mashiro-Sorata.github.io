@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>SORA</title>
-  
+  <subtitle>M-S&#39;s Blog</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Mashiro-Sorata.github.io/"/>

@@ -135,7 +135,7 @@ $(document).ready(function () {
 
   // Expand sidebar on post detail page by default, when post has a toc.
   var $tocContent = $('.post-toc-content');
-  var isSidebarCouldDisplay = CONFIG.sidebar.display === 'post' ||
+  var isSidebarCouldDisplay = CONFIG.sidebar.display === 'post' && document.body.offsetWidth > 975 ||
       CONFIG.sidebar.display === 'always';
   var hasTOC = $tocContent.length > 0 && $tocContent.html().trim().length > 0;
   if (isSidebarCouldDisplay && hasTOC) {
