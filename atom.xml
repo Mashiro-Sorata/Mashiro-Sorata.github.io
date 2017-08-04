@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Mashiro-Sorata.github.io/"/>
-  <updated>2017-08-03T16:50:13.823Z</updated>
+  <updated>2017-08-04T00:17:12.002Z</updated>
   <id>http://Mashiro-Sorata.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://Mashiro-Sorata.github.io/Theories-Of-The-Universe.html"/>
     <id>http://Mashiro-Sorata.github.io/Theories-Of-The-Universe.html</id>
     <published>2017-07-30T15:15:59.000Z</published>
-    <updated>2017-08-03T16:50:13.823Z</updated>
+    <updated>2017-08-04T00:17:12.002Z</updated>
     
     <content type="html"><![CDATA[<p>此壁纸为运行在<a href="http://store.steampowered.com/app/431960/Wallpaper_Engine/" target="_blank" rel="external">Wallpaper Engine</a>上的网页动态壁纸，也是第一次接触html的作品。懒懒散散更新到现在，效果算一般般吧~<br>预览gif图4M多，但是帧数相比实际运行的帧数差很多。<br><br><a id="more"></a><br>以下为steam上创意工坊的链接：<a href="http://steamcommunity.com/sharedfiles/filedetails/?id=848592407" target="_blank" rel="external">Theories Of The Universe</a></p>
 <h1 id="Preview-预览图"><a href="#Preview-预览图" class="headerlink" title="Preview(预览图)"></a>Preview(预览图)</h1><p><img class="blockquote-center" src="http://oty1v077k.bkt.clouddn.com/universepreviewpic.gif" width="800px" height="100%" alt="preview_pic"></p>
@@ -29,7 +29,7 @@
 <ol>
 <li>闪动位移范围：值越大，星星抖动越厉害；</li>
 <li>闪动速度：星星闪动变化的速度，值越大变化也就越快，增大可获取更好的效果；</li>
-<li>星星个数：可选择星星的个数，目前只有15颗，以后应该会增加；</li>
+<li>星星个数：可选择星星的个数，目前有21颗，以后应该会增加；</li>
 <li>闪动概率：星星闪动变化的概率，值越大变化概率也就越大，增大至最大值星星每次刷新都会变化，减小至合适值可获取更好地效果；</li>
 <li>壁纸显示方式：有拉伸，填充，适应，如同桌面壁纸设置；</li>
 <li>是否显示星球：如字面意思，可设置星球是否可见；</li>
