@@ -1438,7 +1438,7 @@ pre .javascript .function {
   margin: 0 4px 8px 4px;
 }
 .post-button .btn:hover {
-  background: #6495ed !important;
+  background: #f0e68c !important;
 }
 .post-button .fa-fw {
   width: 1.285714285714286em;
@@ -1859,7 +1859,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #21187d;
+  background: #ffc8f2;
 }
 .links-of-blogroll {
   font-size: 13px;
