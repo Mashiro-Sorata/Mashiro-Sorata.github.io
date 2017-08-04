@@ -16,24 +16,9 @@ function init(can,w,h,star_num,stars,starObj,star_max_wh,star_min_wh)//初始化
  	}
 }
 
-function NP_rand3(adj_p)
-//随机产生+ - 1或者0,+ - 1概率相同且可调
+function NP_rand3(adj_p)		//随机产生+ - 1或者0,+ - 1概率相同且可调
 {
-	if((Math.random()-adj_p)<=0){
-		return -1;
-	}
-	else if((Math.random()-adj_p*2)<=0){
-		return 1;
-	}
-	else{
-		return 0;
-	}
-}
-
-function NP_rand2()
-{
-	//随机产生+ - 1
-	return ((Math.random()-0.5)>=0) ? 1:-1;
+	if((Math.random()-adj_p)<=0){ 1="" return="" -1;="" }="" else="" if((math.random()-adj_p*2)<="0){" 1;="" else{="" 0;="" function="" np_rand2()="" {="" 随机产生+="" -="" ((math.random()-0.5)="">=0) ? 1:-1;
 }
 
 function randvary(stars,star_num,star_max_wh,star_min_wh,adj_p)
@@ -100,22 +85,7 @@ function draw_stars_auto1(ctx,w,h,w_h,bgp_w_h,stars,star_num,flicw,star_mx,star_
 	}
 }
 
-function draw_stars_auto2(ctx,w,h,w_h,bgp_w_h,stars,star_num,flicw,star_mx,star_my)		//适应(w<h)
-{
-	var i=star_num,
-		temp_wh,
-		temp_position=[];
-	ctx.clearRect(0,0,w,h);
-	var peh=w/bgp_w_h,delta_my=((h-peh)/2)*798/peh;
-	while(i--)
-	{
-		temp_wh=stars[i]['wh'];
-		temp_position=stars_position(w,peh,flicw,star_mx[i],star_my[i],temp_wh);
-		ctx.drawImage(stars[i]['pic'],temp_position[0],temp_position[1],temp_wh,temp_wh);
-	}
-}
-
-function draw_stars_cover1(ctx,w,h,w_h,bgp_w_h,stars,star_num,flicw,star_mx,star_my)	//填充(w>=h)
+function draw_stars_auto2(ctx,w,h,w_h,bgp_w_h,stars,star_num,flicw,star_mx,star_my)		//适应(w<h) {="" var="" i="star_num," temp_wh,="" temp_position="[];" ctx.clearrect(0,0,w,h);="" peh="w/bgp_w_h,delta_my=((h-peh)/2)*798/peh;" while(i--)="" temp_wh="stars[i]['wh'];" ctx.drawimage(stars[i]['pic'],temp_position[0],temp_position[1],temp_wh,temp_wh);="" }="" function="" draw_stars_cover1(ctx,w,h,w_h,bgp_w_h,stars,star_num,flicw,star_mx,star_my)="" 填充(w="">=h)
 {
 	var i=star_num,
 		temp_wh,
@@ -131,126 +101,7 @@ function draw_stars_cover1(ctx,w,h,w_h,bgp_w_h,stars,star_num,flicw,star_mx,star
 	}
 }
 
-function draw_stars_cover2(ctx,w,h,w_h,bgp_w_h,stars,star_num,flicw,star_mx,star_my)	//填充(w<h)
-{
-	var i=star_num,
-		temp_wh,
-		temp_position=[];
-	ctx.clearRect(0,0,w,h);
-	var sw=w_h*798,
-		pew=bgp_w_h*h;
-	while(i--)
-	{
-		temp_wh=stars[i]['wh'];
-		temp_position=stars_position(pew,h,flicw,star_mx[i],star_my[i],temp_wh);
-		ctx.drawImage(stars[i]['pic'],temp_position[0],temp_position[1],temp_wh,temp_wh);
-	}
-}
-
-
-function earth_position(pew,peh,earthx,earthy)
-{
-	var temp_position=[];
-	temp_position[0]=(pew/1278)*earthx;
-	temp_position[1]=(peh/798)*earthy;
-	return temp_position;
-}
-
-function earth_contain(flash_div,bgp_div,w,h,earthx,earthy,earthw,earthh)
-{
-	flash_div['style']['left']=earthx*w/1278+'px';
-	flash_div['style']['top']=earthy*h/798+'px';
-	flash_div['style']['width']=earthw*w/1278+'px';
-	flash_div['style']['height']=earthh*h/798+'px';
-	bgp_div['style']['left']=0+'px';
-	bgp_div['style']['top']=0+'px';
-	bgp_div['style']['width']=w+'px';
-	bgp_div['style']['height']=h+'px';
-}
-
-function earth_auto(flash_div,bgp_div,w,h,w_h,bgp_w_h,earthx,earthy,earthw,earthh,flag_wh)
-{
-	
-	if(flag_wh)
-	{
-		var pew=bgp_w_h*h,
-			delta_x=((w-pew)/2)*1278/pew,
-			temp_position=earth_position(pew,h,earthx+delta_x,earthy);
-		flash_div['style']['left']=temp_position[0]+'px';
-		flash_div['style']['top']=temp_position[1]+'px';
-		flash_div['style']['width']=earthw*pew/1278+'px';
-		flash_div['style']['height']=earthh*h/798+'px';
-		bgp_div['style']['left']=(w-pew)/2+'px';
-		bgp_div['style']['top']=0+'px';
-		bgp_div['style']['width']=pew+'px';
-		bgp_div['style']['height']=h+'px';
-	}
-	else
-	{
-		var peh=w/bgp_w_h,
-			delta_y=((h-peh)/2)*798/peh,
-			temp_position=earth_position(w,peh,earthx,earthy+delta_y);
-		flash_div['style']['left']=temp_position[0]+'px';
-		flash_div['style']['top']=temp_position[1]+'px';
-		flash_div['style']['width']=earthw*w/1278+'px';
-		flash_div['style']['height']=earthh*peh/798+'px';
-		bgp_div['style']['left']=0+'px';
-		bgp_div['style']['top']=(h-peh)/2+'px';
-		bgp_div['style']['width']=w+'px';
-		bgp_div['style']['height']=peh+'px';
-	}
-}
-
-function earth_cover(flash_div,bgp_div,w,h,w_h,bgp_w_h,earthx,earthy,earthw,earthh,flag_wh)
-{
-	if(flag_wh)
-	{
-		var sh=1278/w_h,
-			peh=w/bgp_w_h,
-			delta_y=-(798-sh)/2,
-		temp_position=earth_position(w,peh,earthx,earthy+delta_y);
-		flash_div['style']['left']=temp_position[0]+'px';
-		flash_div['style']['top']=temp_position[1]+'px';
-		flash_div['style']['width']=earthw*w/1278+'px';
-		flash_div['style']['height']=earthh*peh/798+'px';
-		bgp_div['style']['left']=0+'px';
-		bgp_div['style']['top']=(h-peh)/2+'px';
-		bgp_div['style']['width']=w+'px';
-		bgp_div['style']['height']=peh+'px';
-	}
-	else
-	{
-		var sw=w_h*798,
-			pew=bgp_w_h*h,
-			delta_x=-(1278-sw)/2,
-		temp_position=earth_position(pew,h,earthx+delta_x,earthy);
-		flash_div['style']['left']=temp_position[0]+'px';
-		flash_div['style']['top']=temp_position[1]+'px';
-		flash_div['style']['width']=earthw*pew/1278+'px';
-		flash_div['style']['height']=earthh*h/798+'px';
-		bgp_div['style']['left']=(w-pew)/2+'px';
-		bgp_div['style']['top']=0+'px';
-		bgp_div['style']['width']=pew+'px';
-		bgp_div['style']['height']=h+'px';
-	}
-}
-
-function main()
-{	alert('按F11可全屏预览！\n进入全屏后按F11可退出全屏！');
-	var can=document.getElementById('mycanvas'),
-    	ctx=can.getContext('2d'),
-    	w=screen['width'],
-    	h=screen['height'],
-    	w_h=w/h,
-		ftime=15,	//刷新间隔时间
-		flicw=13,	//闪动范围_越小闪动越明显
-		adj_p=0.3,		//
-		stars=[];	//保存starObj()的数组
-		temp_stars=[];	//保存随机生成的stars数组的子数组
-		var bgp_style='cover';	//壁纸填充样式
- 	// const bgp_w=1278,bgp_h=798;//背景图的宽,高
- 	const bgp_w_h=1278/798;
- 	var flag_wh=(w_h>=bgp_w_h) ? 1:0;	//宽>=高返回1
+function draw_stars_cover2(ctx,w,h,w_h,bgp_w_h,stars,star_num,flicw,star_mx,star_my)	//填充(w<h) {="" var="" i="star_num," temp_wh,="" temp_position="[];" ctx.clearrect(0,0,w,h);="" sw="w_h*798," pew="bgp_w_h*h;" while(i--)="" temp_wh="stars[i]['wh'];" ctx.drawimage(stars[i]['pic'],temp_position[0],temp_position[1],temp_wh,temp_wh);="" }="" function="" earth_position(pew,peh,earthx,earthy)="" temp_position[0]="(pew/1278)*earthx;" temp_position[1]="(peh/798)*earthy;" return="" temp_position;="" earth_contain(flash_div,bgp_div,w,h,earthx,earthy,earthw,earthh)="" flash_div['style']['left']="earthx*w/1278+'px';" flash_div['style']['top']="earthy*h/798+'px';" flash_div['style']['width']="earthw*w/1278+'px';" flash_div['style']['height']="earthh*h/798+'px';" bgp_div['style']['left']="0+'px';" bgp_div['style']['top']="0+'px';" bgp_div['style']['width']="w+'px';" bgp_div['style']['height']="h+'px';" earth_auto(flash_div,bgp_div,w,h,w_h,bgp_w_h,earthx,earthy,earthw,earthh,flag_wh)="" if(flag_wh)="" delta_x="((w-pew)/2)*1278/pew," else="" peh="w/bgp_w_h," delta_y="((h-peh)/2)*798/peh," earth_cover(flash_div,bgp_div,w,h,w_h,bgp_w_h,earthx,earthy,earthw,earthh,flag_wh)="" sh="1278/w_h," main()="" alert('按f11可全屏预览！\n进入全屏后按f11可退出全屏！');="" can="document.getElementById('mycanvas')," ctx="can.getContext('2d')," w="screen['width']," h="screen['height']," w_h="w/h," ftime="15," 刷新间隔时间="" flicw="13," 闪动范围_越小闪动越明显="" adj_p="0.3," stars="[];" 保存starobj()的数组="" temp_stars="[];" 保存随机生成的stars数组的子数组="" bgp_style="cover" ;="" 壁纸填充样式="" const="" bgp_w="1278,bgp_h=798;//背景图的宽,高" bgp_w_h="1278/798;" flag_wh="(w_h">=bgp_w_h) ? 1:0;	//宽>=高返回1
 
  {
 	//新增星星的信息更新处(----------------------------------------------------------)
@@ -290,9 +141,18 @@ function main()
 	$('#mylang').change(function(){
 		if(this.value=='cn'){
 			$('.sp_myvisible font')[0].innerHTML='显示选项';
-			$('#myvisible')[0].options.length=0;
-			$('#myvisible')[0].options.add(new Option('隐藏','hide'));
-			$('#myvisible')[0].options.add(new Option('显示','show'));
+			if($('#myvisible')[0].value=='hide'){
+				$('#myvisible')[0].options.length=0;
+				$('#myvisible')[0].options.add(new Option('隐藏','hide'));
+				$('#myvisible')[0].options.add(new Option('显示','show'));
+				$('#myvisible').val('hide');
+			}
+			else{
+				$('#myvisible')[0].options.length=0;
+				$('#myvisible')[0].options.add(new Option('隐藏','hide'));
+				$('#myvisible')[0].options.add(new Option('显示','show'));
+				$('#myvisible').val('show');
+			}
 
 			$('.sp_mystyle font')[0].innerHTML='壁纸样式';
 			$('#mystyle')[0].options.length=0;
@@ -318,9 +178,18 @@ function main()
 
 		else{
 			$('.sp_myvisible font')[0].innerHTML='Show Options';
-			$('#myvisible')[0].options.length=0;
-			$('#myvisible')[0].options.add(new Option("hide","hide"));
-			$('#myvisible')[0].options.add(new Option("show","show"));
+			if($('#myvisible')[0].value=='hide'){
+				$('#myvisible')[0].options.length=0;
+				$('#myvisible')[0].options.add(new Option("hide","hide"));
+				$('#myvisible')[0].options.add(new Option("show","show"));
+				$('#myvisible').val('hide');
+			}
+			else{
+				$('#myvisible')[0].options.length=0;
+				$('#myvisible')[0].options.add(new Option("hide","hide"));
+				$('#myvisible')[0].options.add(new Option("show","show"));
+				$('#myvisible').val('show');
+			}
 
 			$('.sp_mystyle font')[0].innerHTML='Image Position';
 			$('#mystyle')[0].options.length=0;
@@ -577,15 +446,4 @@ function main()
 		temp_star_my=star_my.slice(0);
 		temp_star_min_wh=star_min_wh.slice(0);
 		temp_star_max_wh=star_max_wh.slice(0);
-		for(var i=0;i<(21-star_num);i++)
-		{
-			var temp=Math.round(Math.random()*(21-i));
-			temp_stars.remove(temp);
-			temp_star_mx.remove(temp);
-			temp_star_my.remove(temp);
-			temp_star_min_wh.remove(temp);
-			temp_star_max_wh.remove(temp);
-		}
-	}
-}
-
+		for(var i=0;i</h)></h)></=0){>
