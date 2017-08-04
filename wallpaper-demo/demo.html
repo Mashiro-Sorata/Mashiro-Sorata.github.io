@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>the theory of universe</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8"> 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+</head>
+<body onload="main()">
+	<div id="my_bgp_div">
+		<canvas id="mycanvas" style="z-index: 0"></canvas>
+	</div>
+	<div id="my_flash_div" style="position:absolute;">
+    	<video id="video1" autoplay="autoplay" loop="loop" preload="auto">
+    	<source src="img/final.webm" type="video/webm">
+		</video>
+	</div>
+	<div>
+	<div class="show_option" style="display: block;position: relative;left: 0px">
+	
+	<span class="sp_mylang" style="color: white;display: block;width: 100px"><font style="font-size: 12px">Language</font></span>
+	<select id="mylang">    
+         <option value="cn">中文</option>    
+         <option value="en">English</option>       
+    </select> 
+
+	<span class="sp_myvisible" style="color: white;display: block;width: 100px"><font style="font-size: 12px">显示选项</font></span>
+	<select id="myvisible">    
+         <option value="hide">隐藏</option>    
+         <option value="show">显示</option>       
+    </select> 
+    </div>
+	<div class="myinputs" style="display: block;position: absolute;left: 0px;display: none">
+	<span class="sp_mystyle" style="color: white;display: block"><font style="font-size: 12px">壁纸样式</font></span>
+	<select id="mystyle">    
+         <option value="contain">拉伸</option>    
+         <option value="auto">适应</option>    
+         <option value="cover">填充</option>    
+     </select> 
+     <span class="sp_myearth_show" style="color: white;display: block"><font style="font-size: 12px">显示星球</font></span>
+     <select id="my_earth_show">    
+         <option value=1>显示</option>    
+         <option value=0>隐藏</option>        
+     </select> 
+
+     <!-- <div style="position: absolute;left: 0px;"> -->
+
+     	<span class="sp_mynum" style="color: white;display: block"><font style="font-size: 12px">星星个数：21</font></span><input id="mynum" type="range" min="1" max="21" value="21" step="1" style="width: 100px;height: 20px"> 
+     
+   		<span class="sp_myp" style="color: white;display: block"><font style="font-size: 12px">闪动概率：30</font></span><input id="myp" type="range" min="10" max="50" value="30" step="1" style="width: 100px;height: 20px"> 
+		
+		<span class="sp_myftime" style="color: white;display: block"><font style="font-size: 12px">闪动速度：380</font></span><input id="myftime" type="range" min="100" max="390" value="380" step="1" style="width: 100px;height: 20px"> 
+
+		<span class="sp_myflicw" style="color: white;display: block"><font style="font-size: 12px">闪动位移范围：90</font></span><input id="myflicw" type="range" min="1" max="100" value="90" step="1" style="width: 100px;height: 20px">
+
+		<span class="sp_myearth_speed" style="color: white;display: block"><font style="font-size: 12px">星球转动速度：10</font></span><input id="myearth_speed" type="range" min="5" max="30" value="10" step="1" style="width: 100px;height: 20px">
+   	<!-- </div> -->
+	</div>
+	</div>
+	<script src="js/star.js"></script>
+</body>
+</html>

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Mashiro-Sorata.github.io/"/>
-  <updated>2017-08-04T00:17:12.002Z</updated>
+  <updated>2017-08-04T09:42:30.084Z</updated>
   <id>http://Mashiro-Sorata.github.io/</id>
   
   <author>
@@ -19,13 +19,15 @@
     <title>Theories Of The Universe</title>
     <link href="http://Mashiro-Sorata.github.io/Theories-Of-The-Universe.html"/>
     <id>http://Mashiro-Sorata.github.io/Theories-Of-The-Universe.html</id>
-    <published>2017-07-30T15:15:59.000Z</published>
-    <updated>2017-08-04T00:17:12.002Z</updated>
+    <published>2017-07-30T23:15:59.000Z</published>
+    <updated>2017-08-04T09:42:30.084Z</updated>
     
     <content type="html"><![CDATA[<p>此壁纸为运行在<a href="http://store.steampowered.com/app/431960/Wallpaper_Engine/" target="_blank" rel="external">Wallpaper Engine</a>上的网页动态壁纸，也是第一次接触html的作品。懒懒散散更新到现在，效果算一般般吧~<br>预览gif图4M多，但是帧数相比实际运行的帧数差很多。<br><br><a id="more"></a><br>以下为steam上创意工坊的链接：<a href="http://steamcommunity.com/sharedfiles/filedetails/?id=848592407" target="_blank" rel="external">Theories Of The Universe</a></p>
-<h1 id="Preview-预览图"><a href="#Preview-预览图" class="headerlink" title="Preview(预览图)"></a>Preview(预览图)</h1><p><img class="blockquote-center" src="http://oty1v077k.bkt.clouddn.com/universepreviewpic.gif" width="800px" height="100%" alt="preview_pic"></p>
+<h1 id="预览图及网页版Demo"><a href="#预览图及网页版Demo" class="headerlink" title="预览图及网页版Demo"></a>预览图及网页版Demo</h1><p><img class="blockquote-center" src="http://oty1v077k.bkt.clouddn.com/universepreviewpic.gif" width="800px" height="100%" alt="preview_pic"></p>
+<p align="center"><a href="http://mashirosorata.vicp.io/wallpaper-demo/demo.html" target="_blank" rel="external">DEMO</a></p>
+
 <hr>
-<h1 id="Description-描述-："><a href="#Description-描述-：" class="headerlink" title="Description(描述)："></a>Description(描述)：</h1><p>壁纸一共8个可调整项：</p>
+<h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>壁纸一共8个可调整项：</p>
 <ol>
 <li>闪动位移范围：值越大，星星抖动越厉害；</li>
 <li>闪动速度：星星闪动变化的速度，值越大变化也就越快，增大可获取更好的效果；</li>
@@ -37,7 +39,7 @@
 <li>调整星星个数时，星星随机显示。</li>
 </ol>
 <hr>
-<h1 id="ChangeLog-更新日志-："><a href="#ChangeLog-更新日志-：" class="headerlink" title="ChangeLog(更新日志)："></a>ChangeLog(更新日志)：</h1><font color="#DAA520" size="5">2017年</font>
+<h1 id="ChangeLog-更新日志"><a href="#ChangeLog-更新日志" class="headerlink" title="ChangeLog(更新日志)"></a>ChangeLog(更新日志)</h1><font color="#DAA520" size="5">2017年</font>
 
 <blockquote>
 <ul>
@@ -46,13 +48,14 @@
 <li>update2.00：更新于&gt;2月5日&gt;下午7:51<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;此次更新的壁纸已经完成，又新增了2个选项，一共7个可调整项。<br>新增：<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.是否显示星球：如字面意思，可设置星球是否可见；<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.星球转动速度：值越大，星球转动速度越快。<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;还有一个算作小彩蛋的地方：点击星球那部分可以暂停转动，再次点击可继续转动。<br>后续还会增加星星的数量以及优化的。</p></li>
 <li>update2.01：更新于&gt;2月7日&gt;下午6:29<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;此次更新解决了单机星球后不能暂停的bug。</p></li>
 <li>update2.02：更新于&gt;3月5日&gt;下午2:02<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新增了6颗星星的显示。</p></li>
-<li>update2.10：更新于&gt;7月14日&gt;下午11:41<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.优化了主程序部分的代码，占用CPU资源更少；<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.改动：调整星星个数时星星随机显示。</p>
+<li>update2.10：更新于&gt;7月14日&gt;下午11:41<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.优化了主程序部分的代码，占用CPU资源更少；<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.改动：调整星星个数时星星随机显示。</p></li>
+<li>update2.10：更新于&gt;8月4日&gt;下午5:24<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更正一个乱序显示星星时的小bug。</p>
 
 </li>
 </ul>
 </blockquote>
 <hr>
-<h1 id="PS-备注-："><a href="#PS-备注-：" class="headerlink" title="PS(备注)："></a>PS(备注)：</h1><p><div align="center"><img src="http://oty1v077k.bkt.clouddn.com/jianc_jump.gif" height="100%" alt="jump"></div><br>目前忙起来暂时不会动这个项目了，大概吧……<br><br>有兴趣的朋友可以在<a href="https://github.com/Mashiro-Sorata/Theories_Of_The_Universe" target="_blank" rel="external">我的仓库</a>里看一下吧~</p>
+<h1 id="PS-备注"><a href="#PS-备注" class="headerlink" title="PS(备注)"></a>PS(备注)</h1><p><div align="center"><img src="http://oty1v077k.bkt.clouddn.com/jianc_jump.gif" height="100%" alt="jump"></div><br>目前忙起来暂时不会动这个项目了，大概吧……<br><br>有兴趣的朋友可以在<a href="https://github.com/Mashiro-Sorata/Theories_Of_The_Universe" target="_blank" rel="external">我的仓库</a>里看一下吧~</p>
 ]]></content>
     
     <summary type="html">

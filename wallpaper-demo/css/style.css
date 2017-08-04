@@ -1,0 +1,19 @@
+html{
+	width: 0;
+	height:0;
+	background: black
+}
+
+body {height:100%;
+	margin:0px;
+	overflow:hidden;
+}
+
+#my_bgp_div{
+	position:absolute;
+	background-image:url("../img/star_bgp.png");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+
+#video1{width:100%;height:100%;object-fit:fill;border-radius:50%;}
