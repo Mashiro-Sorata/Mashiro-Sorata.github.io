@@ -8,7 +8,6 @@ $(document).ready(function () {
   // my custom code begin
   window.onload=function(){
       var bwol=document.body.offsetWidth;
-      console.log(bwol);
       var live2d=document.getElementById('live2dcanvas');
       if(bwol < 975){
           $('aside#sidebar').css("display","none");

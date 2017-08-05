@@ -1859,7 +1859,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffc8f2;
+  background: #67fa9d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3023,4 +3023,23 @@ body {
   font-family: 'iconfont'; /* project id 369420 */
   src: url("//at.alicdn.com/t/font_64rd804d1z66flxr.eot");
   src: url("//at.alicdn.com/t/font_64rd804d1z66flxr.eot?#iefix") format('embedded-opentype'), url("//at.alicdn.com/t/font_64rd804d1z66flxr.woff") format('woff'), url("//at.alicdn.com/t/font_64rd804d1z66flxr.ttf") format('truetype'), url("//at.alicdn.com/t/font_64rd804d1z66flxr.svg#iconfont") format('svg');
+}
+.aplayer-list ol li:hover {
+  background: rgba(100,149,237,0.5) none repeat scroll !important;
+}
+.aplayer-list ol li {
+  background: rgba(0,0,0,0.5);
+}
+.aplayer-list-light {
+  background: rgba(148,0,211,0.8) none repeat scroll !important;
+}
+#player1 {
+  border-radius: 6px;
+}
+#player1 div,
+#player1 ol {
+  border-radius: 6px;
+}
+#player1 * {
+  color: #fff;
 }
