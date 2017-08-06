@@ -15,6 +15,11 @@ $(document).ready(function () {
       }
       // NexT.utils.isDesktop() ? live2d.style.visibility="visible" : live2d.style.visibility="hidden";
       bwol < 750 ? live2d.style.visibility="hidden" : live2d.style.visibility="visible";
+      if(bwol < 750)
+          $('.fixed_side').css('display','none');
+      else
+          $('.fixed_side').css('display','block');
+      ap.isMobile && $('.fixed_side').css('display','none');
   }
 
   window.onresize = function(){
@@ -24,6 +29,10 @@ $(document).ready(function () {
           bwos < 750 ? live2d.style.visibility="hidden" : live2d.style.visibility="visible";
       }
       bwos < 975 && $('body').velocity('stop').velocity({paddingLeft: 0},0);
+      if(bwos < 750)
+          $('.fixed_side').css('display','none');
+      else
+          $('.fixed_side').css('display','block');
       if($('aside#sidebar').css("display") != "none" && $('aside#sidebar').css("width")!="0px")
           $('body').velocity('stop').velocity({paddingLeft: 350},0);
   }

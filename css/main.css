@@ -1859,7 +1859,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #67fa9d;
+  background: #5cf277;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3025,13 +3025,13 @@ body {
   src: url("//at.alicdn.com/t/font_64rd804d1z66flxr.eot?#iefix") format('embedded-opentype'), url("//at.alicdn.com/t/font_64rd804d1z66flxr.woff") format('woff'), url("//at.alicdn.com/t/font_64rd804d1z66flxr.ttf") format('truetype'), url("//at.alicdn.com/t/font_64rd804d1z66flxr.svg#iconfont") format('svg');
 }
 .aplayer-list ol li:hover {
-  background: rgba(100,149,237,0.5) none repeat scroll !important;
+  background: rgba(148,0,211,0.8) none repeat scroll !important;
 }
 .aplayer-list ol li {
   background: rgba(0,0,0,0.5);
 }
 .aplayer-list-light {
-  background: rgba(148,0,211,0.8) none repeat scroll !important;
+  background: rgba(100,149,237,0.5) none repeat scroll !important;
 }
 #player1 {
   border-radius: 6px;
@@ -3042,4 +3042,187 @@ body {
 }
 #player1 * {
   color: #fff;
+}
+.aplayer-list-index {
+  float: left;
+}
+.aplayer-list-title {
+  float: left;
+}
+.aplayer-list-author {
+  float: right;
+}
+.fixed_side {
+  position: fixed;
+  top: 250px;
+  width: 90px;
+  height: 120px;
+}
+.mybtn {
+  width: 100px;
+  height: 120px;
+  background: url("http://oty1v077k.bkt.clouddn.com/bukagirl.jpg") no-repeat center;
+  background-size: cover;
+  background-color: rgba(220,20,60,0);
+}
+.waitingwordtop {
+  background-color: rgba(255,255,255,0.5);
+  width: 110px;
+  height: 30px;
+  position: absolute;
+  top: -30px;
+  right: -110px;
+  color: #9400d3;
+  opacity: 0;
+  border-radius: 8px;
+}
+.waitingwordtop p {
+  height: 30px;
+  display: block;
+  text-align: center;
+  line-hight: 30px;
+  margin-bottom: 0px;
+}
+.waitingwordbuttom {
+  background-color: rgba(255,255,255,0.5);
+  width: 110px;
+  height: 30px;
+  position: absolute;
+  top: 120px;
+  right: -110px;
+  color: #ff4500;
+  opacity: 0;
+  border-radius: 8px;
+}
+.waitingwordbuttom p {
+  height: 30px;
+  display: block;
+  text-align: center;
+  line-hight: 30px;
+  margin-bottom: 0px;
+}
+#mysidebar {
+  width: 0px;
+  height: 120px;
+  display: none;
+}
+.apmode-loop {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url("http://ou68gv0zg.bkt.clouddn.com/newloop.png");
+  background-size: 100%;
+  background-color: rgba(240,255,240,0.6);
+  top: 0px;
+  right: -30px;
+  opacity: 0;
+  border-radius: 8px;
+}
+.apmode-loop:hover {
+  background-color: rgba(240,255,240,0.8);
+}
+.apmode-single {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url("http://ou68gv0zg.bkt.clouddn.com/newsingle.png") no-repeat center;
+  background-size: 100%;
+  background-color: rgba(240,255,240,0.6);
+  top: 0px;
+  right: -30px;
+  opacity: 0;
+  border-radius: 8px;
+}
+.apmode-single:hover {
+  background-color: rgba(240,255,240,0.8);
+}
+.apmode-order {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url("http://ou68gv0zg.bkt.clouddn.com/neworder.png");
+  background-size: 100%;
+  background-color: rgba(240,255,240,0.6);
+  top: 0px;
+  right: -30px;
+  opacity: 0;
+  border-radius: 8px;
+}
+.apmode-order:hover {
+  background-color: rgba(240,255,240,0.8);
+}
+.apmode-random {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url("http://ou68gv0zg.bkt.clouddn.com/newrandom.png");
+  background-size: 100%;
+  background-color: rgba(240,255,240,0.6);
+  top: 0px;
+  right: 0px;
+  border-radius: 8px;
+}
+.apmode-order:hover {
+  background-color: rgba(240,255,240,0.8);
+}
+.lastsong {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url("http://ou68gv0zg.bkt.clouddn.com/lastsong.png");
+  background-size: 100%;
+  background-color: rgba(220,20,60,0.6);
+  top: 30px;
+  right: 0px;
+  border-radius: 8px;
+}
+.lastsong:hover {
+  background-color: rgba(220,20,60,0.8);
+}
+.pause {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url("http://ou68gv0zg.bkt.clouddn.com/pause.png");
+  background-size: 100%;
+  background-color: rgba(70,130,180,0.6);
+  top: 60px;
+  right: -30px;
+  border-radius: 8px;
+}
+.pause:hover {
+  background-color: rgba(70,130,180,0.8);
+}
+.nextsong {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url("http://ou68gv0zg.bkt.clouddn.com/nextsong.png");
+  background-size: 100%;
+  background-color: rgba(255,165,0,0.6);
+  top: 90px;
+  right: 0px;
+  border-radius: 8px;
+}
+.nextsong:hover {
+  background-color: rgba(255,165,0,0.8);
+}
+.playsong {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url("http://ou68gv0zg.bkt.clouddn.com/playsong.png");
+  background-size: 100%;
+  background-color: rgba(70,130,180,0.6);
+  top: 60px;
+  right: 0px;
+  border-radius: 8px;
+}
+.playsong:hover {
+  background-color: rgba(70,130,180,0.8);
+}
+@font-face {
+  font-family: 'iconfont'; /* project id 369420 */
+  src: url("//at.alicdn.com/t/font_o3v3v8tnvxre8kt9.eot");
+  src: url("//at.alicdn.com/t/font_o3v3v8tnvxre8kt9.eot?#iefix") format('embedded-opentype'), url("//at.alicdn.com/t/font_o3v3v8tnvxre8kt9.woff") format('woff'), url("//at.alicdn.com/t/font_o3v3v8tnvxre8kt9.ttf") format('truetype'), url("//at.alicdn.com/t/font_o3v3v8tnvxre8kt9.svg#iconfont") format('svg');
 }
