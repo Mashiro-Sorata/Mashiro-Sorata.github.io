@@ -1185,9 +1185,10 @@
       $('.waitingwordbuttom').delay(300).velocity({right: 0,opacity: 1},1000);
       $('.waitingwordtop').delay(5000).velocity("reverse");
       $('.waitingwordbuttom').delay(5000).velocity("reverse");
+			canplaysong=true;
     }
   }
-  var myto=setTimeout(myloadcheck,40000);
+  var myto=setTimeout(myloadcheck,90000);
 
   ap.on('error',function(){
     myaperror=true;
