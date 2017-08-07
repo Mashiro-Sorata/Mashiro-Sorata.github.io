@@ -1118,7 +1118,7 @@
 		<span style="display: inline-block;float: left">
       <div class="waitingwordtop"><p><i class="iconfont">&#xe636;</i>音乐加载中<i class="iconfont">&#xe636;</i></p></div>
 			<div class="mybtn" style="display: inline-block"></div>
-      <div class="waitingwordbuttom"><p><i class="iconfont">&#xe636;</i>不如来跳舞<i class="iconfont">&#xe636;</i></p></div>
+      <div class="waitingwordbuttom"><p><i class="iconfont">&#xe636;</i>不如来卖萌<i class="iconfont">&#xe636;</i></p></div>
 		</span>
 		<scpan style="display: inline-block;float: left">
 			<aside id="mysidebar" class="mysidebar">
@@ -1152,31 +1152,31 @@
   var canplaysong=false;
   var myaperror=false;
   $('.mybtn').click(function(){
-  	if(canplaysong && $('#mysidebar').css('display')=='none' && !$('.fixed_side').is(":animated")){
-  		$('#mysidebar').animate({width: 30},200);
-  		$('.fixed_side').animate({width: 130},200);
-  		$('#mysidebar').css('display','block');
-  	}
-  	else if(canplaysong && !$('.fixed_side').is(":animated")){
-  		$('.fixed_side').animate({width: 90},200);
-  		$('#mysidebar').animate({width: 0},200);
-  		$('#mysidebar').css('display','none');
-  	}
-    else if(!canplaysong){
-      if (!$('.waitingwordtop.velocity-animating').length && $('.waitingwordtop').css('opacity')==0){
-        $('.waitingwordtop').velocity({right: 0,opacity: 1},1000);
-        $('.waitingwordbuttom').delay(600).velocity({right: 0,opacity: 1},1000);
-        $('.waitingwordtop').delay(3000).velocity("reverse");
-        $('.waitingwordbuttom').delay(3000).velocity("reverse");
-      }
-    }
+		if(!$('.mybtn').is(":animated") && !$('.mysidebar.velocity-animating').length){
+	  	if(canplaysong  && $('.mybtn').css('right')=='0px'){
+	  		$('.mybtn').animate({right: 30},200);
+				$('.mysidebar').delay(200).velocity({right: 0,opacity: 1});
+	  	}
+	  	else if(canplaysong && $('.mybtn').css('right')=='30px' && !$('.mybtn').is(":animated")){
+			$('.mysidebar').velocity({right: -30,opacity: 0});
+	  		$('.mybtn').delay(200).animate({right: 0},200);
+	  	}
+	    else if(!canplaysong){
+	      if (!$('.waitingwordtop.velocity-animating').length && $('.waitingwordtop').css('opacity')==0){
+	        $('.waitingwordtop').velocity({right: 0,opacity: 1},1000);
+	        $('.waitingwordbuttom').delay(600).velocity({right: 0,opacity: 1},1000);
+	        $('.waitingwordtop').delay(3000).velocity("reverse");
+	        $('.waitingwordbuttom').delay(3000).velocity("reverse");
+	      }
+	    }
+		}
   });
   //第一次时当资源加载完成时才能点击mybtn
   ap.on('canplay',function(){
     if(!canplaysong){
       $('.waitingwordtop').html('音乐加载完成');
       $('.waitingwordtop').css('text-align','center');
-      $('.waitingwordbuttom').html('请继续看我跳舞');
+      $('.waitingwordbuttom').html('请继续看我卖萌');
       $('.waitingwordbuttom').css('text-align','center');
       $('.waitingwordtop').velocity({right: 0,opacity: 1},1000);
       $('.waitingwordbuttom').delay(300).velocity({right: 0,opacity: 1},1000);
@@ -1191,7 +1191,7 @@
     if(!canplaysong && !myaperror){
       $('.waitingwordtop').html('音乐加载失败');
       $('.waitingwordtop').css('text-align','center');
-      $('.waitingwordbuttom').html('那就看我跳舞');
+      $('.waitingwordbuttom').html('那就看我卖萌');
       $('.waitingwordbuttom').css('text-align','center');
       $('.waitingwordtop').velocity({right: 0,opacity: 1},1000);
       $('.waitingwordbuttom').delay(300).velocity({right: 0,opacity: 1},1000);
@@ -1206,7 +1206,7 @@
     myaperror=true;
     $('.waitingwordtop').html('音乐播放出错');
     $('.waitingwordtop').css('text-align','center');
-    $('.waitingwordbuttom').html('那就看我跳舞');
+    $('.waitingwordbuttom').html('那就看我卖萌');
     $('.waitingwordbuttom').css('text-align','center');
     $('.waitingwordtop').velocity({right: 0,opacity: 1},1000);
     $('.waitingwordbuttom').delay(300).velocity({right: 0,opacity: 1},1000);
@@ -1288,7 +1288,7 @@
           tempflag=false;
           $('.waitingwordtop').html('歌单已到底部');
           $('.waitingwordtop').css('text-align','center');
-          $('.waitingwordbuttom').html('接着看我跳舞');
+          $('.waitingwordbuttom').html('接着看我卖萌');
           $('.waitingwordbuttom').css('text-align','center');
           $('.waitingwordtop').velocity({right: 0,opacity: 1},1000);
           $('.waitingwordbuttom').delay(300).velocity({right: 0,opacity: 1},1000);

@@ -1859,7 +1859,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #200525;
+  background: #ff8bbb;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3055,15 +3055,19 @@ body {
 .fixed_side {
   position: fixed;
   top: 250px;
-  width: 90px;
+  width: 130px;
   height: 120px;
+  right: -30px;
 }
 .mybtn {
+  position: fixed;
   width: 100px;
   height: 120px;
-  background: url("http://oty1v077k.bkt.clouddn.com/bukagirl.jpg") no-repeat center;
-  background-size: cover;
   background-color: rgba(220,20,60,0);
+  right: 0px;
+}
+.mybtn:hover {
+  cursor: pointer;
 }
 .waitingwordtop {
   background-color: rgba(255,255,255,0.5);
@@ -3102,124 +3106,66 @@ body {
   margin-bottom: 0px;
 }
 #mysidebar {
-  width: 0px;
+  width: 30px;
   height: 120px;
-  display: none;
+  right: -30px;
+  opacity: 0;
+}
+.mysidebar div {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background-size: 100%;
+  background-color: rgba(173,255,47,0.7);
+  border-radius: 80px;
+  border: 1px solid #000;
+}
+.mysidebar div:hover {
+  background-color: rgba(255,140,0,0.8);
+  border: 2px solid #000;
 }
 .apmode-loop {
-  position: absolute;
-  width: 30px;
-  height: 30px;
   background: url("http://ou68gv0zg.bkt.clouddn.com/newloop.png");
-  background-size: 100%;
-  background-color: rgba(240,255,240,0.6);
   top: 0px;
   right: -30px;
   opacity: 0;
-  border-radius: 8px;
-}
-.apmode-loop:hover {
-  background-color: rgba(240,255,240,0.8);
 }
 .apmode-single {
-  position: absolute;
-  width: 30px;
-  height: 30px;
   background: url("http://ou68gv0zg.bkt.clouddn.com/newsingle.png") no-repeat center;
-  background-size: 100%;
-  background-color: rgba(240,255,240,0.6);
   top: 0px;
   right: -30px;
   opacity: 0;
-  border-radius: 8px;
-}
-.apmode-single:hover {
-  background-color: rgba(240,255,240,0.8);
 }
 .apmode-order {
-  position: absolute;
-  width: 30px;
-  height: 30px;
   background: url("http://ou68gv0zg.bkt.clouddn.com/neworder.png");
-  background-size: 100%;
-  background-color: rgba(240,255,240,0.6);
   top: 0px;
   right: -30px;
   opacity: 0;
-  border-radius: 8px;
-}
-.apmode-order:hover {
-  background-color: rgba(240,255,240,0.8);
 }
 .apmode-random {
-  position: absolute;
-  width: 30px;
-  height: 30px;
   background: url("http://ou68gv0zg.bkt.clouddn.com/newrandom.png");
-  background-size: 100%;
-  background-color: rgba(240,255,240,0.6);
   top: 0px;
   right: 0px;
-  border-radius: 8px;
-}
-.apmode-order:hover {
-  background-color: rgba(240,255,240,0.8);
 }
 .lastsong {
-  position: absolute;
-  width: 30px;
-  height: 30px;
   background: url("http://ou68gv0zg.bkt.clouddn.com/lastsong.png");
-  background-size: 100%;
-  background-color: rgba(220,20,60,0.6);
   top: 30px;
   right: 0px;
-  border-radius: 8px;
-}
-.lastsong:hover {
-  background-color: rgba(220,20,60,0.8);
 }
 .pause {
-  position: absolute;
-  width: 30px;
-  height: 30px;
   background: url("http://ou68gv0zg.bkt.clouddn.com/pause.png");
-  background-size: 100%;
-  background-color: rgba(70,130,180,0.6);
   top: 60px;
   right: -30px;
-  border-radius: 8px;
-}
-.pause:hover {
-  background-color: rgba(70,130,180,0.8);
 }
 .nextsong {
-  position: absolute;
-  width: 30px;
-  height: 30px;
   background: url("http://ou68gv0zg.bkt.clouddn.com/nextsong.png");
-  background-size: 100%;
-  background-color: rgba(255,165,0,0.6);
   top: 90px;
   right: 0px;
-  border-radius: 8px;
-}
-.nextsong:hover {
-  background-color: rgba(255,165,0,0.8);
 }
 .playsong {
-  position: absolute;
-  width: 30px;
-  height: 30px;
   background: url("http://ou68gv0zg.bkt.clouddn.com/playsong.png");
-  background-size: 100%;
-  background-color: rgba(70,130,180,0.6);
   top: 60px;
   right: 0px;
-  border-radius: 8px;
-}
-.playsong:hover {
-  background-color: rgba(70,130,180,0.8);
 }
 @font-face {
   font-family: 'iconfont'; /* project id 369420 */
