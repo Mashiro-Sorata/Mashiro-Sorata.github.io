@@ -1859,7 +1859,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff8bbb;
+  background: #18ffb6;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3071,7 +3071,7 @@ body {
 }
 .waitingwordtop {
   background-color: rgba(255,255,255,0.5);
-  width: 110px;
+  width: 140px;
   height: 30px;
   position: absolute;
   top: -30px;
@@ -3089,7 +3089,7 @@ body {
 }
 .waitingwordbuttom {
   background-color: rgba(255,255,255,0.5);
-  width: 110px;
+  width: 140px;
   height: 30px;
   position: absolute;
   top: 120px;
