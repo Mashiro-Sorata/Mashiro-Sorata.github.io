@@ -30,7 +30,7 @@ $(document).ready(function () {
         $('.mybtn').css('background','url(' + btn_image[btn_index] + ') no-repeat center');
         $('.mybtn').css('background-size','contain');
       }
-  }
+  };
 
   window.onresize = function(){
       var bwos=document.body.offsetWidth;
@@ -45,10 +45,10 @@ $(document).ready(function () {
           $('.fixed_side').css('display','block');
       if($('aside#sidebar').css("display") != "none" && $('aside#sidebar').css("width")!="0px")
           $('body').velocity('stop').velocity({paddingLeft: 350},0);
-  }
+  };
 
 
-  document.querySelector('.site-author-image').onclick=function(){window.location.href="http://mashirosorata.vicp.io";};
+  $('.site-author-image').click(function(){window.location.href="http://mashirosorata.vicp.io";});
 
 
   // my custom code end
