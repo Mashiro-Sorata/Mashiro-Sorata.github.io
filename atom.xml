@@ -4,9 +4,9 @@
   <subtitle>M-S&#39;s Blog</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://Mashiro-Sorata.github.io/"/>
+  <link href="http://mashirosorata.vicp.io/"/>
   <updated>2017-08-08T08:34:12.181Z</updated>
-  <id>http://Mashiro-Sorata.github.io/</id>
+  <id>http://mashirosorata.vicp.io/</id>
   
   <author>
     <name>Mashiro_Sorata</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>HEXO+NEXT主题个性化配置</title>
-    <link href="http://Mashiro-Sorata.github.io/HEXO-NEXT%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE.html"/>
-    <id>http://Mashiro-Sorata.github.io/HEXO-NEXT主题个性化配置.html</id>
+    <link href="http://mashirosorata.vicp.io/HEXO-NEXT%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE.html"/>
+    <id>http://mashirosorata.vicp.io/HEXO-NEXT主题个性化配置.html</id>
     <published>2017-08-07T15:08:40.000Z</published>
     <updated>2017-08-08T08:34:12.181Z</updated>
     
@@ -132,27 +132,27 @@
     
     </summary>
     
-      <category term="Html" scheme="http://Mashiro-Sorata.github.io/categories/Html/"/>
+      <category term="Html" scheme="http://mashirosorata.vicp.io/categories/Html/"/>
     
     
-      <category term="hexo" scheme="http://Mashiro-Sorata.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="http://mashirosorata.vicp.io/tags/hexo/"/>
     
-      <category term="next" scheme="http://Mashiro-Sorata.github.io/tags/next/"/>
+      <category term="next" scheme="http://mashirosorata.vicp.io/tags/next/"/>
     
-      <category term="个性化设置" scheme="http://Mashiro-Sorata.github.io/tags/%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E7%BD%AE/"/>
+      <category term="个性化设置" scheme="http://mashirosorata.vicp.io/tags/%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E7%BD%AE/"/>
     
   </entry>
   
   <entry>
     <title>Theories Of The Universe</title>
-    <link href="http://Mashiro-Sorata.github.io/Theories-Of-The-Universe.html"/>
-    <id>http://Mashiro-Sorata.github.io/Theories-Of-The-Universe.html</id>
+    <link href="http://mashirosorata.vicp.io/Theories-Of-The-Universe.html"/>
+    <id>http://mashirosorata.vicp.io/Theories-Of-The-Universe.html</id>
     <published>2017-07-30T15:15:59.000Z</published>
     <updated>2017-08-04T14:13:47.641Z</updated>
     
     <content type="html"><![CDATA[<p>此壁纸为运行在<a href="http://store.steampowered.com/app/431960/Wallpaper_Engine/" target="_blank" rel="external">Wallpaper Engine</a>上的网页动态壁纸，也是第一次接触html的作品。懒懒散散更新到现在，效果算一般般吧~<br>预览gif图4M多，但是帧数相比实际运行的帧数差很多。<br><br><a id="more"></a><br>以下为steam上创意工坊的链接：<a href="http://steamcommunity.com/sharedfiles/filedetails/?id=848592407" target="_blank" rel="external">Theories Of The Universe</a></p>
 <h1 id="预览图及网页版Demo"><a href="#预览图及网页版Demo" class="headerlink" title="预览图及网页版Demo"></a>预览图及网页版Demo</h1><p><img class="blockquote-center" src="http://oty1v077k.bkt.clouddn.com/universepreviewpic.gif" width="800px" height="100%" alt="preview_pic"></p>
-<p align="center"><font color="#8B008B" style="font-size:25px"><a href="http://mashirosorata.vicp.io/wallpaper-demo/demo.html" target="_blank" rel="external">DEMO</a></font></p>
+<p align="center"><font color="#8B008B" style="font-size:25px"><a href="http://mashirosorata.vicp.io/wallpaper-demo/demo.html">DEMO</a></font></p>
 
 <hr>
 <h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>壁纸一共8个可调整项：</p>
@@ -192,18 +192,18 @@
     
     </summary>
     
-      <category term="Html" scheme="http://Mashiro-Sorata.github.io/categories/Html/"/>
+      <category term="Html" scheme="http://mashirosorata.vicp.io/categories/Html/"/>
     
     
-      <category term="Wallpapaer Engine" scheme="http://Mashiro-Sorata.github.io/tags/Wallpapaer-Engine/"/>
+      <category term="Wallpapaer Engine" scheme="http://mashirosorata.vicp.io/tags/Wallpapaer-Engine/"/>
     
-      <category term="网页壁纸" scheme="http://Mashiro-Sorata.github.io/tags/%E7%BD%91%E9%A1%B5%E5%A3%81%E7%BA%B8/"/>
+      <category term="网页壁纸" scheme="http://mashirosorata.vicp.io/tags/%E7%BD%91%E9%A1%B5%E5%A3%81%E7%BA%B8/"/>
     
-      <category term="动态壁纸" scheme="http://Mashiro-Sorata.github.io/tags/%E5%8A%A8%E6%80%81%E5%A3%81%E7%BA%B8/"/>
+      <category term="动态壁纸" scheme="http://mashirosorata.vicp.io/tags/%E5%8A%A8%E6%80%81%E5%A3%81%E7%BA%B8/"/>
     
-      <category term="Steam" scheme="http://Mashiro-Sorata.github.io/tags/Steam/"/>
+      <category term="Steam" scheme="http://mashirosorata.vicp.io/tags/Steam/"/>
     
-      <category term="javascript" scheme="http://Mashiro-Sorata.github.io/tags/javascript/"/>
+      <category term="javascript" scheme="http://mashirosorata.vicp.io/tags/javascript/"/>
     
   </entry>
   
