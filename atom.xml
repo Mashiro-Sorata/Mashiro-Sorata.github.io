@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mashirosorata.vicp.io/"/>
-  <updated>2017-08-09T10:37:44.242Z</updated>
+  <updated>2017-08-09T10:48:01.665Z</updated>
   <id>http://mashirosorata.vicp.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://mashirosorata.vicp.io/HEXO-NEXT%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE.html"/>
     <id>http://mashirosorata.vicp.io/HEXO-NEXT主题个性化配置.html</id>
     <published>2017-08-07T15:08:40.000Z</published>
-    <updated>2017-08-09T10:37:44.242Z</updated>
+    <updated>2017-08-09T10:48:01.665Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://oty1v077k.bkt.clouddn.com/hexo-github.png" alt="github"></p>
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>此文章用来记录本网站个性化的设置更改，以便备用，或者供人参考。<br>提醒一下：<strong>博主next主题风格用的是Mist，若主题风格不一样，有些地方需酌情修改</strong>。<br>在其他地方能找到的教程这里就不重复赘述，文章结尾会给出一些更为详尽的其他参考链接。</p>
@@ -139,6 +139,10 @@
       <category term="next" scheme="http://mashirosorata.vicp.io/tags/next/"/>
     
       <category term="个性化设置" scheme="http://mashirosorata.vicp.io/tags/%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E7%BD%AE/"/>
+    
+      <category term="javascript" scheme="http://mashirosorata.vicp.io/tags/javascript/"/>
+    
+      <category term="网站" scheme="http://mashirosorata.vicp.io/tags/%E7%BD%91%E7%AB%99/"/>
     
   </entry>
   
