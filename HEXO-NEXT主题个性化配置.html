@@ -103,7 +103,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://oty1v077k.bkt.clouddn.com/hexo-github.png">
 <meta property="og:image" content="http://oty1v077k.bkt.clouddn.com/jianc_jump.gif">
-<meta property="og:updated_time" content="2017-08-08T08:34:12.181Z">
+<meta property="og:updated_time" content="2017-08-09T10:37:44.242Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HEXO+NEXT主题个性化配置">
 <meta name="twitter:description" content="前言此文章用来记录本网站个性化的设置更改，以便备用，或者供人参考。提醒一下：博主next主题风格用的是Mist，若主题风格不一样，有些地方需酌情修改。在其他地方能找到的教程这里就不重复赘述，文章结尾会给出一些更为详尽的其他参考链接。">
@@ -557,9 +557,8 @@
 <p>在此<code>&lt;/section&gt;</code>的上方添加一个<code>&lt;/div&gt;</code>，如下所示：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--my custom code begin--&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--my custom code end--&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">section</span>&gt;</span></div><div class="line"></div><div class="line">&#123;% if display_toc and toc(page.content).length &gt; 1 %&#125;</div><div class="line"><span class="comment">&lt;!--noindex--&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">section</span> <span class="attr">class</span>=<span class="string">"post-toc-wrap motion-element sidebar-panel sidebar-panel-active"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"post-toc"</span>&gt;</span></div></pre></td></tr></table></figure>
 </li>
-</ol>
-<ol>
-<li>自定义区域的初始化设置<br><br>在<code>theme/next/source/css/_custom</code>文件夹下打开<code>custom.styl</code>文件，向里面增添下列代码：<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#mydivshow</span>&#123;<span class="attribute">opacity</span>: <span class="number">0</span>;&#125;</div></pre></td></tr></table></figure>
+<li><p>自定义区域的初始化设置<br><br>在<code>theme/next/source/css/_custom</code>文件夹下打开<code>custom.styl</code>文件，向里面增添下列代码：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#mydivshow</span>&#123;<span class="attribute">opacity</span>: <span class="number">0</span>;&#125;</div></pre></td></tr></table></figure>
 </li>
 </ol>
 <p><strong>注</strong>：具体代码添加位置以及代码里的<code>section.site-overview</code>可以自己修改，<code>&lt;div id=&quot;mydivshow&quot; class=&quot;mydivshow&quot;&gt;</code>和末尾的<code>&lt;/div&gt;</code>是控制显示区域，<code>section.site-overview</code>则是用户鼠标滑入划出时的触发事件区域。</p>
@@ -612,7 +611,7 @@
   <p><span>本文标题:</span><a href="/HEXO-NEXT主题个性化配置.html">HEXO+NEXT主题个性化配置</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Mashiro_Sorata 的个人博客">Mashiro_Sorata</a></p>
   <p><span>发布时间:</span>2017年08月07日 - 15:08</p>
-  <p><span>最后更新:</span>2017年08月08日 - 08:08</p>
+  <p><span>最后更新:</span>2017年08月09日 - 10:08</p>
   <p><span>原始链接:</span><a href="/HEXO-NEXT主题个性化配置.html" title="HEXO+NEXT主题个性化配置">http://mashirosorata.vicp.io/HEXO-NEXT主题个性化配置.html</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://mashirosorata.vicp.io/HEXO-NEXT主题个性化配置.html"  aria-label="复制成功！"></i></span>
   </p>

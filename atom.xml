@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mashirosorata.vicp.io/"/>
-  <updated>2017-08-08T08:34:12.181Z</updated>
+  <updated>2017-08-09T10:37:44.242Z</updated>
   <id>http://mashirosorata.vicp.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://mashirosorata.vicp.io/HEXO-NEXT%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE.html"/>
     <id>http://mashirosorata.vicp.io/HEXO-NEXT主题个性化配置.html</id>
     <published>2017-08-07T15:08:40.000Z</published>
-    <updated>2017-08-08T08:34:12.181Z</updated>
+    <updated>2017-08-09T10:37:44.242Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://oty1v077k.bkt.clouddn.com/hexo-github.png" alt="github"></p>
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>此文章用来记录本网站个性化的设置更改，以便备用，或者供人参考。<br>提醒一下：<strong>博主next主题风格用的是Mist，若主题风格不一样，有些地方需酌情修改</strong>。<br>在其他地方能找到的教程这里就不重复赘述，文章结尾会给出一些更为详尽的其他参考链接。</p>
@@ -95,9 +95,8 @@
 <p>在此<code>&lt;/section&gt;</code>的上方添加一个<code>&lt;/div&gt;</code>，如下所示：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--my custom code begin--&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--my custom code end--&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">section</span>&gt;</span></div><div class="line"></div><div class="line">&#123;% if display_toc and toc(page.content).length &gt; 1 %&#125;</div><div class="line"><span class="comment">&lt;!--noindex--&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">section</span> <span class="attr">class</span>=<span class="string">"post-toc-wrap motion-element sidebar-panel sidebar-panel-active"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"post-toc"</span>&gt;</span></div></pre></td></tr></table></figure>
 </li>
-</ol>
-<ol>
-<li>自定义区域的初始化设置<br><br>在<code>theme/next/source/css/_custom</code>文件夹下打开<code>custom.styl</code>文件，向里面增添下列代码：<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#mydivshow</span>&#123;<span class="attribute">opacity</span>: <span class="number">0</span>;&#125;</div></pre></td></tr></table></figure>
+<li><p>自定义区域的初始化设置<br><br>在<code>theme/next/source/css/_custom</code>文件夹下打开<code>custom.styl</code>文件，向里面增添下列代码：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#mydivshow</span>&#123;<span class="attribute">opacity</span>: <span class="number">0</span>;&#125;</div></pre></td></tr></table></figure>
 </li>
 </ol>
 <p><strong>注</strong>：具体代码添加位置以及代码里的<code>section.site-overview</code>可以自己修改，<code>&lt;div id=&quot;mydivshow&quot; class=&quot;mydivshow&quot;&gt;</code>和末尾的<code>&lt;/div&gt;</code>是控制显示区域，<code>section.site-overview</code>则是用户鼠标滑入划出时的触发事件区域。</p>
