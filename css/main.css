@@ -1859,7 +1859,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff7e82;
+  background: #4a0dbb;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3055,7 +3055,6 @@ body {
   top: 250px;
   width: 130px;
   height: 120px;
-  right: -30px;
 }
 .mybtn {
   position: fixed;
