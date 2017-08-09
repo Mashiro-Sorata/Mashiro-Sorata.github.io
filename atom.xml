@@ -198,6 +198,8 @@
       <category term="Html" scheme="http://mashirosorata.vicp.io/categories/Html/"/>
     
     
+      <category term="javascript" scheme="http://mashirosorata.vicp.io/tags/javascript/"/>
+    
       <category term="Wallpapaer Engine" scheme="http://mashirosorata.vicp.io/tags/Wallpapaer-Engine/"/>
     
       <category term="网页壁纸" scheme="http://mashirosorata.vicp.io/tags/%E7%BD%91%E9%A1%B5%E5%A3%81%E7%BA%B8/"/>
@@ -205,8 +207,6 @@
       <category term="动态壁纸" scheme="http://mashirosorata.vicp.io/tags/%E5%8A%A8%E6%80%81%E5%A3%81%E7%BA%B8/"/>
     
       <category term="Steam" scheme="http://mashirosorata.vicp.io/tags/Steam/"/>
-    
-      <category term="javascript" scheme="http://mashirosorata.vicp.io/tags/javascript/"/>
     
   </entry>
   
