@@ -1859,7 +1859,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fffff7;
+  background: #ffff6f;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3081,7 +3081,7 @@ body {
   height: 30px;
   display: block;
   text-align: center;
-  line-hight: 30px;
+  line-height: 30px;
   margin-bottom: 0px;
 }
 .waitingwordbuttom {
@@ -3099,10 +3099,11 @@ body {
   height: 30px;
   display: block;
   text-align: center;
-  line-hight: 30px;
+  line-height: 30px;
   margin-bottom: 0px;
 }
 #mysidebar {
+  position: fixed;
   width: 30px;
   height: 120px;
   right: -30px;

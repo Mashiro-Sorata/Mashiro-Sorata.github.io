@@ -18,11 +18,11 @@
 		if(!$('.mybtn').is(":animated") && !$('.mysidebar.velocity-animating').length){
 	  	if(canplaysong  && $('.mybtn').css('right')=='0px'){
 	  		$('.mybtn').animate({right: 30},200);
-				$('.mysidebar').delay(200).velocity({right: 0,opacity: 1});
+				$('.mysidebar').velocity({right: 0,opacity: 1});
 	  	}
 	  	else if(canplaysong && $('.mybtn').css('right')=='30px' && !$('.mybtn').is(":animated")){
 			$('.mysidebar').velocity({right: -30,opacity: 0});
-	  		$('.mybtn').delay(200).animate({right: 0},200);
+	  		$('.mybtn').animate({right: 0},200);
 	  	}
 	    else if(!canplaysong){
 	      if (!$('.waitingwordtop.velocity-animating').length && $('.waitingwordtop').css('opacity')==0){
