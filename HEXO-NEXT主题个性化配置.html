@@ -75,7 +75,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo,next,个性化设置,javascript,网站," />
+  <meta name="keywords" content="javascript,hexo,next,个性化设置,网站," />
 
 
 
@@ -94,7 +94,7 @@
 
 
 <meta name="description" content="前言此文章用来记录本网站个性化的设置更改，以便备用，或者供人参考。提醒一下：博主next主题风格用的是Mist，若主题风格不一样，有些地方需酌情修改。在其他地方能找到的教程这里就不重复赘述，文章结尾会给出一些更为详尽的其他参考链接。">
-<meta name="keywords" content="hexo,next,个性化设置,javascript,网站">
+<meta name="keywords" content="javascript,hexo,next,个性化设置,网站">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HEXO+NEXT主题个性化配置">
 <meta property="og:url" content="http://mashirosorata.vicp.io/HEXO-NEXT主题个性化配置.html">
@@ -103,7 +103,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://oty1v077k.bkt.clouddn.com/hexo-github.png">
 <meta property="og:image" content="http://oty1v077k.bkt.clouddn.com/jianc_jump.gif">
-<meta property="og:updated_time" content="2017-08-10T04:44:26.454Z">
+<meta property="og:updated_time" content="2017-08-11T02:29:23.585Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HEXO+NEXT主题个性化配置">
 <meta name="twitter:description" content="前言此文章用来记录本网站个性化的设置更改，以便备用，或者供人参考。提醒一下：博主next主题风格用的是Mist，若主题风格不一样，有些地方需酌情修改。在其他地方能找到的教程这里就不重复赘述，文章结尾会给出一些更为详尽的其他参考链接。">
@@ -449,7 +449,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  4,284 字
+                  4,262 字
                 </span>
               
 
@@ -551,7 +551,7 @@
 <li><p>设置自定义div<br><br>在<code>theme/next/layout/_macro</code>文件夹下打开<code>sidebar.swig</code>文件，找到以下代码行的位置：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">nav</span> <span class="attr">class</span>=<span class="string">"site-state motion-element"</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>在其上添加以下代码：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--my custom code begin--&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="javascript">      $(<span class="string">"section.site-overview"</span>).hover(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></div><div class="line"><span class="javascript">          <span class="keyword">if</span> (!$(<span class="string">"#mydivshow"</span>).is(<span class="string">":animated"</span>))</span></div><div class="line"><span class="javascript">              $(<span class="string">"#mydivshow"</span>).animate(&#123;<span class="attr">opacity</span>: <span class="number">1</span>&#125;);</span></div><div class="line"><span class="javascript">       &#125;,<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></div><div class="line"><span class="javascript">          <span class="keyword">if</span> (!$(<span class="string">"#mydivshow"</span>).is(<span class="string">":animated"</span>))</span></div><div class="line"><span class="javascript">              $(<span class="string">"#mydivshow"</span>).animate(&#123;<span class="attr">opacity</span>: <span class="number">0</span>&#125;);</span></div><div class="line"><span class="undefined">       &#125;);</span></div><div class="line"><span class="undefined">      </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"mydivshow"</span> <span class="attr">class</span>=<span class="string">"mydivshow"</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--my custom code end--&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--my custom code begin--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="javascript">  $(<span class="string">"#sidebar"</span>).hover(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></div><div class="line"><span class="javascript">    $(<span class="string">"#mydivshow"</span>).velocity(<span class="string">'stop'</span>).velocity(&#123;<span class="attr">opacity</span>: <span class="number">1</span>&#125;);</span></div><div class="line"><span class="javascript">  &#125;,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></div><div class="line"><span class="javascript">    $(<span class="string">"#mydivshow"</span>).velocity(<span class="string">'stop'</span>).velocity(&#123;<span class="attr">opacity</span>: <span class="number">0</span>&#125;);</span></div><div class="line"><span class="undefined">  &#125;);</span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"mydivshow"</span> <span class="attr">class</span>=<span class="string">"mydivshow"</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--my custom code end--&gt;</span></div></pre></td></tr></table></figure>
 <p>然后找到代码行：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;/<span class="name">section</span>&gt;</span></div><div class="line"></div><div class="line">&#123;% if display_toc and toc(page.content).length &gt; 1 %&#125;</div><div class="line"><span class="comment">&lt;!--noindex--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">section</span> <span class="attr">class</span>=<span class="string">"post-toc-wrap motion-element sidebar-panel sidebar-panel-active"</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>在此<code>&lt;/section&gt;</code>的上方添加一个<code>&lt;/div&gt;</code>，如下所示：</p>
@@ -611,7 +611,7 @@
   <p><span>本文标题:</span><a href="/HEXO-NEXT主题个性化配置.html">HEXO+NEXT主题个性化配置</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Mashiro_Sorata 的个人博客">Mashiro_Sorata</a></p>
   <p><span>发布时间:</span>2017年08月07日 - 15:08</p>
-  <p><span>最后更新:</span>2017年08月10日 - 04:08</p>
+  <p><span>最后更新:</span>2017年08月11日 - 02:08</p>
   <p><span>原始链接:</span><a href="/HEXO-NEXT主题个性化配置.html" title="HEXO+NEXT主题个性化配置">http://mashirosorata.vicp.io/HEXO-NEXT主题个性化配置.html</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://mashirosorata.vicp.io/HEXO-NEXT主题个性化配置.html"  aria-label="复制成功！"></i></span>
   </p>
@@ -661,13 +661,13 @@
       
         <div class="post-tags">
           
+            <a href="/tags/javascript/" rel="tag"><i class="fa fa-tag"></i> javascript</a>
+          
             <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
           
             <a href="/tags/next/" rel="tag"><i class="fa fa-tag"></i> next</a>
           
             <a href="/tags/个性化设置/" rel="tag"><i class="fa fa-tag"></i> 个性化设置</a>
-          
-            <a href="/tags/javascript/" rel="tag"><i class="fa fa-tag"></i> javascript</a>
           
             <a href="/tags/网站/" rel="tag"><i class="fa fa-tag"></i> 网站</a>
           
@@ -775,95 +775,12 @@
         </div>
 
 <!--my custom code begin-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
         <script type="text/javascript">
-        var myp=false;
-        $("section.site-overview").hover(function(ae) {
-            var e = window.event || ae ;
-            var s = e.fromElement || e.relatedTarget ;
-            if( document.all ){
-              if(  !(s == this || this.contains(s))  ){
-                if (!$('#mydivshow').is(":animated")){
-                  $('#mydivshow').animate({opacity: 1});
-                  $("#mydivshow").delay(100).css("visibility","visible");
-                }
-                myp=true;
-              }
-            }else{
-              var res= this.compareDocumentPosition(s) ;
-              if(  !(s == this || res == 20 || res == 0 )  ){
-                if (!$('#mydivshow').is(":animated")){
-                  $('#mydivshow').animate({opacity: 1});
-                  $("#mydivshow").delay(100).css("visibility","visible");
-                }
-                myp=true;
-              }
-            }
-        },function (ae) {
-            var e = window.event || ae;
-            var s = e.toElement || e.relatedTarget;
-            if(document.all){
-              if( !this.contains(s) ){
-                if (!$('#mydivshow').is(":animated")){
-                  $('#mydivshow').animate({height: 250});
-          			  $('#player1').delay(100).animate({height: 66});
-                  $('#mydivshow').animate({opacity: 0});
-                  $("#mydivshow").delay(100).css("visibility","hidden");
-                  if($('#player1').css('height')=='250px'){
-                    $('.aplayer-icon-menu')[0].click();
-                    myflag=!myflag;
-                  }
-                }
-                myp=false;
-              }
-            }else{
-              var res= this.compareDocumentPosition(s) ;
-              if( ! ( res == 20 || res == 0) ){
-                if (!$('#mydivshow').is(":animated")){
-                  $('#mydivshow').animate({height: 250});
-          			  $('#player1').delay(100).animate({height: 66});
-                  $('#mydivshow').animate({opacity: 0});
-                  $("#mydivshow").delay(100).css("visibility","hidden");
-                  if($('#player1').css('height')=='250px'){
-                    $('.aplayer-icon-menu')[0].click();
-                    myflag=!myflag;
-                  }
-                }
-                myp=false;
-              }
-            }
+        $("#sidebar").hover(function(){
+          $("#mydivshow").velocity('stop').velocity({opacity: 1});
+        },function(){
+          $("#mydivshow").velocity('stop').velocity({opacity: 0});
         });
-
-      function mycheck(){
-	       if(myp && !$('#mydivshow').is(":animated") && $('#mydivshow').css('opacity')==0){
-		       $('#mydivshow').animate({opacity: 1});
-           $("#mydivshow").delay(100).css("visibility","visible");
-        }
-	       else if(!myp && !$('#mydivshow').is(":animated") && $('#mydivshow').css('opacity')==1){
-           $('#mydivshow').animate({height: 250});
-           $('#player1').delay(100).animate({height: 66});
-		       $('#mydivshow').animate({opacity: 0});
-           $("#mydivshow").delay(100).css("visibility","hidden");
-           if($('#player1').css('height')=='250px'){
-              $('.aplayer-icon-menu')[0].click();
-              myflag=!myflag;
-            }
-        }
-      if($('.sidebar-nav-active').css('display')){
-        $('.aplayer-list').css('height','250px');
-      }
-    }
-
-      var mytime;
-      $('.sidebar-toggle')[0].onclick=function(){
-        if($('#sidebar').css('display')=='block' && $('#sidebar').css('width')=='350px'){
-          clearInterval(mytime);
-        }
-        else{
-          mytime=setInterval(mycheck,500);
-        }
-      };
       </script>
 
         <div id="mydivshow" class="mydivshow">
@@ -962,7 +879,7 @@
         
 
         <script src="/js/src/APlayer.min.js"></script>
-<div id="player1" class="aplayer" style="width: 300px;height: 66px;background:rgba(0,0,0,0.5) none repeat scroll !important"></div>
+<div id="player1" class="aplayer" style="width:300px;height:66px;background:rgba(0,0,0,0.5)"></div>
 	<script type="text/javascript">
 	var ap = new APlayer({
 	    element: document.getElementById('player1'),                       // Optional, player element
@@ -1008,16 +925,18 @@
 });
 
   $('.aplayer-icon-menu')[0].click();   //initial height
+	$('.aplayer-icon.aplayer-icon-mode').css('display','inline-block');
   var myflag=true;
+	$('.aplayer-list').css('height','180px');
 	$('.aplayer-icon-menu svg').click(function(){
     var temp=$('#player1').css('height');
 		if(temp=='250px' && !myflag){
-      $('#mydivshow').animate({height: 250});
-			$('#player1').delay(100).animate({height: 66});
+      $('#mydivshow').velocity('stop').velocity({height: 250});
+			$('#player1').velocity('stop').velocity({height: 66});
     }
 		else if(temp=='66px' && myflag){
-      $('#mydivshow').animate({height: 420});
-			$('#player1').delay(50).animate({height: 250});
+      $('#mydivshow').velocity('stop').velocity({height: 420});
+			$('#player1').velocity('stop').velocity({height: 250});
     }
     myflag=!myflag;
 	});

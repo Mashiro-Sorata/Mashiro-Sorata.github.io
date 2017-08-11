@@ -75,7 +75,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="javascript,Wallpapaer Engine,网页壁纸,动态壁纸,Steam," />
+  <meta name="keywords" content="Wallpapaer Engine,网页壁纸,动态壁纸,Steam,javascript," />
 
 
 
@@ -94,7 +94,7 @@
 
 
 <meta name="description" content="此壁纸为运行在Wallpaper Engine上的网页动态壁纸，也是第一次接触html的作品。懒懒散散更新到现在，效果算一般般吧~预览gif图4M多，但是帧数相比实际运行的帧数差很多。">
-<meta name="keywords" content="javascript,Wallpapaer Engine,网页壁纸,动态壁纸,Steam">
+<meta name="keywords" content="Wallpapaer Engine,网页壁纸,动态壁纸,Steam,javascript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Theories Of The Universe">
 <meta property="og:url" content="http://mashirosorata.vicp.io/Theories-Of-The-Universe.html">
@@ -596,8 +596,6 @@
       
         <div class="post-tags">
           
-            <a href="/tags/javascript/" rel="tag"><i class="fa fa-tag"></i> javascript</a>
-          
             <a href="/tags/Wallpapaer-Engine/" rel="tag"><i class="fa fa-tag"></i> Wallpapaer Engine</a>
           
             <a href="/tags/网页壁纸/" rel="tag"><i class="fa fa-tag"></i> 网页壁纸</a>
@@ -605,6 +603,8 @@
             <a href="/tags/动态壁纸/" rel="tag"><i class="fa fa-tag"></i> 动态壁纸</a>
           
             <a href="/tags/Steam/" rel="tag"><i class="fa fa-tag"></i> Steam</a>
+          
+            <a href="/tags/javascript/" rel="tag"><i class="fa fa-tag"></i> javascript</a>
           
         </div>
       
@@ -710,95 +710,12 @@
         </div>
 
 <!--my custom code begin-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
         <script type="text/javascript">
-        var myp=false;
-        $("section.site-overview").hover(function(ae) {
-            var e = window.event || ae ;
-            var s = e.fromElement || e.relatedTarget ;
-            if( document.all ){
-              if(  !(s == this || this.contains(s))  ){
-                if (!$('#mydivshow').is(":animated")){
-                  $('#mydivshow').animate({opacity: 1});
-                  $("#mydivshow").delay(100).css("visibility","visible");
-                }
-                myp=true;
-              }
-            }else{
-              var res= this.compareDocumentPosition(s) ;
-              if(  !(s == this || res == 20 || res == 0 )  ){
-                if (!$('#mydivshow').is(":animated")){
-                  $('#mydivshow').animate({opacity: 1});
-                  $("#mydivshow").delay(100).css("visibility","visible");
-                }
-                myp=true;
-              }
-            }
-        },function (ae) {
-            var e = window.event || ae;
-            var s = e.toElement || e.relatedTarget;
-            if(document.all){
-              if( !this.contains(s) ){
-                if (!$('#mydivshow').is(":animated")){
-                  $('#mydivshow').animate({height: 250});
-          			  $('#player1').delay(100).animate({height: 66});
-                  $('#mydivshow').animate({opacity: 0});
-                  $("#mydivshow").delay(100).css("visibility","hidden");
-                  if($('#player1').css('height')=='250px'){
-                    $('.aplayer-icon-menu')[0].click();
-                    myflag=!myflag;
-                  }
-                }
-                myp=false;
-              }
-            }else{
-              var res= this.compareDocumentPosition(s) ;
-              if( ! ( res == 20 || res == 0) ){
-                if (!$('#mydivshow').is(":animated")){
-                  $('#mydivshow').animate({height: 250});
-          			  $('#player1').delay(100).animate({height: 66});
-                  $('#mydivshow').animate({opacity: 0});
-                  $("#mydivshow").delay(100).css("visibility","hidden");
-                  if($('#player1').css('height')=='250px'){
-                    $('.aplayer-icon-menu')[0].click();
-                    myflag=!myflag;
-                  }
-                }
-                myp=false;
-              }
-            }
+        $("#sidebar").hover(function(){
+          $("#mydivshow").velocity('stop').velocity({opacity: 1});
+        },function(){
+          $("#mydivshow").velocity('stop').velocity({opacity: 0});
         });
-
-      function mycheck(){
-	       if(myp && !$('#mydivshow').is(":animated") && $('#mydivshow').css('opacity')==0){
-		       $('#mydivshow').animate({opacity: 1});
-           $("#mydivshow").delay(100).css("visibility","visible");
-        }
-	       else if(!myp && !$('#mydivshow').is(":animated") && $('#mydivshow').css('opacity')==1){
-           $('#mydivshow').animate({height: 250});
-           $('#player1').delay(100).animate({height: 66});
-		       $('#mydivshow').animate({opacity: 0});
-           $("#mydivshow").delay(100).css("visibility","hidden");
-           if($('#player1').css('height')=='250px'){
-              $('.aplayer-icon-menu')[0].click();
-              myflag=!myflag;
-            }
-        }
-      if($('.sidebar-nav-active').css('display')){
-        $('.aplayer-list').css('height','250px');
-      }
-    }
-
-      var mytime;
-      $('.sidebar-toggle')[0].onclick=function(){
-        if($('#sidebar').css('display')=='block' && $('#sidebar').css('width')=='350px'){
-          clearInterval(mytime);
-        }
-        else{
-          mytime=setInterval(mycheck,500);
-        }
-      };
       </script>
 
         <div id="mydivshow" class="mydivshow">
@@ -897,7 +814,7 @@
         
 
         <script src="/js/src/APlayer.min.js"></script>
-<div id="player1" class="aplayer" style="width: 300px;height: 66px;background:rgba(0,0,0,0.5) none repeat scroll !important"></div>
+<div id="player1" class="aplayer" style="width:300px;height:66px;background:rgba(0,0,0,0.5)"></div>
 	<script type="text/javascript">
 	var ap = new APlayer({
 	    element: document.getElementById('player1'),                       // Optional, player element
@@ -943,16 +860,18 @@
 });
 
   $('.aplayer-icon-menu')[0].click();   //initial height
+	$('.aplayer-icon.aplayer-icon-mode').css('display','inline-block');
   var myflag=true;
+	$('.aplayer-list').css('height','180px');
 	$('.aplayer-icon-menu svg').click(function(){
     var temp=$('#player1').css('height');
 		if(temp=='250px' && !myflag){
-      $('#mydivshow').animate({height: 250});
-			$('#player1').delay(100).animate({height: 66});
+      $('#mydivshow').velocity('stop').velocity({height: 250});
+			$('#player1').velocity('stop').velocity({height: 66});
     }
 		else if(temp=='66px' && myflag){
-      $('#mydivshow').animate({height: 420});
-			$('#player1').delay(50).animate({height: 250});
+      $('#mydivshow').velocity('stop').velocity({height: 420});
+			$('#player1').velocity('stop').velocity({height: 250});
     }
     myflag=!myflag;
 	});

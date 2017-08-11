@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mashirosorata.vicp.io/"/>
-  <updated>2017-08-10T04:44:26.454Z</updated>
+  <updated>2017-08-11T02:29:23.585Z</updated>
   <id>http://mashirosorata.vicp.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://mashirosorata.vicp.io/HEXO-NEXT%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE.html"/>
     <id>http://mashirosorata.vicp.io/HEXO-NEXT主题个性化配置.html</id>
     <published>2017-08-07T15:08:40.000Z</published>
-    <updated>2017-08-10T04:44:26.454Z</updated>
+    <updated>2017-08-11T02:29:23.585Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://oty1v077k.bkt.clouddn.com/hexo-github.png" alt="github"></p>
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>此文章用来记录本网站个性化的设置更改，以便备用，或者供人参考。<br>提醒一下：<strong>博主next主题风格用的是Mist，若主题风格不一样，有些地方需酌情修改</strong>。<br>在其他地方能找到的教程这里就不重复赘述，文章结尾会给出一些更为详尽的其他参考链接。</p>
@@ -89,7 +89,7 @@
 <li><p>设置自定义div<br><br>在<code>theme/next/layout/_macro</code>文件夹下打开<code>sidebar.swig</code>文件，找到以下代码行的位置：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">nav</span> <span class="attr">class</span>=<span class="string">"site-state motion-element"</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>在其上添加以下代码：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--my custom code begin--&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="javascript">      $(<span class="string">"section.site-overview"</span>).hover(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></div><div class="line"><span class="javascript">          <span class="keyword">if</span> (!$(<span class="string">"#mydivshow"</span>).is(<span class="string">":animated"</span>))</span></div><div class="line"><span class="javascript">              $(<span class="string">"#mydivshow"</span>).animate(&#123;<span class="attr">opacity</span>: <span class="number">1</span>&#125;);</span></div><div class="line"><span class="javascript">       &#125;,<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></div><div class="line"><span class="javascript">          <span class="keyword">if</span> (!$(<span class="string">"#mydivshow"</span>).is(<span class="string">":animated"</span>))</span></div><div class="line"><span class="javascript">              $(<span class="string">"#mydivshow"</span>).animate(&#123;<span class="attr">opacity</span>: <span class="number">0</span>&#125;);</span></div><div class="line"><span class="undefined">       &#125;);</span></div><div class="line"><span class="undefined">      </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"mydivshow"</span> <span class="attr">class</span>=<span class="string">"mydivshow"</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--my custom code end--&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--my custom code begin--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="javascript">  $(<span class="string">"#sidebar"</span>).hover(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></div><div class="line"><span class="javascript">    $(<span class="string">"#mydivshow"</span>).velocity(<span class="string">'stop'</span>).velocity(&#123;<span class="attr">opacity</span>: <span class="number">1</span>&#125;);</span></div><div class="line"><span class="javascript">  &#125;,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></div><div class="line"><span class="javascript">    $(<span class="string">"#mydivshow"</span>).velocity(<span class="string">'stop'</span>).velocity(&#123;<span class="attr">opacity</span>: <span class="number">0</span>&#125;);</span></div><div class="line"><span class="undefined">  &#125;);</span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"mydivshow"</span> <span class="attr">class</span>=<span class="string">"mydivshow"</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--my custom code end--&gt;</span></div></pre></td></tr></table></figure>
 <p>然后找到代码行：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;/<span class="name">section</span>&gt;</span></div><div class="line"></div><div class="line">&#123;% if display_toc and toc(page.content).length &gt; 1 %&#125;</div><div class="line"><span class="comment">&lt;!--noindex--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">section</span> <span class="attr">class</span>=<span class="string">"post-toc-wrap motion-element sidebar-panel sidebar-panel-active"</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>在此<code>&lt;/section&gt;</code>的上方添加一个<code>&lt;/div&gt;</code>，如下所示：</p>
@@ -134,13 +134,13 @@
       <category term="Html" scheme="http://mashirosorata.vicp.io/categories/Html/"/>
     
     
+      <category term="javascript" scheme="http://mashirosorata.vicp.io/tags/javascript/"/>
+    
       <category term="hexo" scheme="http://mashirosorata.vicp.io/tags/hexo/"/>
     
       <category term="next" scheme="http://mashirosorata.vicp.io/tags/next/"/>
     
       <category term="个性化设置" scheme="http://mashirosorata.vicp.io/tags/%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E7%BD%AE/"/>
-    
-      <category term="javascript" scheme="http://mashirosorata.vicp.io/tags/javascript/"/>
     
       <category term="网站" scheme="http://mashirosorata.vicp.io/tags/%E7%BD%91%E7%AB%99/"/>
     
@@ -198,8 +198,6 @@
       <category term="Html" scheme="http://mashirosorata.vicp.io/categories/Html/"/>
     
     
-      <category term="javascript" scheme="http://mashirosorata.vicp.io/tags/javascript/"/>
-    
       <category term="Wallpapaer Engine" scheme="http://mashirosorata.vicp.io/tags/Wallpapaer-Engine/"/>
     
       <category term="网页壁纸" scheme="http://mashirosorata.vicp.io/tags/%E7%BD%91%E9%A1%B5%E5%A3%81%E7%BA%B8/"/>
@@ -207,6 +205,8 @@
       <category term="动态壁纸" scheme="http://mashirosorata.vicp.io/tags/%E5%8A%A8%E6%80%81%E5%A3%81%E7%BA%B8/"/>
     
       <category term="Steam" scheme="http://mashirosorata.vicp.io/tags/Steam/"/>
+    
+      <category term="javascript" scheme="http://mashirosorata.vicp.io/tags/javascript/"/>
     
   </entry>
   
