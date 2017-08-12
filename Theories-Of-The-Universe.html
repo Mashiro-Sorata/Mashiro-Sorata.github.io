@@ -75,7 +75,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Wallpapaer Engine,网页壁纸,动态壁纸,Steam,javascript," />
+  <meta name="keywords" content="javascript,Wallpapaer Engine,网页壁纸,动态壁纸,Steam," />
 
 
 
@@ -94,7 +94,7 @@
 
 
 <meta name="description" content="此壁纸为运行在Wallpaper Engine上的网页动态壁纸，也是第一次接触html的作品。懒懒散散更新到现在，效果算一般般吧~预览gif图4M多，但是帧数相比实际运行的帧数差很多。">
-<meta name="keywords" content="Wallpapaer Engine,网页壁纸,动态壁纸,Steam,javascript">
+<meta name="keywords" content="javascript,Wallpapaer Engine,网页壁纸,动态壁纸,Steam">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Theories Of The Universe">
 <meta property="og:url" content="http://mashirosorata.vicp.io/Theories-Of-The-Universe.html">
@@ -596,6 +596,8 @@
       
         <div class="post-tags">
           
+            <a href="/tags/javascript/" rel="tag"><i class="fa fa-tag"></i> javascript</a>
+          
             <a href="/tags/Wallpapaer-Engine/" rel="tag"><i class="fa fa-tag"></i> Wallpapaer Engine</a>
           
             <a href="/tags/网页壁纸/" rel="tag"><i class="fa fa-tag"></i> 网页壁纸</a>
@@ -603,8 +605,6 @@
             <a href="/tags/动态壁纸/" rel="tag"><i class="fa fa-tag"></i> 动态壁纸</a>
           
             <a href="/tags/Steam/" rel="tag"><i class="fa fa-tag"></i> Steam</a>
-          
-            <a href="/tags/javascript/" rel="tag"><i class="fa fa-tag"></i> javascript</a>
           
         </div>
       
@@ -710,11 +710,15 @@
         </div>
 
 <!--my custom code begin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
         <script type="text/javascript">
         $("#sidebar").hover(function(){
           $("#mydivshow").velocity('stop').velocity({opacity: 1});
+          console.log('in');
         },function(){
           $("#mydivshow").velocity('stop').velocity({opacity: 0});
+          console.log('out');
         });
       </script>
 
