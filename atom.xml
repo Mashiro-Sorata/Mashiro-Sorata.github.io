@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mashirosorata.vicp.io/"/>
-  <updated>2017-08-14T16:50:11.441Z</updated>
+  <updated>2017-08-14T17:23:58.283Z</updated>
   <id>http://mashirosorata.vicp.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://mashirosorata.vicp.io/APlayer-Controler%E2%80%94%E2%80%94%E5%8F%AF%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9A%84ap%E6%8E%A7%E5%88%B6%E5%99%A8.html"/>
     <id>http://mashirosorata.vicp.io/APlayer-Controler——可自定义的ap控制器.html</id>
     <published>2017-08-14T12:34:01.000Z</published>
-    <updated>2017-08-14T16:50:11.441Z</updated>
+    <updated>2017-08-14T17:23:58.283Z</updated>
     
     <content type="html"><![CDATA[<p><div align="center"><img alt="AP-preview" src="http://oty1v077k.bkt.clouddn.com/apctrler-instruction.png"></div></p>
 <h1 id="前言-Introduction"><a href="#前言-Introduction" class="headerlink" title="前言(Introduction)"></a>前言(Introduction)</h1><p>最近配置网站的时候，做了一个<em>Aplayer</em>的个性控制器（本站右端），在此基础上就把它做成了一个引用简单的对象，自定义配置更方便了。<br><strong>注</strong>：此1.0.0版本与Aplayer的1.6.0版本相匹配。<br><a href="http://mashirosorata.vicp.io/others/Aplayer-Controler-demo/index.html">Demo</a><br><a id="more"></a></p>
@@ -39,13 +39,13 @@
 <li><code>btn_width</code>: Optional, button’s width, default: 100;</li>
 <li><code>btn_height</code>: Optional, button’s height, default: 120;</li>
 <li><code>img_src</code>: Optional, button’s background-image ‘url-array’, default: [];</li>
-<li><code>img_style</code>: Optional, style of button’s background-images, default: {repeat:’no-repeat’,position:’center’,size:’contain’};</li>
+<li><code>img_style</code>: Optional, style of button’s background-images, default: in <a href="#jump1">Javascript</a>;;</li>
 <li><code>ctrls_color</code>: Optional, controlers’ color, default: ‘rgba(173,255,47,0.7)’;</li>
-<li><code>ctrls_hover_color</code>: Optional, controlers’ color when the mouse hover, default: ‘rgba(255,140,0,0.8)’;</li>
+<li><code>ctrls_hover_color</code>: Optional, controlers’ color when the mouse hover, default:’rgba(255,140,0,0.8)’;</li>
 <li><code>tips_on</code>: Optional, the message’s switch, default: true;</li>
 <li><code>tips_width</code>: Optional, the message’s width, default: 140;</li>
 <li><code>tips_height</code>: Optional, the message’s height, default: 25;</li>
-<li><code>tips_color</code>: Optional, the message’s background-color,default: ‘rgba(255,255,255,0.5)’;</li>
+<li><code>tips_color</code>: Optional, the message’s background-color,default:’rgba(255,255,255,0.5)’;</li>
 <li><code>tips_content</code>: Optional, the message’s content, default: in <a href="#jump1">Javascript</a>;</li>
 <li><code>timeout</code>: Optional, the longest time to wait player’s ‘canplay’ event when <code>tips_on</code> is true. And The button is disabled during this time. In addition, the <code>on_loading</code> of <code>tips_content</code> will close when <code>timeout</code> is ‘0’, and the button is valid all the time. default: 30;</li>
 <li><code>showOnPhone</code>: Sets whether the ‘Aplayer-Controler’ is dispalyed, default: false;</li>
@@ -213,13 +213,13 @@
       <category term="Html" scheme="http://mashirosorata.vicp.io/categories/Html/"/>
     
     
-      <category term="javascript" scheme="http://mashirosorata.vicp.io/tags/javascript/"/>
-    
       <category term="hexo" scheme="http://mashirosorata.vicp.io/tags/hexo/"/>
     
       <category term="next" scheme="http://mashirosorata.vicp.io/tags/next/"/>
     
       <category term="个性化设置" scheme="http://mashirosorata.vicp.io/tags/%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E7%BD%AE/"/>
+    
+      <category term="javascript" scheme="http://mashirosorata.vicp.io/tags/javascript/"/>
     
       <category term="网站" scheme="http://mashirosorata.vicp.io/tags/%E7%BD%91%E7%AB%99/"/>
     
