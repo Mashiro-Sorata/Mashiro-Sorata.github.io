@@ -9,27 +9,11 @@ $(document).ready(function () {
   window.onload=function(){
       var bwol=document.body.offsetWidth;
       var live2d=document.getElementById('live2dcanvas');
-      var btn_image=['http://oty1v077k.bkt.clouddn.com/bukagirl.jpg',
-                     'http://oty1v077k.bkt.clouddn.com/jumpgirl.jpg',
-                     'http://oty1v077k.bkt.clouddn.com/%E8%90%8C1.gif'];
-      var btn_index =Math.round(Math.random()*(btn_image.length-1));
       if(bwol < 975){
           $('aside#sidebar').css("display","none");
           $('body').css("paddingLeft","0px");
       }
-      // NexT.utils.isDesktop() ? live2d.style.visibility="visible" : live2d.style.visibility="hidden";
       bwol < 750 ? live2d.style.visibility="hidden" : live2d.style.visibility="visible";
-      if(bwol < 750)
-          $('.fixed_side').css('display','none');
-      else
-          $('.fixed_side').css('display','block');
-      if(ap.isMobile){
-        $('.fixed_side').css('display','none');
-      }
-      else {
-        $('.mybtn').css('background','url(' + btn_image[btn_index] + ') no-repeat center');
-        $('.mybtn').css('background-size','contain');
-      }
   };
 
   window.onresize = function(){
@@ -40,9 +24,9 @@ $(document).ready(function () {
       }
       bwos < 975 && $('body').velocity('stop').velocity({paddingLeft: 0},0);
       if(bwos < 750)
-          $('.fixed_side').css('display','none');
+          myapc.APC_dom.css('display','none');
       else
-          $('.fixed_side').css('display','block');
+          myapc.APC_dom.css('display','block');
       if($('aside#sidebar').css("display") != "none" && $('aside#sidebar').css("width")!="0px")
           $('body').velocity('stop').velocity({paddingLeft: 350},0);
   };
