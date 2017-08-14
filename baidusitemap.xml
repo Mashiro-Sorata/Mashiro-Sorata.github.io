@@ -4,6 +4,60 @@
 
     
   <url>
+    <loc>http://mashirosorata.vicp.io/HEXO-NEXT%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE.html</loc>
+    <lastmod>2017-08-14T17:07:45.985Z</lastmod>
+    <data>
+        <display>
+        <title>HEXO+NEXT主题个性化配置</title>
+        <pubTime>2017-08-07T15:08:40.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>hexo</tag>
+         
+        <tag>next</tag>
+         
+        <tag>个性化设置</tag>
+         
+        <tag>网站</tag>
+         
+         
+           
+             
+              <breadCrumb title="Html" url="http://mashirosorata.vicp.io/categories/Html/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://mashirosorata.vicp.io/APlayer-Controler%E2%80%94%E2%80%94%E5%8F%AF%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9A%84ap%E6%8E%A7%E5%88%B6%E5%99%A8.html</loc>
+    <lastmod>2017-08-14T16:50:11.441Z</lastmod>
+    <data>
+        <display>
+        <title>APlayer Controler——可自定义的ap控制器</title>
+        <pubTime>2017-08-14T12:34:01.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>个性化</tag>
+         
+        <tag>Aplayer</tag>
+         
+        <tag>控制器</tag>
+         
+         
+           
+             
+              <breadCrumb title="Javascript" url="http://mashirosorata.vicp.io/categories/Javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://mashirosorata.vicp.io/Theories-Of-The-Universe.html</loc>
     <lastmod>2017-08-14T07:44:50.660Z</lastmod>
     <data>
@@ -20,34 +74,6 @@
         <tag>动态壁纸</tag>
          
         <tag>Steam</tag>
-         
-         
-           
-             
-              <breadCrumb title="Html" url="http://mashirosorata.vicp.io/categories/Html/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://mashirosorata.vicp.io/HEXO-NEXT%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE.html</loc>
-    <lastmod>2017-08-14T07:18:01.929Z</lastmod>
-    <data>
-        <display>
-        <title>HEXO+NEXT主题个性化配置</title>
-        <pubTime>2017-08-07T15:08:40.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>next</tag>
-         
-        <tag>个性化设置</tag>
-         
-        <tag>javascript</tag>
-         
-        <tag>网站</tag>
          
          
            
