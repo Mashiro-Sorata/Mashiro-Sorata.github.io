@@ -147,7 +147,7 @@ function APlayer_Controler(elem){
 
 		//定义方法
 		apc.jqdoms.init=function(){
-			if(!apc.showOnPhone && !apc.aplayer.isMobile){
+			if(!apc.showOnPhone && apc.aplayer.isMobile){
 				apc.APC_dom.css('display','none');
 			}
 
