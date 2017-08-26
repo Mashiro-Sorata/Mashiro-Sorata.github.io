@@ -193,13 +193,13 @@
       <category term="Html" scheme="http://mashirosorata.vicp.io/categories/Html/"/>
     
     
-      <category term="javascript" scheme="http://mashirosorata.vicp.io/tags/javascript/"/>
-    
       <category term="hexo" scheme="http://mashirosorata.vicp.io/tags/hexo/"/>
     
       <category term="next" scheme="http://mashirosorata.vicp.io/tags/next/"/>
     
       <category term="个性化设置" scheme="http://mashirosorata.vicp.io/tags/%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E7%BD%AE/"/>
+    
+      <category term="javascript" scheme="http://mashirosorata.vicp.io/tags/javascript/"/>
     
       <category term="网站" scheme="http://mashirosorata.vicp.io/tags/%E7%BD%91%E7%AB%99/"/>
     
