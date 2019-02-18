@@ -75,13 +75,12 @@
 <meta property="og:site_name" content="SORA">
 <meta property="og:description" content="前言此文章用来记录本网站个性化的设置更改，以便备用，或者供人参考。提醒一下：博主next主题风格用的是Mist，若主题风格不一样，有些地方需酌情修改。在其他地方能找到的教程这里就不重复赘述，文章结尾会给出一些更为详尽的其他参考链接。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://oty1v077k.bkt.clouddn.com/hexo-github.png">
-<meta property="og:image" content="http://oty1v077k.bkt.clouddn.com/jianc_jump.gif">
-<meta property="og:updated_time" content="2017-08-17T15:57:44.375Z">
+<meta property="og:image" content="https://t1.picb.cc/uploads/2019/02/18/VhzVBs.gif">
+<meta property="og:updated_time" content="2019-02-18T12:18:45.412Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HEXO+NEXT主题个性化配置">
 <meta name="twitter:description" content="前言此文章用来记录本网站个性化的设置更改，以便备用，或者供人参考。提醒一下：博主next主题风格用的是Mist，若主题风格不一样，有些地方需酌情修改。在其他地方能找到的教程这里就不重复赘述，文章结尾会给出一些更为详尽的其他参考链接。">
-<meta name="twitter:image" content="http://oty1v077k.bkt.clouddn.com/hexo-github.png">
+<meta name="twitter:image" content="https://t1.picb.cc/uploads/2019/02/18/VhzVBs.gif">
 
 
 
@@ -358,7 +357,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-07T15:08:40+00:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-07T23:08:40+00:00">
                 2017-08-07
               </time>
             
@@ -423,7 +422,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  3,677 字
+                  3,697 字
                 </span>
               
 
@@ -458,8 +457,7 @@
       
 
       
-        <p><img src="http://oty1v077k.bkt.clouddn.com/hexo-github.png" alt="github"></p>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>此文章用来记录本网站个性化的设置更改，以便备用，或者供人参考。<br>提醒一下：<strong>博主next主题风格用的是Mist，若主题风格不一样，有些地方需酌情修改</strong>。<br>在其他地方能找到的教程这里就不重复赘述，文章结尾会给出一些更为详尽的其他参考链接。</p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>此文章用来记录本网站个性化的设置更改，以便备用，或者供人参考。<br>提醒一下：<strong>博主next主题风格用的是Mist，若主题风格不一样，有些地方需酌情修改</strong>。<br>在其他地方能找到的教程这里就不重复赘述，文章结尾会给出一些更为详尽的其他参考链接。</p>
 <h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><h1 id="基本样式配置"><a href="#基本样式配置" class="headerlink" title="基本样式配置"></a>基本样式配置</h1><h2 id="给页面添加背景图片"><a href="#给页面添加背景图片" class="headerlink" title="给页面添加背景图片"></a>给页面添加背景图片</h2><p>在<code>theme/next/source/css/_custom</code>文件夹下打开<code>custom.styl</code>文件，往里面添加以下代码：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">body</span>&#123;   </div><div class="line">        <span class="attribute">background</span>:<span class="built_in">url</span>(图片链接);</div><div class="line">        <span class="attribute">background-size</span>:cover;</div><div class="line">        <span class="attribute">background-repeat</span>:no-repeat;</div><div class="line">        <span class="attribute">background-attachment</span>:fixed;</div><div class="line">        <span class="attribute">background-position</span>:center;</div><div class="line">     &#125;</div></pre></td></tr></table></figure></p>
 <p>其中的css样式属性都可以根据你的自定义图片来更改，以达到最佳的效果。</p>
 <h2 id="文字背景色以及半透明的设置"><a href="#文字背景色以及半透明的设置" class="headerlink" title="文字背景色以及半透明的设置"></a>文字背景色以及半透明的设置</h2><p>在<code>theme/next/source/css/_custom</code>文件夹下打开<code>custom.styl</code>文件，往里面添加以下代码：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.content</span> &#123;</div><div class="line">            <span class="attribute">border-radius</span>: <span class="number">10px</span>;</div><div class="line">            <span class="attribute">margin-top</span>: <span class="number">60px</span>;</div><div class="line">            <span class="attribute">background</span>:<span class="built_in">rgba</span>(颜色rgb,透明度) none repeat scroll <span class="meta">!important</span>;</div><div class="line">         &#125;</div></pre></td></tr></table></figure></p>
@@ -544,7 +542,7 @@
 <h3 id="自定义萌萌哒音乐播放控制边栏"><a href="#自定义萌萌哒音乐播放控制边栏" class="headerlink" title="自定义萌萌哒音乐播放控制边栏"></a>自定义萌萌哒音乐播放控制边栏</h3><p>描述：效果见本博客右方。<br><br><del><br><em>播放器状态提示方面</em>：当播放器加载数据到能够播放后点击其会出现控制选项，若音乐不能播放点击其会出现提示信息；若自加载页面30s后仍不能播放，则提示播放器无响应；若播放器出错，则提示播放器错误；当音乐能够播放时提示加载完成。<br><br><em>播放器控制方面</em>：播放模式控制，上一首，暂停/播放，下一首四个按钮。此自定义的模块会记录下你所有播放过的歌曲，所以上一首歌返回的是绝对的上一首歌，不管播放模式如何。当处于上一首歌的状态下（按下了上一首歌按钮一次或者多次），当点击下一首按钮时，还是会按照历史记录的顺序播放；一旦退出此状态，则会按照播放模式进行播放。<br><br><em>注</em>：此自定义过程可能有些麻烦，请读者斟酌修改。<br></del></p>
 <p>由于把这个控制栏部分单独做成了一个引用方便的对象，现在创建更加简单了，自定义也更方便了。<br>其详细的使用方法见我的<a href="http://mashirosorata.vicp.io/APlayer-Controler——可自定义的ap控制器.html">另一篇博文</a></p>
 <h4 id="添加js代码"><a href="#添加js代码" class="headerlink" title="添加js代码"></a>添加js代码</h4><p>安装APlayer-Controler的js文件：<a href="https://github.com/Mashiro-Sorata/APlayer-Controler" target="_blank" rel="external">APlayer-Controler</a><br>将其放入<code>theme/next/source/js/src</code>下。</p>
-<h4 id="创建按钮区域"><a href="#创建按钮区域" class="headerlink" title="创建按钮区域"></a>创建按钮区域</h4><p>在<code>theme/next/layout/_custom/</code>文件夹下新建一个<code>myapcontroler.swig</code>的文件。向其中添加以下代码：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/js/src/Aplayer-Controler.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"AP-controler"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="javascript"><span class="keyword">var</span> myapc=<span class="keyword">new</span> APlayer_Controler(&#123;</span></div><div class="line"><span class="javascript">		APC_dom:$(<span class="string">'#AP-controler'</span>),</span></div><div class="line"><span class="javascript">		aplayer:ap, <span class="comment">//此为绑定的aplayer对象</span></span></div><div class="line"><span class="javascript">		attach_right:<span class="literal">true</span>,</span></div><div class="line"><span class="javascript">		position:&#123;<span class="attr">top</span>:<span class="string">'300px'</span>,<span class="attr">bottom</span>:<span class="string">''</span>&#125;,</span></div><div class="line"><span class="javascript">		fixed:<span class="literal">true</span>,</span></div><div class="line"><span class="undefined">		btn_width:100,</span></div><div class="line"><span class="undefined">		btn_height:120,</span></div><div class="line"><span class="javascript">		img_src:[<span class="string">'http://oty1v077k.bkt.clouddn.com/bukagirl.jpg'</span>,</span></div><div class="line"><span class="javascript">				<span class="string">'http://oty1v077k.bkt.clouddn.com/jumpgirl.jpg'</span>,</span></div><div class="line"><span class="javascript">				<span class="string">'http://oty1v077k.bkt.clouddn.com/pentigirl.jpg'</span>,</span></div><div class="line"><span class="javascript">				<span class="string">'http://oty1v077k.bkt.clouddn.com/%E8%90%8C1.gif'</span>],</span></div><div class="line"><span class="javascript">		img_style:&#123;<span class="attr">repeat</span>:<span class="string">'no-repeat'</span>,<span class="attr">position</span>:<span class="string">'center'</span>,<span class="attr">size</span>:<span class="string">'contain'</span>&#125;,</span></div><div class="line"><span class="javascript">		ctrls_color:<span class="string">'rgba(173,255,47,0.8)'</span>,</span></div><div class="line"><span class="javascript">		ctrls_hover_color:<span class="string">'rgba(255,140,0,0.7)'</span>,</span></div><div class="line"><span class="javascript">		tips_on:<span class="literal">true</span>,</span></div><div class="line"><span class="undefined">		tips_width:140,</span></div><div class="line"><span class="undefined">		tips_height:25,</span></div><div class="line"><span class="javascript">		tips_color:<span class="string">'rgba(255,255,255,0.6)'</span>,</span></div><div class="line"><span class="undefined">		tips_content:&#123;&#125;,</span></div><div class="line"><span class="undefined">		timeout:30</span></div><div class="line"><span class="undefined">	&#125;);</span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h4 id="创建按钮区域"><a href="#创建按钮区域" class="headerlink" title="创建按钮区域"></a>创建按钮区域</h4><p>在<code>theme/next/layout/_custom/</code>文件夹下新建一个<code>myapcontroler.swig</code>的文件。向其中添加以下代码：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/js/src/Aplayer-Controler.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"AP-controler"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="javascript"><span class="keyword">var</span> myapc=<span class="keyword">new</span> APlayer_Controler(&#123;</span></div><div class="line"><span class="javascript">		APC_dom:$(<span class="string">'#AP-controler'</span>),</span></div><div class="line"><span class="javascript">		aplayer:ap, <span class="comment">//此为绑定的aplayer对象</span></span></div><div class="line"><span class="javascript">		attach_right:<span class="literal">true</span>,</span></div><div class="line"><span class="javascript">		position:&#123;<span class="attr">top</span>:<span class="string">'300px'</span>,<span class="attr">bottom</span>:<span class="string">''</span>&#125;,</span></div><div class="line"><span class="javascript">		fixed:<span class="literal">true</span>,</span></div><div class="line"><span class="undefined">		btn_width:100,</span></div><div class="line"><span class="undefined">		btn_height:120,</span></div><div class="line"><span class="javascript">    img_src:[<span class="string">'https://t1.picb.cc/uploads/2019/02/18/VhsfTw.gif'</span>,</span></div><div class="line"><span class="javascript">				<span class="string">'https://t1.picb.cc/uploads/2019/02/18/VhzJAe.gif'</span>,</span></div><div class="line"><span class="javascript">				<span class="string">'https://t1.picb.cc/uploads/2019/02/18/VhzVBs.gif'</span>,</span></div><div class="line"><span class="javascript">				<span class="string">'https://t1.picb.cc/uploads/2019/02/18/Vhzt46.gif'</span>,</span></div><div class="line"><span class="javascript">				<span class="string">'https://t1.picb.cc/uploads/2019/02/18/VhzZbT.gif'</span>],</span></div><div class="line"><span class="javascript">		img_style:&#123;<span class="attr">repeat</span>:<span class="string">'no-repeat'</span>,<span class="attr">position</span>:<span class="string">'center'</span>,<span class="attr">size</span>:<span class="string">'contain'</span>&#125;,</span></div><div class="line"><span class="javascript">		ctrls_color:<span class="string">'rgba(173,255,47,0.8)'</span>,</span></div><div class="line"><span class="javascript">		ctrls_hover_color:<span class="string">'rgba(255,140,0,0.7)'</span>,</span></div><div class="line"><span class="javascript">		tips_on:<span class="literal">true</span>,</span></div><div class="line"><span class="undefined">		tips_width:140,</span></div><div class="line"><span class="undefined">		tips_height:25,</span></div><div class="line"><span class="javascript">		tips_color:<span class="string">'rgba(255,255,255,0.6)'</span>,</span></div><div class="line"><span class="undefined">		tips_content:&#123;&#125;,</span></div><div class="line"><span class="undefined">		timeout:30</span></div><div class="line"><span class="undefined">	&#125;);</span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure></p>
 <p>以上为本站设置，可自定义修改</p>
 <h4 id="将控制按钮加入body页面"><a href="#将控制按钮加入body页面" class="headerlink" title="将控制按钮加入body页面"></a>将控制按钮加入body页面</h4><p>在<code>theme/next/layout</code>文件夹下打开<code>_layout.swig</code>文件，在<code>&lt;/body&gt;</code>前添加以下代码：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;% include '_custom/myapcontroler.swig' %&#125;</div></pre></td></tr></table></figure></p>
 <p>到此，自定义音乐播放控制边栏就基本完成，完成整个配置需要根据自己的主题背景进一步修改完善。</p>
@@ -554,7 +552,7 @@
 <blockquote>
 <p><a href="https://segmentfault.com/a/1190000009544924#articleHeader21" target="_blank" rel="external">https://segmentfault.com/a/1190000009544924#articleHeader21</a><br><a href="http://blog.csdn.net/MasterAnt_D/article/details/56839222#t50" target="_blank" rel="external">http://blog.csdn.net/MasterAnt_D/article/details/56839222#t50</a><br><a href="https://thief.one/2017/03/03/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/" target="_blank" rel="external">https://thief.one/2017/03/03/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/</a></p>
 </blockquote>
-<p>版权声明：版权所有权属于Mashiro_Sorata，转载请注明出处，谢谢！<br><img src="http://oty1v077k.bkt.clouddn.com/jianc_jump.gif" alt="post"></p>
+<p>版权声明：版权所有权属于Mashiro_Sorata，转载请注明出处，谢谢！<br><img src="https://t1.picb.cc/uploads/2019/02/18/VhzVBs.gif" alt="post"></p>
 
       
     </div>
@@ -582,8 +580,8 @@
   <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
   <p><span>本文标题:</span><a href="/HEXO-NEXT主题个性化配置.html">HEXO+NEXT主题个性化配置</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Mashiro_Sorata 的个人博客">Mashiro_Sorata</a></p>
-  <p><span>发布时间:</span>2017年08月07日 - 15:08</p>
-  <p><span>最后更新:</span>2017年08月17日 - 15:08</p>
+  <p><span>发布时间:</span>2017年08月07日 - 23:08</p>
+  <p><span>最后更新:</span>2019年02月18日 - 12:02</p>
   <p><span>原始链接:</span><a href="/HEXO-NEXT主题个性化配置.html" title="HEXO+NEXT主题个性化配置">http://mashirosorata.vicp.io/HEXO-NEXT主题个性化配置.html</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://mashirosorata.vicp.io/HEXO-NEXT主题个性化配置.html"  aria-label="复制成功！"></i></span>
   </p>
@@ -862,65 +860,89 @@
 	    listmaxheight: '250px',                                             // Optional, max height of play list
 	    music: [
 	    {
-	    	title: '楽園PROJECT',                                          // Required, music title
-	        author: 'Ray',                          // Required, music author
-	        url: 'http://ou68gv0zg.bkt.clouddn.com/Ray%20-%20%E6%A5%BD%E5%9C%92PROJECT.mp3',  // Required, music url
-	        pic: 'http://ou68gv0zg.bkt.clouddn.com/Ray%20-%20%E6%A5%BD%E5%9C%92PROJECT.jpg'
+	    	title: 'Intro - intro',                                          // Required, music title
+	        author: '西原健一郎',                          // Required, music author
+	        url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Intro%20-%20intro.mp3',  // Required, music url
+	        pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
 	    },
 	    {
-	    	title: '恋人を射ち堕とした日',
-	    	author: 'Sound Horizon',
-	    	url: 'http://ou68gv0zg.bkt.clouddn.com/Sound%20Horizon%20-%20%E6%81%8B%E4%BA%BA%E3%82%92%E5%B0%84%E3%81%A1%E5%A0%95%E3%81%A8%E3%81%97%E3%81%9F%E6%97%A5%20_%20Koibito%20wo%20Uchiotoshia%20Hi.mp3',
-	    	pic: 'http://ou68gv0zg.bkt.clouddn.com/Sound%20Horizon%20-%20%E6%81%8B%E4%BA%BA%E3%82%92%E5%B0%84%E3%81%A1%E5%A0%95%E3%81%A8%E3%81%97%E3%81%9F%E6%97%A5.jpg'
+	    	title: 'Natural Relax',
+	    	author: '西原健一郎',
+	    	url: 'http://mashirosorata.vicp.io/Sound%20Horizon%20-%20%E6%81%8B%E4%BA%BA%E3%82%92%E5%B0%84%E3%81%A1%E5%A0%95%E3%81%A8%E3%81%97%E3%81%9F%E6%97%A5%20_%20Koibito%20wo%20Uchiotoshia%20Hi.mp3',
+	    	pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
 	    },
 	    {
-	    	title: 'cat\'s dance',
-	    	author: 'すーぱーそに子',
-	    	url: 'http://ou68gv0zg.bkt.clouddn.com/%E3%81%99%E3%83%BC%E3%81%B1%E3%83%BC%E3%81%9D%E3%81%AB%E5%AD%90%20-%20cat%27s%20dance.mp3',
-	    	pic: 'http://ou68gv0zg.bkt.clouddn.com/%E3%81%99%E3%83%BC%E3%81%B1%E3%83%BC%E3%81%9D%E3%81%AB%E5%AD%90%20-%20cat%27s%20dance.jpg'
+	    	title: 'Get Inside Your Heart feat. Pismo',
+	    	author: '西原健一郎',
+	    	url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Get%20Inside%20Your%20Heart%20feat.%20Pismo.mp3',
+	    	pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
 	    },
 	    {
-	    	title: '夏令时记录(piano.ver)',
-	    	author: 'ゆめこ',
-	    	url: 'http://ou68gv0zg.bkt.clouddn.com/%E3%82%86%E3%82%81%E3%81%93%20-%20%E5%A4%8F%E4%BB%A4%E6%97%B6%E8%AE%B0%E5%BD%95%28piano.ver%29.mp3',
-	    	pic: 'http://ou68gv0zg.bkt.clouddn.com/%E3%82%86%E3%82%81%E3%81%93%20-%20%E5%A4%8F%E4%BB%A4%E6%97%B6%E8%AE%B0%E5%BD%95%28piano.ver%29.jpg'
+	    	title: 'Beautiful Things Remix feat. Amanda Diva - remix',
+	    	author: '西原健一郎',
+	    	url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Beautiful%20Things%20Remix%20feat.%20Amanda%20Diva%20-%20remix.mp3',
+	    	pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
 	    },
 	    {
-	    	title: '月光',
-	    	author: '鬼束千寻',
-	    	url: 'http://ou68gv0zg.bkt.clouddn.com/%E9%AC%BC%E6%9D%9F%E5%8D%83%E5%AF%BB%20-%20%E6%9C%88%E5%85%89.mp3',
-	    	pic: 'http://ou68gv0zg.bkt.clouddn.com/%E9%AC%BC%E6%9D%9F%E5%8D%83%E5%AF%BB%20-%20%E6%9C%88%E5%85%89.jpg'
+	    	title: 'Heartbeat',
+	    	author: '西原健一郎',
+	    	url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Heartbeat.mp3',
+	    	pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
 	    },
 			{
-	    	title: 'No title',                                          // Required, music title
-	        author: 'れをる,ギガP',                          // Required, music author
-	        url: 'http://ou68gv0zg.bkt.clouddn.com/%E3%82%8C%E3%82%92%E3%82%8B,%E3%82%AE%E3%82%ACP%20-%20No%20title.mp3',  // Required, music url
-	        pic: 'http://ou68gv0zg.bkt.clouddn.com/%E3%82%8C%E3%82%92%E3%82%8B,%E3%82%AE%E3%82%ACP%20-%20No%20title.jpg'
+	    	title: 'Silent Motorway',                                          // Required, music title
+	        author: '西原健一郎',                          // Required, music author
+	        url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Silent%20Motorway.mp3',  // Required, music url
+	        pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
 	    },
 	    {
-	    	title: '空想フォレスト',
-	    	author: '伊東歌詞太郎',
-	    	url: 'http://ou68gv0zg.bkt.clouddn.com/%E4%BC%8A%E6%9D%B1%E6%AD%8C%E8%A9%9E%E5%A4%AA%E9%83%8E%20-%20%E7%A9%BA%E6%83%B3%E3%83%95%E3%82%A9%E3%83%AC%E3%82%B9%E3%83%88.mp3',
-	    	pic: 'http://ou68gv0zg.bkt.clouddn.com/%E4%BC%8A%E6%9D%B1%E6%AD%8C%E8%A9%9E%E5%A4%AA%E9%83%8E%20-%20%E7%A9%BA%E6%83%B3%E3%83%95%E3%82%A9%E3%83%AC%E3%82%B9%E3%83%88.gif'
+	    	title: 'Heart Remix feat. Substantial - remix',
+	    	author: '西原健一郎',
+	    	url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Heart%20Remix%20feat.%20Substantial%20-%20remix.mp3',
+	    	pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
 	    },
 	    {
-	    	title: 'だんご大家族',
-	    	author: '茶太',
-	    	url: 'http://ou68gv0zg.bkt.clouddn.com/Key%20Sounds%20Label%20-%20%E3%81%A0%E3%82%93%E3%81%94%E5%A4%A7%E5%AE%B6%E6%97%8F.mp3',
-	    	pic: 'http://ou68gv0zg.bkt.clouddn.com/Key%20Sounds%20Label%20-%20%E3%81%A0%E3%82%93%E3%81%94%E5%A4%A7%E5%AE%B6%E6%97%8F.jpg'
+	    	title: 'Folklove (Inst.) - instrumental',
+	    	author: '西原健一郎',
+	    	url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Folklove%20%28Inst.%29%20-%20instrumental.mp3',
+	    	pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
 	    },
 	    {
-	    	title: 'Clover Heart\'s-New days recording',
-	    	author: 'MANYO,三輪学',
-	    	url: 'http://ou68gv0zg.bkt.clouddn.com/MANYO,%E4%B8%89%E8%BC%AA%E5%AD%A6%20-%20Clover%20Heart%27s%20-New%20days%20recording-.mp3',
-	    	pic: 'http://ou68gv0zg.bkt.clouddn.com/MANYO,%E4%B8%89%E8%BC%AA%E5%AD%A6%20-%20Clover%20Heart%27s%20-New%20days%20recording-.jpg'
+	    	title: 'Sign feat. Jun',
+	    	author: '西原健一郎',
+	    	url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Sign%20feat.%20Jun.mp3',
+	    	pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
 	    },
 	    {
-	    	title: 'Secret',
-	    	author: '茶太',
-	    	url: 'http://ou68gv0zg.bkt.clouddn.com/%E8%8C%B6%E5%A4%AA%20-%20Secret.mp3',
-	    	pic: 'http://ou68gv0zg.bkt.clouddn.com/%E8%8C%B6%E5%A4%AA%20-%20Secret.jpg'
-	    }]
+	    	title: 'Montana',
+	    	author: '西原健一郎',
+	    	url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Montana.mp3',
+	    	pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
+	    },
+			{
+				title: 'Mature Opinion (Inst.) - instrumental',
+				author: '西原健一郎',
+				url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Mature%20Opinion%20%28Inst.%29%20-%20instrumental.mp3',
+				pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
+			},
+			{
+				title: 'Individual Carnival',
+				author: '西原健一郎',
+				url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Individual%20Carnival.mp3',
+				pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
+			},
+			{
+				title: 'Say You Love Me feat. Tamala',
+				author: '西原健一郎',
+				url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Say%20You%20Love%20Me%20feat.%20Tamala.mp3',
+				pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
+			},
+			{
+				title: 'Outro - intro',
+				author: '西原健一郎',
+				url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Outro%20-%20intro.mp3',
+				pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
+			}]
 });
 
   $('.aplayer-icon-menu')[0].click();   //initial height
@@ -979,8 +1001,8 @@
         <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <div class="copyright" >
   
-  &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  &copy;  2017 - 
+  <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <!-- <i class="fa fa-heart"></i> -->
      <i class="iconfont">&#xe608;</i>
@@ -1426,10 +1448,11 @@ var myapc=new APlayer_Controler({
 		fixed:true,
 		btn_width:100,
 		btn_height:120,
-		img_src:['http://oty1v077k.bkt.clouddn.com/bukagirl.jpg',
-				'http://oty1v077k.bkt.clouddn.com/jumpgirl.jpg',
-				'http://oty1v077k.bkt.clouddn.com/pentigirl.jpg',
-				'http://oty1v077k.bkt.clouddn.com/%E8%90%8C1.gif'],
+		img_src:['https://t1.picb.cc/uploads/2019/02/18/VhsfTw.gif',
+				'https://t1.picb.cc/uploads/2019/02/18/VhzJAe.gif',
+				'https://t1.picb.cc/uploads/2019/02/18/VhzVBs.gif',
+				'https://t1.picb.cc/uploads/2019/02/18/Vhzt46.gif',
+				'https://t1.picb.cc/uploads/2019/02/18/VhzZbT.gif'],
 		img_style:{repeat:'no-repeat',position:'center',size:'contain'},
 		ctrls_color:'rgba(173,255,47,0.8)',
 		ctrls_hover_color:'rgba(255,140,0,0.7)',
@@ -1437,10 +1460,6 @@ var myapc=new APlayer_Controler({
 		tips_width:140,
 		tips_height:25,
 		tips_color:'rgba(255,255,255,0.6)',
-		tips_content:{on_welcome:{audio:['http://ourhtpfyj.bkt.clouddn.com/nekonin_loaded-0.m4a','http://ourhtpfyj.bkt.clouddn.com/nekonin_loaded-1.m4a','http://ourhtpfyj.bkt.clouddn.com/nekonin_loaded-2.m4a','http://ourhtpfyj.bkt.clouddn.com/nekonin_loaded-3.m4a','http://ourhtpfyj.bkt.clouddn.com/nekonin_loaded-4.m4a','http://ourhtpfyj.bkt.clouddn.com/loaded-5.m4a']},
-									on_timeout:{audio:['http://ourhtpfyj.bkt.clouddn.com/timeout-0.m4a','http://ourhtpfyj.bkt.clouddn.com/timeout-1.m4a','http://ourhtpfyj.bkt.clouddn.com/timeout-3.m4a']},
-									on_error:{audio:['http://ourhtpfyj.bkt.clouddn.com/error.m4a']}
-		},
 		timeout:30
 	});
 </script>
