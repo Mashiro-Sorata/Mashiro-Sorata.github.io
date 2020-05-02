@@ -12,44 +12,44 @@ var ap1 = new APlayer({
 	    {
 	    	title: 'Intro - intro',                                          // Required, music title
 	        author: '西原健一郎',                          // Required, music author
-	        url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Intro%20-%20intro.mp3',  // Required, music url
-	        pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
+	        url: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Intro.mp3',  // Required, music url
+	        pic: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/cover.jpg'
 	    },
 	    {
 	    	title: 'Natural Relax',
 	    	author: '西原健一郎',
-	    	url: 'http://mashirosorata.vicp.io/Sound%20Horizon%20-%20%E6%81%8B%E4%BA%BA%E3%82%92%E5%B0%84%E3%81%A1%E5%A0%95%E3%81%A8%E3%81%97%E3%81%9F%E6%97%A5%20_%20Koibito%20wo%20Uchiotoshia%20Hi.mp3',
-	    	pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
+	    	url: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Natural%20Relax.mp3',
+	    	pic: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/cover.jpg'
 	    },
 	    {
 	    	title: 'Get Inside Your Heart feat. Pismo',
 	    	author: '西原健一郎',
-	    	url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Get%20Inside%20Your%20Heart%20feat.%20Pismo.mp3',
-	    	pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
+	    	url: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Get%20Inside%20Your%20Heart%20feat.%20Pismo.mp3',
+	    	pic: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/cover.jpg'
 	    },
 	    {
 	    	title: 'Beautiful Things Remix feat. Amanda Diva - remix',
 	    	author: '西原健一郎',
-	    	url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Beautiful%20Things%20Remix%20feat.%20Amanda%20Diva%20-%20remix.mp3',
-	    	pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
+	    	url: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Beautiful%20Things%20Remix%20feat.%20Amanda%20Diva.mp3',
+	    	pic: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/cover.jpg'
 	    },
 	    {
 	    	title: 'Heartbeat',
 	    	author: '西原健一郎',
-	    	url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Heartbeat.mp3',
-	    	pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
+	    	url: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Heartbeat.mp3',
+	    	pic: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/cover.jpg'
 	    },
 			{
 	    	title: 'Silent Motorway',                                          // Required, music title
 	        author: '西原健一郎',                          // Required, music author
-	        url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Silent%20Motorway.mp3',  // Required, music url
-	        pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
+	        url: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Silent%20Motorway.mp3',  // Required, music url
+	        pic: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/cover.jpg'
 	    },
 			{
 				title: 'Heart Remix feat. Substantial - remix',
 				author: '西原健一郎',
-				url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Heart%20Remix%20feat.%20Substantial%20-%20remix.mp3',
-				pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
+				url: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Heart%20Remix%20feat.%20Substantial.mp3',
+				pic: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/cover.jpg'
 			}]
 });
 
@@ -67,44 +67,44 @@ var ap2 = new APlayer({
 		    {
 		    	title: 'Folklove (Inst.) - instrumental',
 		    	author: '西原健一郎',
-		    	url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Folklove%20%28Inst.%29%20-%20instrumental.mp3',
-		    	pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
+		    	url: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Folklove%20(Inst.).mp3',
+		    	pic: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/cover.jpg'
 		    },
 		    {
 		    	title: 'Sign feat. Jun',
 		    	author: '西原健一郎',
-		    	url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Sign%20feat.%20Jun.mp3',
-		    	pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
+		    	url: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Sign%20feat.%20Jun.mp3',
+		    	pic: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/cover.jpg'
 		    },
 		    {
 		    	title: 'Montana',
 		    	author: '西原健一郎',
-		    	url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Montana.mp3',
-		    	pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
+		    	url: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Montana.mp3',
+		    	pic: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/cover.jpg'
 		    },
 				{
 					title: 'Mature Opinion (Inst.) - instrumental',
 					author: '西原健一郎',
-					url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Mature%20Opinion%20%28Inst.%29%20-%20instrumental.mp3',
-					pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
+					url: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Mature%20Opinion%20(Inst.).mp3',
+					pic: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/cover.jpg'
 				},
 				{
 					title: 'Individual Carnival',
 					author: '西原健一郎',
-					url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Individual%20Carnival.mp3',
-					pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
+					url: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Individual%20Carnival.mp3',
+					pic: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/cover.jpg'
 				},
 				{
 					title: 'Say You Love Me feat. Tamala',
 					author: '西原健一郎',
-					url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Say%20You%20Love%20Me%20feat.%20Tamala.mp3',
-					pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
+					url: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Say%20You%20Love%20Me%20feat.%20Tamala.mp3',
+					pic: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/cover.jpg'
 				},
 				{
 					title: 'Outro - intro',
 					author: '西原健一郎',
-					url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Outro%20-%20intro.mp3',
-					pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
+					url: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Outro.mp3',
+					pic: 'https://mashirosorata-1254084432.cos.ap-chengdu.myqcloud.com/AP_Demo/cover.jpg'
 				}]
 });
 

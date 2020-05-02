@@ -11,7 +11,7 @@ body {height:100%;
 
 #my_bgp_div{
 	position:absolute;
-	background-image:url("http://pn44fespx.bkt.clouddn.com/star_bgp.png");
+	background-image:url("../img/star_bgp.png");
 	background-repeat:no-repeat;
 	background-size:100% 100%;
 }
