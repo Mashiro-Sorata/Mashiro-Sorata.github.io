@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mashirosorata.vicp.io/"/>
-  <updated>2020-05-19T04:12:29.459Z</updated>
+  <updated>2020-05-20T06:03:34.082Z</updated>
   <id>http://mashirosorata.vicp.io/</id>
   
   <author>
@@ -20,13 +20,17 @@
     <link href="http://mashirosorata.vicp.io/ADV-Plugin%E2%80%94%E2%80%94SAO%20Utils%E9%9F%B3%E9%A2%91%E5%8F%AF%E8%A7%86%E5%8C%96%E6%8F%92%E4%BB%B6.html"/>
     <id>http://mashirosorata.vicp.io/ADV-Plugin——SAO Utils音频可视化插件.html</id>
     <published>2020-05-18T20:13:01.000Z</published>
-    <updated>2020-05-19T04:12:29.459Z</updated>
+    <updated>2020-05-20T06:03:34.082Z</updated>
     
     <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>一个月前，在b站无意间刷到一个分享SAO Utils桌面图标挂件和音乐挂件的视频，视频中那个白色的动态频谱可以将系统音频的频谱展示出来。很好，你成功的引起了我的注意。看了下视频简介居然还贴心的附上了下载地址，下载后解压一看，发现事情并不简单，里面都是ini配置文件。纳尼！？还以为是SAO Utils的新插件，原来是雨滴的皮肤！？为了这么一个小小的动态频谱我还得安装一个雨滴？不想再安装一个雨滴，但是又很想要一个在桌面上任意位置摆放，大小可调的频谱插件。权衡之下，打算自己弄一个SAO Utils插件。但是SAO Utils的SDK中暂时还没有开放GUI界面的接口，而且用C++编写的频谱显示插件的预设样式有限，用户难以自定义。而SAO Utils还有一个强大的桌面网页挂件，这使得用户可以通过编写HTML文件来自定义频谱显示样式，然后通过网页挂件打开让其在桌面上展示出来。那么现在插件的功能确定为捕获系统音频，将经过FFT处理后的频谱数据通过WebSocket协议发送给客户端。网页客户端通过调用频谱数据进行显示。</p>
 <p><div align="center"><img src="https://github.com/Mashiro-Sorata/ADV-Plugin/blob/master/Image/ADV_demo.png?raw=true"></div><br><a id="more"></a></p>
 <hr>
-<h1 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h1><h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p><code>V1.1.0</code>版本的插件在<code>beta 1</code>、<code>beta 2(steam)</code>版本的SAO Utils中测试过通过。现已知在实验性版本<code>Exp 1</code>中会导致<strong>程序崩溃</strong>。</p>
-<p>与SAO Utils实验版兼容的插件会在后续中推出，敬请期待。</p>
+<h1 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h1><h2 id="开发日志"><a href="#开发日志" class="headerlink" title="开发日志"></a>开发日志</h2><ul>
+<li>2020-05-20：<code>V1.2.1</code>版本更新支持<code>EXP 1</code>实验版的SAO Utils。新增调试版插件下载，可输出日志文件。</li>
+</ul>
+<ul>
+<li>2020-05-19：<code>V1.1.0</code>版本的插件在<code>beta 1</code>、<code>beta 2(steam)</code>版本的SAO Utils中测试过通过。已知在实验性版本<code>Exp 1</code>中会导致<strong>程序崩溃</strong>。<del>与SAO Utils实验版兼容的插件会在后续中推出，敬请期待。</del></li>
+</ul>
 <h2 id="插件下载"><a href="#插件下载" class="headerlink" title="插件下载"></a>插件下载</h2><p>下载最新版本的插件：<a href="https://github.com/Mashiro-Sorata/ADV-Plugin/releases/latest" target="_blank" rel="external">ADV_Plug-in.zip</a>，将下载的 <code>ADV_Plug-in.zip</code> 压缩文件解压。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">文件夹结构如下</div><div class="line">│  readme.txt</div><div class="line">│</div><div class="line">├─ADV_Client</div><div class="line">│      adv.js</div><div class="line">│      index.html</div><div class="line">│</div><div class="line">└─AudioDVServer</div><div class="line">        advConfig.ini</div><div class="line">        module64.dll</div></pre></td></tr></table></figure></p>
 <h2 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h2><p>将解压缩根目录下的<code>AudioDVServer</code>文件夹拷贝至SAO Utils根目录的<code>Plugins</code>文件夹中，重启SAO即可。</p>
 <h2 id="插件配置"><a href="#插件配置" class="headerlink" title="插件配置"></a>插件配置</h2><p>安装完成后打开SAO Utils首选项中的插件管理页面，将名称为<code>AudioDVServer</code>的插件选择启用后点击保存。</p>
@@ -35,8 +39,9 @@
 <li>ip：可选，默认值为<code>127.0.0.1</code>，可更改为<code>any</code>，指代地址<code>0.0.0.0</code>。只支持<code>any</code>与默认参数<code>local</code>，定义插件提供服务的地址。</li>
 <li>port：可选，默认值为<code>5050</code>，定义插件提供服务的端口号。</li>
 <li>maxClient：可选，默认值为<code>5</code>，定义客户端最大连接数。</li>
+<li>logger：可选，默认值为<code>false</code>，调试版(Debug Version)专有，发行版(Release Version)可设置，但无效。设置为<code>true</code>后可在插件所在目录下输出日志文件<code>ADV_Log.log</code>。</li>
 </ul>
-<p><code>advConfig.ini</code> 文件示例：<br><figure class="highlight ini"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="section">[Server]</span></div><div class="line"><span class="attr">ip</span> = local</div><div class="line"><span class="attr">port</span> = <span class="number">5050</span></div><div class="line"><span class="attr">maxClient</span> = <span class="number">4</span></div></pre></td></tr></table></figure></p>
+<p><code>advConfig.ini</code> 文件示例：<br><figure class="highlight ini"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="section">[Server]</span></div><div class="line"><span class="attr">ip</span> = local</div><div class="line"><span class="attr">port</span> = <span class="number">5050</span></div><div class="line"><span class="attr">maxClient</span> = <span class="number">4</span></div><div class="line"><span class="attr">logger</span> = <span class="literal">true</span></div></pre></td></tr></table></figure></p>
 <h2 id="客户端配置"><a href="#客户端配置" class="headerlink" title="客户端配置"></a>客户端配置</h2><p>压缩包内提供了一个频谱显示客户端的示例，可用SAO Utils桌面网页挂件打开。通过设置<code>ADV_Client</code>文件夹内的<code>index.html</code>文件来配置地址，端口号以及显示频谱的样式。必须保证客户端与插件设置的地址与端口号一致。示例文件已配置好，可以直接使用。开发者也可通过编写HTML文件来定义自己的频谱显示客户端。</p>
 <p>可以更改<code>index.html</code>中的以下代码来自定义客户端，值得注意的是<code>IP</code>与<code>PORT</code>需要与插件的设置一致。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> IP = <span class="string">"local"</span>;</div><div class="line"><span class="keyword">var</span> PORT = <span class="number">5050</span>;</div><div class="line"><span class="comment">//频谱线颜色</span></div><div class="line"><span class="keyword">var</span> LINE_COLOR = <span class="string">"rgba(0,191,255,0.4)"</span>;</div><div class="line"><span class="comment">//分界线的颜色</span></div><div class="line"><span class="keyword">var</span> CENTER_COLOR = <span class="string">"rgba(0,0,0,0.9)"</span>;</div></pre></td></tr></table></figure>
@@ -76,7 +81,7 @@
     <link href="http://mashirosorata.vicp.io/APlayer-Controler%E2%80%94%E2%80%94%E5%8F%AF%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9A%84ap%E6%8E%A7%E5%88%B6%E5%99%A8.html"/>
     <id>http://mashirosorata.vicp.io/APlayer-Controler——可自定义的ap控制器.html</id>
     <published>2017-08-14T20:34:01.000Z</published>
-    <updated>2020-05-19T04:12:29.474Z</updated>
+    <updated>2020-05-20T06:03:34.082Z</updated>
     
     <content type="html"><![CDATA[<h1 id="前言-Introduction"><a href="#前言-Introduction" class="headerlink" title="前言(Introduction)"></a>前言(Introduction)</h1><p>最近配置网站的时候，做了一个<em>Aplayer</em>的个性控制器（本站右端），在此基础上就把它做成了一个引用简单的对象，自定义配置更方便了。<br><strong>注</strong>：此1.0.0版本与Aplayer的1.6.0版本相匹配。<br><a href="http://mashirosorata.vicp.io/others/Aplayer-Controler-demo/index.html">Demo</a><br><a id="more"></a></p>
 <hr>
@@ -135,7 +140,7 @@
     <link href="http://mashirosorata.vicp.io/HEXO-NEXT%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE.html"/>
     <id>http://mashirosorata.vicp.io/HEXO-NEXT主题个性化配置.html</id>
     <published>2017-08-07T23:08:40.000Z</published>
-    <updated>2020-05-19T04:12:29.474Z</updated>
+    <updated>2020-05-20T06:03:34.082Z</updated>
     
     <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>此文章用来记录本网站个性化的设置更改，以便备用，或者供人参考。<br>提醒一下：<strong>博主next主题风格用的是Mist，若主题风格不一样，有些地方需酌情修改</strong>。<br>在其他地方能找到的教程这里就不重复赘述，文章结尾会给出一些更为详尽的其他参考链接。</p>
 <h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><h1 id="基本样式配置"><a href="#基本样式配置" class="headerlink" title="基本样式配置"></a>基本样式配置</h1><h2 id="给页面添加背景图片"><a href="#给页面添加背景图片" class="headerlink" title="给页面添加背景图片"></a>给页面添加背景图片</h2><p>在<code>theme/next/source/css/_custom</code>文件夹下打开<code>custom.styl</code>文件，往里面添加以下代码：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">body</span>&#123;   </div><div class="line">        <span class="attribute">background</span>:<span class="built_in">url</span>(图片链接);</div><div class="line">        <span class="attribute">background-size</span>:cover;</div><div class="line">        <span class="attribute">background-repeat</span>:no-repeat;</div><div class="line">        <span class="attribute">background-attachment</span>:fixed;</div><div class="line">        <span class="attribute">background-position</span>:center;</div><div class="line">     &#125;</div></pre></td></tr></table></figure></p>
@@ -262,7 +267,7 @@
     <link href="http://mashirosorata.vicp.io/Theories-Of-The-Universe.html"/>
     <id>http://mashirosorata.vicp.io/Theories-Of-The-Universe.html</id>
     <published>2017-07-30T23:15:59.000Z</published>
-    <updated>2020-05-19T04:12:29.474Z</updated>
+    <updated>2020-05-20T06:03:34.082Z</updated>
     
     <content type="html"><![CDATA[<p>此壁纸为运行在<a href="http://store.steampowered.com/app/431960/Wallpaper_Engine/" target="_blank" rel="external">Wallpaper Engine</a>上的网页动态壁纸，也是第一次接触html的作品。懒懒散散更新到现在，效果算一般般吧~<br>预览gif图4M多，但是帧数相比实际运行的帧数差很多。<br><br><a id="more"></a><br>以下为steam上创意工坊的链接：<a href="http://steamcommunity.com/sharedfiles/filedetails/?id=848592407" target="_blank" rel="external">Theories Of The Universe</a></p>
 <h1 id="网页版Demo"><a href="#网页版Demo" class="headerlink" title="网页版Demo"></a>网页版Demo</h1><p align="center"><font color="#8B008B" style="font-size:25px"><a href="http://mashirosorata.vicp.io/others/wallpaper-demo/demo.html">DEMO</a></font></p>
