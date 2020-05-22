@@ -77,7 +77,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://github.com/Mashiro-Sorata/ADV-Plugin/blob/master/Image/ADV_demo.png?raw=true">
 <meta property="og:image" content="https://t1.picb.cc/uploads/2019/02/18/VhzVBs.gif">
-<meta property="og:updated_time" content="2020-05-20T09:58:56.416Z">
+<meta property="og:updated_time" content="2020-05-22T04:28:27.655Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ADV-Plugin——SAO Utils音频可视化插件">
 <meta name="twitter:description" content="前言一个月前，在b站无意间刷到一个分享SAO Utils桌面图标挂件和音乐挂件的视频，视频中那个白色的动态频谱可以将系统音频的频谱展示出来。很好，你成功的引起了我的注意。看了下视频简介居然还贴心的附上了下载地址，下载后解压一看，发现事情并不简单，里面都是ini配置文件。纳尼！？还以为是SAO Utils的新插件，原来是雨滴的皮肤！？为了这么一个小小的动态频谱我还得安装一个雨滴？不想再安装一个雨滴，">
@@ -423,7 +423,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  1,406 字
+                  1,525 字
                 </span>
               
 
@@ -439,7 +439,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  5 min
+                  6 min
                 </span>
               
             </div>
@@ -473,18 +473,23 @@
 <h2 id="插件配置"><a href="#插件配置" class="headerlink" title="插件配置"></a>插件配置</h2><p>安装完成后打开SAO Utils首选项中的插件管理页面，将名称为<code>AudioDVServer</code>的插件选择启用后点击保存。</p>
 <p>通过更改<code>AudioDVServer</code>文件夹中的<code>advConfig.ini</code>文件来配置插件。当配置数据错误或无配置文件时使用默认值，配置值不区分大小写。</p>
 <ul>
-<li>ip：可选，默认值为<code>127.0.0.1</code>，可更改为<code>any</code>，指代地址<code>0.0.0.0</code>。只支持<code>any</code>与默认参数<code>local</code>，定义插件提供服务的地址。</li>
+<li>ip：可选，默认值为<code>local</code>，指代地址<code>127.0.0.1</code>，可更改为<code>any</code>，指代地址<code>0.0.0.0</code>。只支持<code>any</code>与默认参数<code>local</code>，定义插件提供服务的地址。</li>
 <li>port：可选，默认值为<code>5050</code>，定义插件提供服务的端口号。</li>
 <li>maxClient：可选，默认值为<code>5</code>，定义客户端最大连接数。</li>
 <li>logger：可选，默认值为<code>false</code>，调试版(Debug Version)专有，发行版(Release Version)可设置，但无效。设置为<code>true</code>后可在插件所在目录下输出日志文件<code>ADV_Log.log</code>。</li>
 </ul>
 <p><code>advConfig.ini</code> 文件示例：<br><figure class="highlight ini"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="section">[Server]</span></div><div class="line"><span class="attr">ip</span> = local</div><div class="line"><span class="attr">port</span> = <span class="number">5050</span></div><div class="line"><span class="attr">maxClient</span> = <span class="number">4</span></div><div class="line"><span class="attr">logger</span> = <span class="literal">true</span></div></pre></td></tr></table></figure></p>
 <h2 id="客户端配置"><a href="#客户端配置" class="headerlink" title="客户端配置"></a>客户端配置</h2><p>压缩包内提供了一个频谱显示客户端的示例，可用SAO Utils桌面网页挂件打开。通过设置<code>ADV_Client</code>文件夹内的<code>index.html</code>文件来配置地址，端口号以及显示频谱的样式。必须保证客户端与插件设置的地址与端口号一致。示例文件已配置好，可以直接使用。开发者也可通过编写HTML文件来定义自己的频谱显示客户端。</p>
-<p>可以更改<code>index.html</code>中的以下代码来自定义客户端，值得注意的是<code>IP</code>与<code>PORT</code>需要与插件的设置一致。</p>
+<p>可以更改<code>index.html</code>中的以下代码来自定义客户端，值得注意的是<code>IP</code>与<code>PORT</code>需要与插件的设置”一致”：</p>
+<ul>
+<li>如果插件配置文件<code>advConfig.ini</code>中的<code>ip = any</code>, 客户端<code>IP</code>可选<code>&quot;local&quot;</code>，或者是插件所在主机的的局域网<code>ip</code>地址（如<code>&quot;192.168.1.107&quot;</code>）。</li>
+<li>如果插件配置文件<code>advConfig.ini</code>中的<code>ip = local</code>， 客户端<code>IP</code>必须为参数<code>&quot;local&quot;</code>。</li>
+</ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> IP = <span class="string">"local"</span>;</div><div class="line"><span class="keyword">var</span> PORT = <span class="number">5050</span>;</div><div class="line"><span class="comment">//频谱线颜色</span></div><div class="line"><span class="keyword">var</span> LINE_COLOR = <span class="string">"rgba(0,191,255,0.4)"</span>;</div><div class="line"><span class="comment">//分界线的颜色</span></div><div class="line"><span class="keyword">var</span> CENTER_COLOR = <span class="string">"rgba(0,0,0,0.9)"</span>;</div></pre></td></tr></table></figure>
 <h2 id="使用注意事项"><a href="#使用注意事项" class="headerlink" title="使用注意事项"></a>使用注意事项</h2><p>请不要频繁刷新网页挂件：与浏览器不同的是，网页挂件刷新后不会立即关闭前一个<code>WebSocket</code>连接，需要等待一段时间后才能释放，而新的连接会被插件计数。所以当频繁刷新次数加上已有的客户端数大于设置的最大客户端连接数时，会造成被刷新的那个客户端无法正常显示。如果出现这种情况，可以通过打开SAO Utils首选项中的插件管理页面重启该插件，或者等待之前的客户端自动断开连接。</p>
 <h2 id="开发接口-API"><a href="#开发接口-API" class="headerlink" title="开发接口/API"></a>开发接口/API</h2><p><code>ADV_Client</code>文件夹内的<code>adv.js</code>封装了一个<code>ADV_Plugin</code>类，并提供了一个<code>ondata()</code>接口方便数据的引用。</p>
-<p>引用方法：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> adv = <span class="keyword">new</span> ADV_Plugin(<span class="string">"ANY"</span>,<span class="number">5050</span>);</div><div class="line">adv.ondata = <span class="function"><span class="keyword">function</span>(<span class="params">audioData</span>)</span>&#123; <span class="comment">//do something with audioData...&#125;;</span></div></pre></td></tr></table></figure></p>
+<p>引用方法：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> IP = <span class="string">"local"</span>; <span class="comment">// "192.168.1.107"</span></div><div class="line"><span class="keyword">var</span> PORT = <span class="number">5050</span>;</div><div class="line"><span class="keyword">var</span> adv = <span class="keyword">new</span> ADV_Plugin(IP, PORT);</div><div class="line">adv.ondata = <span class="function"><span class="keyword">function</span>(<span class="params">audioData</span>)</span>&#123; <span class="comment">//do something with audioData...&#125;;</span></div></pre></td></tr></table></figure></p>
+<p>参数<code>IP</code>可选值有<code>&quot;local&quot;</code>，或者是插件所在主机的的局域网<code>ip</code>地址（如<code>&quot;192.168.1.107&quot;</code>）。参数<code>&quot;local&quot;</code>会被解析为<code>&quot;localhost&quot;</code>。</p>
 <p>每当客户端收到插件发送的频谱数据就会触发<code>ondata</code>事件。<br>其中<code>audioData</code>是数据长度为<code>128</code>的数组，前面<code>64</code>个数据为左声道FFT数据，后面<code>64</code>个数据为右声道FFT数据。每一个声道的FFT数据位从低到高对应频谱频率的由低到高。</p>
 <hr>
 <h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>最后附上<a href="https://github.com/Mashiro-Sorata/ADV-Plugin" target="_blank" rel="external">项目地址</a>，欢迎开issue提问或者建议。</p>
@@ -521,7 +526,7 @@
   <p><span>本文标题:</span><a href="/ADV-Plugin——SAO Utils音频可视化插件.html">ADV-Plugin——SAO Utils音频可视化插件</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Mashiro_Sorata 的个人博客">Mashiro_Sorata</a></p>
   <p><span>发布时间:</span>2020年05月18日 - 20:05</p>
-  <p><span>最后更新:</span>2020年05月20日 - 09:05</p>
+  <p><span>最后更新:</span>2020年05月22日 - 04:05</p>
   <p><span>原始链接:</span><a href="/ADV-Plugin——SAO Utils音频可视化插件.html" title="ADV-Plugin——SAO Utils音频可视化插件">http://mashirosorata.vicp.io/ADV-Plugin——SAO Utils音频可视化插件.html</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://mashirosorata.vicp.io/ADV-Plugin——SAO Utils音频可视化插件.html"  aria-label="复制成功！"></i></span>
   </p>
@@ -964,7 +969,7 @@
 -->
 
 <div class="theme-info">
-  <span class="post-count">博客全站共6.7k字</span>
+  <span class="post-count">博客全站共6.8k字</span>
 </div>
 
         
