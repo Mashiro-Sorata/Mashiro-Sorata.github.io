@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mashirosorata.vicp.io/"/>
-  <updated>2020-05-25T18:23:40.588Z</updated>
+  <updated>2020-05-29T11:17:32.685Z</updated>
   <id>http://mashirosorata.vicp.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://mashirosorata.vicp.io/ADV-Plugin%E2%80%94%E2%80%94SAO%20Utils%E9%9F%B3%E9%A2%91%E5%8F%AF%E8%A7%86%E5%8C%96%E6%8F%92%E4%BB%B6.html"/>
     <id>http://mashirosorata.vicp.io/ADV-Plugin——SAO Utils音频可视化插件.html</id>
     <published>2020-05-18T20:13:01.000Z</published>
-    <updated>2020-05-25T18:23:40.588Z</updated>
+    <updated>2020-05-29T11:17:32.685Z</updated>
     
     <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>一个月前，在b站无意间刷到一个分享SAO Utils桌面图标挂件和音乐挂件的视频，视频中那个白色的动态频谱可以将系统音频的频谱展示出来。很好，你成功的引起了我的注意。看了下视频简介居然还贴心的附上了下载地址，下载后解压一看，发现事情并不简单，里面都是ini配置文件。纳尼！？还以为是SAO Utils的新插件，原来是雨滴的皮肤！？为了这么一个小小的动态频谱我还得安装一个雨滴？不想再安装一个雨滴，但是又很想要一个在桌面上任意位置摆放，大小可调的频谱插件。权衡之下，打算自己弄一个SAO Utils插件。但是SAO Utils的SDK中暂时还没有开放GUI界面的接口，而且用C++编写的频谱显示插件的预设样式有限，用户难以自定义。而SAO Utils还有一个强大的桌面网页挂件，这使得用户可以通过编写HTML文件来自定义频谱显示样式，然后通过网页挂件打开让其在桌面上展示出来。那么现在插件的功能确定为捕获系统音频，将经过FFT处理后的频谱数据通过WebSocket协议发送给客户端。网页客户端通过调用频谱数据进行显示。</p>
 <div align="center"><img src="https://github.com/Mashiro-Sorata/ADV-Plugin/blob/master/Image/ADV_demo.png?raw=true"></div><br><a id="more"></a><br><br><h2>视频演示</h2><br><br><div align="center"><iframe width="800" height="600" src="//player.bilibili.com/player.html?aid=285646304&bvid=BV1uf4y1U7Tx&cid=192662498&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></div>
@@ -52,7 +52,7 @@
 <li>如果插件配置文件<code>advConfig.ini</code>中的<code>ip = local</code>， 客户端<code>IP</code>必须为参数<code>&quot;local&quot;</code>。</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> IP = <span class="string">"local"</span>;</div><div class="line"><span class="keyword">var</span> PORT = <span class="number">5050</span>;</div><div class="line"><span class="comment">//频谱线颜色</span></div><div class="line"><span class="keyword">var</span> LINE_COLOR = <span class="string">"rgba(0,191,255,0.4)"</span>;</div><div class="line"><span class="comment">//分界线的颜色</span></div><div class="line"><span class="keyword">var</span> CENTER_COLOR = <span class="string">"rgba(0,0,0,0.9)"</span>;</div></pre></td></tr></table></figure>
-<h2 id="使用注意事项"><a href="#使用注意事项" class="headerlink" title="使用注意事项"></a>使用注意事项</h2><p>请不要频繁刷新网页挂件：与浏览器不同的是，网页挂件刷新后不会立即关闭前一个<code>WebSocket</code>连接，需要等待一段时间后才能释放，而新的连接会被插件计数。所以当频繁刷新次数加上已有的客户端数大于设置的最大客户端连接数时，会造成被刷新的那个客户端无法正常显示。如果出现这种情况，可以通过打开SAO Utils首选项中的插件管理页面重启该插件，或者等待之前的客户端自动断开连接。</p>
+<h2 id="SAO-Utils-beta版使用注意事项"><a href="#SAO-Utils-beta版使用注意事项" class="headerlink" title="SAO Utils beta版使用注意事项"></a>SAO Utils beta版使用注意事项</h2><p>如果你是SAO Utils beta版用户，请不要频繁刷新网页挂件：与浏览器不同的是，网页挂件刷新后不会立即关闭前一个<code>WebSocket</code>连接，需要等待一段时间后才能释放，而新的连接会被插件计数。所以当频繁刷新次数加上已有的客户端数大于设置的最大客户端连接数时，会造成被刷新的那个客户端无法正常显示。如果出现这种情况，可以通过打开SAO Utils首选项中的插件管理页面重启该插件，或者等待之前的客户端自动断开连接。</p>
 <h2 id="开发接口-API"><a href="#开发接口-API" class="headerlink" title="开发接口/API"></a>开发接口/API</h2><p><code>ADV_Client</code>文件夹内的<code>adv.js</code>封装了一个<code>ADV_Plugin</code>类，并提供了一个<code>ondata()</code>接口方便数据的引用。</p>
 <p>引用方法：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> IP = <span class="string">"local"</span>; <span class="comment">// "192.168.1.107"</span></div><div class="line"><span class="keyword">var</span> PORT = <span class="number">5050</span>;</div><div class="line"><span class="keyword">var</span> adv = <span class="keyword">new</span> ADV_Plugin(IP, PORT);</div><div class="line">adv.ondata = <span class="function"><span class="keyword">function</span>(<span class="params">audioData</span>)</span>&#123; <span class="comment">//do something with audioData...&#125;;</span></div></pre></td></tr></table></figure></p>
 <p>参数<code>IP</code>可选值有<code>&quot;local&quot;</code>，或者是插件所在主机的的局域网<code>ip</code>地址（如<code>&quot;192.168.1.107&quot;</code>）。参数<code>&quot;local&quot;</code>会被解析为<code>&quot;localhost&quot;</code>。</p>
@@ -89,7 +89,7 @@
     <link href="http://mashirosorata.vicp.io/APlayer-Controler%E2%80%94%E2%80%94%E5%8F%AF%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9A%84ap%E6%8E%A7%E5%88%B6%E5%99%A8.html"/>
     <id>http://mashirosorata.vicp.io/APlayer-Controler——可自定义的ap控制器.html</id>
     <published>2017-08-14T20:34:01.000Z</published>
-    <updated>2020-05-25T18:23:40.588Z</updated>
+    <updated>2020-05-29T11:17:32.685Z</updated>
     
     <content type="html"><![CDATA[<h1 id="前言-Introduction"><a href="#前言-Introduction" class="headerlink" title="前言(Introduction)"></a>前言(Introduction)</h1><p>最近配置网站的时候，做了一个<em>Aplayer</em>的个性控制器（本站右端），在此基础上就把它做成了一个引用简单的对象，自定义配置更方便了。<br><strong>注</strong>：此1.0.0版本与Aplayer的1.6.0版本相匹配。<br><a href="http://mashirosorata.vicp.io/others/Aplayer-Controler-demo/index.html">Demo</a><br><a id="more"></a></p>
 <hr>
@@ -148,7 +148,7 @@
     <link href="http://mashirosorata.vicp.io/HEXO-NEXT%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE.html"/>
     <id>http://mashirosorata.vicp.io/HEXO-NEXT主题个性化配置.html</id>
     <published>2017-08-07T23:08:40.000Z</published>
-    <updated>2020-05-25T18:23:40.603Z</updated>
+    <updated>2020-05-29T11:17:32.685Z</updated>
     
     <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>此文章用来记录本网站个性化的设置更改，以便备用，或者供人参考。<br>提醒一下：<strong>博主next主题风格用的是Mist，若主题风格不一样，有些地方需酌情修改</strong>。<br>在其他地方能找到的教程这里就不重复赘述，文章结尾会给出一些更为详尽的其他参考链接。</p>
 <h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><h1 id="基本样式配置"><a href="#基本样式配置" class="headerlink" title="基本样式配置"></a>基本样式配置</h1><h2 id="给页面添加背景图片"><a href="#给页面添加背景图片" class="headerlink" title="给页面添加背景图片"></a>给页面添加背景图片</h2><p>在<code>theme/next/source/css/_custom</code>文件夹下打开<code>custom.styl</code>文件，往里面添加以下代码：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">body</span>&#123;   </div><div class="line">        <span class="attribute">background</span>:<span class="built_in">url</span>(图片链接);</div><div class="line">        <span class="attribute">background-size</span>:cover;</div><div class="line">        <span class="attribute">background-repeat</span>:no-repeat;</div><div class="line">        <span class="attribute">background-attachment</span>:fixed;</div><div class="line">        <span class="attribute">background-position</span>:center;</div><div class="line">     &#125;</div></pre></td></tr></table></figure></p>
@@ -275,7 +275,7 @@
     <link href="http://mashirosorata.vicp.io/Theories-Of-The-Universe.html"/>
     <id>http://mashirosorata.vicp.io/Theories-Of-The-Universe.html</id>
     <published>2017-07-30T23:15:59.000Z</published>
-    <updated>2020-05-25T18:23:40.603Z</updated>
+    <updated>2020-05-29T11:17:32.685Z</updated>
     
     <content type="html"><![CDATA[<p>此壁纸为运行在<a href="http://store.steampowered.com/app/431960/Wallpaper_Engine/" target="_blank" rel="external">Wallpaper Engine</a>上的网页动态壁纸，也是第一次接触html的作品。懒懒散散更新到现在，效果算一般般吧~<br>预览gif图4M多，但是帧数相比实际运行的帧数差很多。<br><br><a id="more"></a><br>以下为steam上创意工坊的链接：<a href="http://steamcommunity.com/sharedfiles/filedetails/?id=848592407" target="_blank" rel="external">Theories Of The Universe</a></p>
 <h1 id="网页版Demo"><a href="#网页版Demo" class="headerlink" title="网页版Demo"></a>网页版Demo</h1><p align="center"><font color="#8B008B" style="font-size:25px"><a href="http://mashirosorata.vicp.io/others/wallpaper-demo/demo.html">DEMO</a></font></p>
