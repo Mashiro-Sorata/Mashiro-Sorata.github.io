@@ -1859,7 +1859,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fffaf7;
+  background: #b0fbff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2973,7 +2973,7 @@ body {
   color: #adff2f;
 }
 #sidebar {
-  background: url("https://wx2.sbimg.cn/2020/06/14/sidebar1.jpg");
+  background: url("https://wx1.sbimg.cn/2020/06/14/sidebar0.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
