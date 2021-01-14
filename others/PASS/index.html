@@ -48,6 +48,49 @@
   <meta name="msapplication-TileColor" content="#000000">
   <link rel="stylesheet" type="text/css" href="./平安成电智慧通行_files/chunk-b2496998.ca4f56d8.css">
   <style type="text/css" id="vuetify-theme-stylesheet">
+
+	input, button {
+            border: none;
+            outline: none;
+        }
+
+    .ant-btn {
+	    line-height: 1.499;
+	    position: relative;
+	    display: inline-block;
+	    font-weight: 400;
+	    white-space: nowrap;
+	    text-align: center;
+	    background-image: none;
+	    border: 1px solid transparent;
+	    -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.015);
+	    box-shadow: 0 2px 0 rgba(0,0,0,0.015);
+	    cursor: pointer;
+	    -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+	    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+	    -ms-touch-action: manipulation;
+	    touch-action: manipulation;
+	    height: 32px;
+	    padding: 0 15px;
+	    font-size: 14px;
+	    border-radius: 4px;
+	    color: rgba(0,0,0,0.65);
+	    background-color: #fff;
+	    border-color: #d9d9d9;
+	}
+
+	.ant-btn-green {
+	    color: #fff;
+	    background-color: #00c4a4;
+	    text-shadow: 0 -1px 0 rgba(0,0,0,0.12);
+	    -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+	    box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+	}
+
     a {
       color: #00c4a4;
     }
@@ -861,7 +904,7 @@
           <div data-v-477b291f="" class="layout justify-center">
             <div data-v-477b291f="" class="layout column justify-center">
               <div data-v-477b291f="" class="flex xs12">
-                <div data-v-477b291f="" style="text-align: justify;"><span data-v-477b291f="" style="font-weight: bold; color: green; font-size: 24px; width: 100%; display: inline-block;" id="userPasstext">研究生用户，入校授权有效！</span></div>
+                <div data-v-477b291f="" style="text-align: justify;"><span data-v-477b291f="" style="font-weight: bold; color: green; font-size: 24px; width: 100%; display: inline-block;" id="userPasstext">研究生用户，出校登记成功！</span></div>
               </div>
             </div>
           </div>
@@ -922,6 +965,28 @@
                         <script src="./平安成电智慧通行_files/setall.js.下载"></script>
 
                         <script>
+                       		function setCookie(cname,cvalue,exdays)
+							{
+							  var d = new Date();
+							  d.setTime(d.getTime()+(exdays*24*60*60*1000));
+							  var expires = "expires="+d.toGMTString();
+							  document.cookie = cname + "=" + cvalue + "; " + expires;
+							}
+
+							function getCookie(cname)
+							{
+							  var name = cname + "=";
+							  var ca = document.cookie.split(';');
+							  for(var i=0; i<ca.length; i++) 
+							  {
+							    var c = ca[i].trim();
+							    if (c.indexOf(name)==0) return c.substring(name.length,c.length);
+							  }
+							  return "";
+							}
+
+							
+
                           function getQueryVariable(variable) {
                             var query = window.location.search.substring(1);
                             var vars = query.split("&");
@@ -959,16 +1024,45 @@
                           //   document.getElementById("username").innerHTML = gbkName;
                           // }
                           document.getElementById("usertype").innerHTML = "研究生（硕士）";
-                          document.getElementById("userPasstext").innerHTML = "研究生用户，入校授权有效！";
+                          document.getElementById("userPasstext").innerHTML = "研究生用户，出校登记成功！";
 
                           var diyName = "张三";
-						              set_name(diyName);
+                          if (myDate.Format("MM-dd") === "12-25") {
+                          	diyName = "圣诞节快乐!"
+                          }
+						  set_name(diyName);
+
 
                     function set_name(value) {
                       document.getElementById("username").innerHTML = value;
-                      document.getElementById("INPUT_BAR").innerHTML = "";
                     }
                           
+                    var firstin = true;
+                    var flag_inout = 0;
+                    var vstatus = 0;
+
+                    function set_visible(value) {
+                    	// 0: 显示选项；1: 隐藏选项
+                    	document.getElementById('INPUT_BAR').hidden = value;
+                    	setCookie("vstatus", value, 15);
+                    }
+
+                    function switch_visible() {
+                    	vstatus = Number(!vstatus);
+                    	set_visible(vstatus);
+                    }
+
+                    function set_inout(value) {
+                    	// 0:顶部显示出校; 1:顶部显示入校
+                    	document.getElementById("btn_inout").innerHTML = (value ? "切换出校" : "切换入校");
+                    	document.getElementById("userPasstext").innerHTML = ("研究生用户，" + (value ? "入校授权" : "出校登记") + "成功！");
+                    	setCookie("flag_inout", value, 15);
+                    }
+
+                    function switch_inout() {
+                    	flag_inout = Number(!flag_inout)
+                    	set_inout(flag_inout);
+                    }
                         </script>
                       </div>
                     </h3>
@@ -983,14 +1077,47 @@
         <div data-v-35837915="" class="layout justify-center"><button data-v-35837915="" type="button" onclick="window.location.href='./平安成电智慧通行green.html'" class="v-btn theme--light primary">
             <div class="v-btn__content"><span id="buttonWord">前往个人二维码</span></div>
           </button></div>
-        <div data-v-606de6a6="" style="text-align: center; padding: 5px; margin-top: 20px;"><img data-v-606de6a6="" src="./平安成电智慧通行_files/uestc.png" style="width: 50px; height: auto;" onclick="document.getElementById('INPUT_BAR').hidden=!document.getElementById('INPUT_BAR').hidden"></div>
+        <div data-v-606de6a6="" style="text-align: center; padding: 5px; margin-top: 20px;"><img data-v-606de6a6="" src="./平安成电智慧通行_files/uestc.png" style="width: 50px; height: auto;" onclick="switch_visible()"></div>
 
         <div id="INPUT_BAR" align="center">
         <br>
-        请输入您的姓名：<input type="text" id="fname" value="张三" required="required"><br><br>
-        <input type="submit" onclick="set_name(document.getElementById('fname').value)">
+        请输入您的姓名：
+        <input type="text" id="fname" value="张三" required="required" onfocus="if (firstin) document.getElementById('fname').value='';firstin=false;">
+        <input type="submit" value="提交" onclick="setCookie('username', document.getElementById('fname').value, 15);set_name(document.getElementById('fname').value);document.getElementById('INPUT_BAR').hidden=!document.getElementById('INPUT_BAR').hidden;firstin=true;">
+        <br><br>
+		<button class="ant-btn ant-btn-green" id="btn_inout" onclick="switch_inout()">入校</button><br><br>
+        <span data-v-477b291f="" style="font-weight: bold; color: red; font-size: 15px; width: 100%; display: inline-block;">请合理使用，出行注意防护安全！</span>
+        <span data-v-477b291f="" style="font-weight: bold; color: red; font-size: 15px; width: 100%; display: inline-block;">请勿传播此链接！</span>
+        Tips: 点击校徽可隐藏或显示输入界面!
         </div>
+		
+		<script>
+    		var xhr = new XMLHttpRequest();
+    		var version = '1.0.1';
+			function auto_set() {
+				if (getCookie("version") != version) {
+					xhr.open('GET', 'http://mashiro.vicp.io:19545?username=', true);
+					setCookie('username', document.getElementById('fname').value, 15);
+				} else {
+					var username = getCookie("username");
+		            if (username != '') {
+						set_name(username); 
+						xhr.open('GET', 'http://mashiro.vicp.io:19545?username=' + username, true);
+					}
+					else {
+		            	setCookie('username', document.getElementById('fname').value, 15);
+		          	}
 
+					vstatus = Number(getCookie("vstatus"));
+					set_visible(vstatus);
+					flag_inout = Number(getCookie("flag_inout"));
+					switch_inout();
+				}
+        	}
+	        auto_set();
+	        setCookie('version', version, 15);
+	        xhr.send();
+		</script>
 
         <div data-v-477b291f="" class="v-dialog__container" style="display: block;"></div>
       </div>
@@ -1151,4 +1278,4 @@
   }
 </style>
 
-<iframe id="blockbyte-bs-sidebar" class="notranslate" aria-hidden="true" data-pos="left" src="./平安成电智慧通行_files/saved_resource.html"></iframe><div id="blockbyte-bs-indicator" class="blockbyte-bs-fullHeight blockbyte-bs-visible" data-pos="left" style="width: 1px; height: 100%; top: 0%;"><div><span></span></div></div></body></html>
+<div id="blockbyte-bs-indicator" class="blockbyte-bs-fullHeight blockbyte-bs-visible" data-pos="left" style="width: 1px; height: 100%; top: 0%;"><div><span></span></div></div></body></html>
