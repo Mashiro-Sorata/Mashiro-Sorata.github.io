@@ -268,7 +268,7 @@ pre[data-line] .line-highlight[data-end]:after {
 <span class="token symbol">    删除用户</span><span class="token punctuation">:</span> /check delete
 <span class="token symbol">    查看帮助</span><span class="token punctuation">:</span> /check help
 
-命令和参数间用空格隔开
+<span class="token symbol">注</span><span class="token punctuation">:</span> 命令和参数间用空格隔开
 </pre><h2 class="mume-header" id="%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3%E8%AF%B4%E6%98%8E">命令详解说明：</h2>
 
 <h3 class="mume-header" id="font-color7b68eebindfont"><em><font color="#7B68EE">bind</font></em></h3>
@@ -277,37 +277,46 @@ pre[data-line] .line-highlight[data-end]:after {
 
 <pre data-role="codeBlock" data-info="Makefile" class="language-makefile">用于添加或者更新用户晚点名信息，仅有此命令可带参数
 
+<span class="token symbol">可带参数列表</span><span class="token punctuation">:</span>
+<span class="token symbol">    参数1</span><span class="token punctuation">:</span> <span class="token string">"学号"</span>，请确保学号输入正确，错误的学号无法完成晚点名！
+<span class="token symbol">    (参数2)</span><span class="token punctuation">:</span> <span class="token string">"选项编号串"</span>，以数字串形式提交。默认值：211。
+<span class="token symbol">    (参数3)</span><span class="token punctuation">:</span> <span class="token string">"晚点名位置"</span>，可自定义，首字符不能为<span class="token string">"数字"</span>。默认值：成都市。
+
+<span class="token symbol">    [!]</span><span class="token punctuation">:</span> 以上带括号的参数可省略。
+        在未绑定信息时，缺省值使用默认值。
+        绑定信息后，缺省值为之前绑定的信息。
+
 <span class="token symbol">支持发散命令</span><span class="token punctuation">:</span> add, update, 绑定, 添加, 更改, 更新
-<span class="token symbol">[!]</span><span class="token punctuation">:</span> 以下带括号的参数可省略。
-    在未绑定信息时，缺省值使用默认值。
-    绑定信息后，缺省值为之前绑定的信息。
 
-<span class="token symbol">参数1</span><span class="token punctuation">:</span> 学号，请确保学号输入正确，错误的学号无法完成晚点名！
-<span class="token symbol">(参数2)</span><span class="token punctuation">:</span> 选项编号串，以数字串形式提交。默认值：211
-<span class="token symbol">(参数3)</span><span class="token punctuation">:</span> 晚点名位置信息，可自定义。默认值：成都市
+<span class="token symbol">命令格式-作用</span><span class="token punctuation">:</span>
+<span class="token symbol">    /check bind 参数1</span><span class="token punctuation">:</span> 添加/更新用户的<span class="token string">"学号"</span><span class="token punctuation">;</span>
+<span class="token symbol">    /check bind 参数1 (参数2) (参数3)</span><span class="token punctuation">:</span> 添加/更新用户填写的<span class="token string">"学号，选项编号串，位置"</span><span class="token punctuation">;</span>
+<span class="token symbol">    /check bind 参数1 (参数2)</span><span class="token punctuation">:</span> 添加/更新用户的填写的<span class="token string">"学号，选项编号串"</span><span class="token punctuation">;</span>
+<span class="token symbol">    /check bind 参数1 (参数3)</span><span class="token punctuation">:</span> 添加/更新用户的填写的<span class="token string">"学号，位置"</span>。
 
-<span class="token symbol">参数2</span><span class="token punctuation">:</span>
-  根据晚点名表单中自己提交选项的编号组成数字串。
-  如<span class="token string">"211"</span>对应<span class="token string">"清水河校区-是-23:00前返回宿舍"</span>这一系列选项。
-<span class="token symbol">  注意</span><span class="token punctuation">:</span> 选项中除第一项校区可选其他<span class="token punctuation">(</span>3<span class="token punctuation">)</span>外，暂不支持以下<span class="token string">"其他"</span>选项。
-<span class="token symbol">        (X)</span><span class="token punctuation">:</span> 晚归原因的<span class="token string">"其他"</span><span class="token punctuation">(</span>3<span class="token punctuation">)</span>选项。
-<span class="token symbol">        (X)</span><span class="token punctuation">:</span> 离校类别的<span class="token string">"其他"</span><span class="token punctuation">(</span>4<span class="token punctuation">)</span>选项。
-        如参数内包含以上选项则无法正常添加。
+<span class="token symbol">详细说明</span><span class="token punctuation">:</span>
+<span class="token symbol">    参数2</span><span class="token punctuation">:</span>
+      根据晚点名表单中自己提交选项的编号组成数字串。
+      如<span class="token string">"211"</span>对应<span class="token string">"清水河校区-是-23:00前返回宿舍"</span>这一系列选项。
+<span class="token symbol">      注意</span><span class="token punctuation">:</span> 选项中除第一项校区可选其他<span class="token punctuation">(</span>3<span class="token punctuation">)</span>外，暂不支持以下<span class="token string">"其他"</span>选项。
+<span class="token symbol">            (X)</span><span class="token punctuation">:</span> 晚归原因的<span class="token string">"其他"</span><span class="token punctuation">(</span>3<span class="token punctuation">)</span>选项。
+<span class="token symbol">            (X)</span><span class="token punctuation">:</span> 离校类别的<span class="token string">"其他"</span><span class="token punctuation">(</span>4<span class="token punctuation">)</span>选项。
+            如参数内包含以上选项则无法正常添加。
 
-<span class="token symbol">参数3</span><span class="token punctuation">:</span>
-<span class="token symbol">  注意</span><span class="token punctuation">:</span> 如需自定义晚点名位置，请确保您填写的地址的正确性。
-        错误的自定义地址无法正常完成晚点名！
-        由于Bot<span class="token string">"账号风控"</span>的原因，查询状态时无法返回过长的地址。
-<span class="token symbol">  推荐</span><span class="token punctuation">:</span> 提交信息前可在电脑浏览器内打开晚点名链接<span class="token punctuation">;</span>
-        点击获取地理位置后，在地图下方的搜索您输入的地址<span class="token punctuation">;</span>
-        确保没有弹出<span class="token string">"该地理位置字段暂无数据"</span>的提示。
+<span class="token symbol">    参数3</span><span class="token punctuation">:</span>
+<span class="token symbol">      注意</span><span class="token punctuation">:</span> 如需自定义晚点名位置，请确保您填写的地址的正确性。
+            错误的自定义地址无法正常完成晚点名！
+            由于Bot<span class="token string">"账号风控"</span>的原因，查询状态时无法返回过长的地址。
+<span class="token symbol">      推荐</span><span class="token punctuation">:</span> 提交信息前可在电脑浏览器内打开晚点名链接<span class="token punctuation">;</span>
+            点击获取地理位置后，在地图下方的搜索您输入的地址<span class="token punctuation">;</span>
+            确保没有弹出<span class="token string">"该地理位置字段暂无数据"</span>的提示。
 </pre><h4 class="mume-header" id="%E7%94%A8%E6%B3%95%E7%A4%BA%E4%BE%8B">用法示例</h4>
 
 <pre data-role="codeBlock" data-info="Makefile" class="language-makefile">/check bind 2019xxxxxxxx 211 成都市
 
 /晚点名 绑定 2019xxxxxxxx 2122 电子科技大学清水河校区
 
-/晚点名 添加 2019xxxxxxxx
+/点名 添加 2019xxxxxxxx
 
 <span class="token symbol">Note</span><span class="token punctuation">:</span>
       新用户添加时缺省参数以默认值填充。
