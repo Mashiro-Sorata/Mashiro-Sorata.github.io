@@ -49,7 +49,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="javascript,Wallpapaer Engine,网页壁纸,动态壁纸,Steam," />
+  <meta name="keywords" content="qml,特效,代码记录," />
 
 
 
@@ -67,20 +67,20 @@
 
 
 
-<meta name="description" content="此壁纸为运行在Wallpaper Engine上的网页动态壁纸，也是第一次接触html的作品。懒懒散散更新到现在，效果算一般般吧~预览gif图4M多，但是帧数相比实际运行的帧数差很多。">
-<meta name="keywords" content="javascript,Wallpapaer Engine,网页壁纸,动态壁纸,Steam">
+<meta name="description" content="前言在网上查找qml中实现倒影效果的相关内容时，国内网站有关的内容都是使用ShaderEffect实现的，且代码都是以图片(Image)为例。在GPbeta的帮助下，找到了另一种使用OpacityMask实现倒影效果的方式，对控件和图片都有效果，在此记录一下。效果图如下。">
+<meta name="keywords" content="qml,特效,代码记录">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Theories Of The Universe">
-<meta property="og:url" content="http://mashirosorata.vicp.io/Theories-Of-The-Universe.html">
+<meta property="og:title" content="qml实现倒影效果">
+<meta property="og:url" content="http://mashirosorata.vicp.io/qml实现倒影效果.html">
 <meta property="og:site_name" content="SORA">
-<meta property="og:description" content="此壁纸为运行在Wallpaper Engine上的网页动态壁纸，也是第一次接触html的作品。懒懒散散更新到现在，效果算一般般吧~预览gif图4M多，但是帧数相比实际运行的帧数差很多。">
+<meta property="og:description" content="前言在网上查找qml中实现倒影效果的相关内容时，国内网站有关的内容都是使用ShaderEffect实现的，且代码都是以图片(Image)为例。在GPbeta的帮助下，找到了另一种使用OpacityMask实现倒影效果的方式，对控件和图片都有效果，在此记录一下。效果图如下。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://t1.picb.cc/uploads/2019/02/18/VhsZiL.gif">
+<meta property="og:image" content="https://files.catbox.moe/00mpv1.png">
 <meta property="og:updated_time" content="2021-07-28T08:39:04.790Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Theories Of The Universe">
-<meta name="twitter:description" content="此壁纸为运行在Wallpaper Engine上的网页动态壁纸，也是第一次接触html的作品。懒懒散散更新到现在，效果算一般般吧~预览gif图4M多，但是帧数相比实际运行的帧数差很多。">
-<meta name="twitter:image" content="https://t1.picb.cc/uploads/2019/02/18/VhsZiL.gif">
+<meta name="twitter:title" content="qml实现倒影效果">
+<meta name="twitter:description" content="前言在网上查找qml中实现倒影效果的相关内容时，国内网站有关的内容都是使用ShaderEffect实现的，且代码都是以图片(Image)为例。在GPbeta的帮助下，找到了另一种使用OpacityMask实现倒影效果的方式，对控件和图片都有效果，在此记录一下。效果图如下。">
+<meta name="twitter:image" content="https://files.catbox.moe/00mpv1.png">
 
 
 
@@ -108,7 +108,7 @@
 
 
 
-  <link rel="canonical" href="http://mashirosorata.vicp.io/Theories-Of-The-Universe.html"/>
+  <link rel="canonical" href="http://mashirosorata.vicp.io/qml实现倒影效果.html"/>
 
 
 
@@ -126,7 +126,7 @@
     })();
 </script>
 
-  <title> Theories Of The Universe | SORA </title>
+  <title> qml实现倒影效果 | SORA </title>
   <style> #live2dcanvas { right:-20px!important;}</style>
 </head>
 
@@ -321,7 +321,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://mashirosorata.vicp.io/Theories-Of-The-Universe.html">
+    <link itemprop="mainEntityOfPage" href="http://mashirosorata.vicp.io/qml实现倒影效果.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mashiro_Sorata">
@@ -342,7 +342,7 @@
             
             
               
-                Theories Of The Universe
+                qml实现倒影效果
               
             
           </h1>
@@ -357,8 +357,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-30T23:15:59+00:00">
-                2017-07-30
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-28T16:33:24+00:00">
+                2021-07-28
               </time>
             
 
@@ -380,8 +380,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Html/" itemprop="url" rel="index">
-                    <span itemprop="name">Html</span>
+                  <a href="/categories/qml/" itemprop="url" rel="index">
+                    <span itemprop="name">qml</span>
                   </a>
                 </span>
 
@@ -397,7 +397,7 @@
 
           
           
-             <span id="/Theories-Of-The-Universe.html" class="leancloud_visitors" data-flag-title="Theories Of The Universe">
+             <span id="/qml实现倒影效果.html" class="leancloud_visitors" data-flag-title="qml实现倒影效果">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -422,7 +422,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  698 字
+                  309 字
                 </span>
               
 
@@ -438,7 +438,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  3 min
+                  2 min
                 </span>
               
             </div>
@@ -457,39 +457,11 @@
       
 
       
-        <p>此壁纸为运行在<a href="http://store.steampowered.com/app/431960/Wallpaper_Engine/" target="_blank" rel="external">Wallpaper Engine</a>上的网页动态壁纸，也是第一次接触html的作品。懒懒散散更新到现在，效果算一般般吧~<br>预览gif图4M多，但是帧数相比实际运行的帧数差很多。<br><br><a id="more"></a><br>以下为steam上创意工坊的链接：<a href="http://steamcommunity.com/sharedfiles/filedetails/?id=848592407" target="_blank" rel="external">Theories Of The Universe</a></p>
-<h1 id="网页版Demo"><a href="#网页版Demo" class="headerlink" title="网页版Demo"></a>网页版Demo</h1><p align="center"><font color="#8B008B" style="font-size:25px"><a href="http://mashirosorata.vicp.io/others/wallpaper-demo/demo.html">DEMO</a></font></p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在网上查找qml中实现倒影效果的相关内容时，国内网站有关的内容都是使用ShaderEffect实现的，且代码都是以图片(Image)为例。<br>在GPbeta的帮助下，找到了另一种使用OpacityMask实现倒影效果的方式，对控件和图片都有效果，在此记录一下。效果图如下。</p>
+<div align="center"><img src="https://files.catbox.moe/00mpv1.png"></div>
 
-<hr>
-<h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>壁纸一共8个可调整项：</p>
-<ol>
-<li>闪动位移范围：值越大，星星抖动越厉害；</li>
-<li>闪动速度：星星闪动变化的速度，值越大变化也就越快，增大可获取更好的效果；</li>
-<li>星星个数：可选择星星的个数，目前有21颗，以后应该会增加；</li>
-<li>闪动概率：星星闪动变化的概率，值越大变化概率也就越大，增大至最大值星星每次刷新都会变化，减小至合适值可获取更好地效果；</li>
-<li>壁纸显示方式：有拉伸，填充，适应，如同桌面壁纸设置；</li>
-<li>是否显示星球：如字面意思，可设置星球是否可见；</li>
-<li>星球转动速度：设置星球自转速度。</li>
-<li>调整星星个数时，星星随机显示。</li>
-</ol>
-<hr>
-<h1 id="ChangeLog-更新日志"><a href="#ChangeLog-更新日志" class="headerlink" title="ChangeLog(更新日志)"></a>ChangeLog(更新日志)</h1><font color="#DAA520" size="5">2017年</font>
-
-<blockquote>
-<ul>
-<li>update1.01：更新于&gt;1月25日&gt;下午10:40<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;优化了部分代码，增添了一颗星星。</p></li>
-<li>update1.10：更新于&gt;1月30日&gt;下午8:25<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;此次更新优化了大部分的代码，把星星个数增加到15个，还增加了两个可选项（闪动概率以及壁纸显示方式）。<br>下一步就是增加星星，以及星球转动的问题了。</p></li>
-<li>update2.00：更新于&gt;2月5日&gt;下午7:51<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;此次更新的壁纸已经完成，又新增了2个选项，一共7个可调整项。<br>新增：<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.是否显示星球：如字面意思，可设置星球是否可见；<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.星球转动速度：值越大，星球转动速度越快。<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;还有一个算作小彩蛋的地方：点击星球那部分可以暂停转动，再次点击可继续转动。<br>后续还会增加星星的数量以及优化的。</p></li>
-<li>update2.01：更新于&gt;2月7日&gt;下午6:29<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;此次更新解决了单机星球后不能暂停的bug。</p></li>
-<li>update2.02：更新于&gt;3月5日&gt;下午2:02<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新增了6颗星星的显示。</p></li>
-<li>update2.10：更新于&gt;7月14日&gt;下午11:41<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.优化了主程序部分的代码，占用CPU资源更少；<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.改动：调整星星个数时星星随机显示。</p></li>
-<li>update2.10：更新于&gt;8月4日&gt;下午5:24<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更正一个乱序显示星星时的小bug。</p>
-
-</li>
-</ul>
-</blockquote>
-<hr>
-<h1 id="PS-备注"><a href="#PS-备注" class="headerlink" title="PS(备注)"></a>PS(备注)</h1><p><div align="center" style="height:40%"><img src="https://t1.picb.cc/uploads/2019/02/18/VhsZiL.gif" height="100%" alt="jump"></div><br>目前忙起来暂时不会动这个项目了，大概吧……<br><br>有兴趣的朋友可以在<a href="https://github.com/Mashiro-Sorata/Theories_Of_The_Universe" target="_blank" rel="external">我的仓库</a>里看一下吧~</p>
+<a id="more"></a>
+<h1 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h1><figure class="highlight qml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> QtQuick <span class="number">2.4</span></div><div class="line"><span class="keyword">import</span> QtQuick.Window <span class="number">2.2</span></div><div class="line"><span class="keyword">import</span> QtGraphicalEffects <span class="number">1.0</span></div><div class="line"></div><div class="line"><span class="title">Rectangle</span> &#123;</div><div class="line">    <span class="attribute">id:</span><span class="string"> main_container</span></div><div class="line">    <span class="attribute">width</span>: <span class="number">390</span></div><div class="line">    <span class="attribute">height</span>: <span class="number">360</span></div><div class="line"></div><div class="line">    <span class="keyword">property</span><span class="string"> int offset</span>: <span class="number">0</span></div><div class="line"></div><div class="line">    <span class="title">Rectangle</span> &#123;</div><div class="line">        <span class="comment">//控件本体</span></div><div class="line">        <span class="attribute">id:</span><span class="string"> content</span></div><div class="line">        <span class="attribute">color</span>: <span class="string">"#8e44ad"</span></div><div class="line">        <span class="attribute">width</span>: <span class="number">140</span></div><div class="line">        <span class="attribute">height</span>: <span class="number">140</span></div><div class="line">        <span class="attribute">anchors.top</span>: <span class="built_in">parent</span>.top</div><div class="line">        <span class="attribute">anchors.topMargin</span>: <span class="number">20</span></div><div class="line">        <span class="attribute">anchors.left</span>: <span class="built_in">parent</span>.left</div><div class="line">        <span class="attribute">anchors.leftMargin</span>: <span class="number">50</span></div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="title">OpacityMask</span> &#123;</div><div class="line">        <span class="comment">//控件阴影</span></div><div class="line">        <span class="attribute">width</span>: content.width</div><div class="line">        <span class="attribute">height</span>: content.height</div><div class="line">        <span class="comment">//阴影定位</span></div><div class="line">        <span class="attribute">anchors.top</span>: content.bottom</div><div class="line">        <span class="attribute">anchors.topMargin</span>: content.height + offset</div><div class="line">        <span class="attribute">anchors.left</span>: content.left</div><div class="line"></div><div class="line">        <span class="attribute">source</span>: content</div><div class="line">        <span class="attribute">maskSource</span>: <span class="title">Rectangle</span> &#123;</div><div class="line">            <span class="attribute">width</span>: content.width</div><div class="line">            <span class="attribute">height</span>: content.height</div><div class="line">            <span class="attribute">gradient</span>: <span class="title">Gradient</span> &#123;</div><div class="line">                <span class="title">GradientStop</span> &#123; <span class="attribute">position</span>: <span class="number">0.0</span>; <span class="attribute">color</span>: Qt.rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>) &#125;</div><div class="line">                <span class="title">GradientStop</span> &#123; <span class="attribute">position</span>: <span class="number">1.0</span>; <span class="attribute">color</span>: Qt.rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.9</span>) &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="attribute">transform</span>: <span class="title">Scale</span> &#123; <span class="attribute">yScale</span>: <span class="number">-1</span>&#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="title">Image</span> &#123;</div><div class="line">        <span class="comment">//图片本体</span></div><div class="line">        <span class="attribute">id:</span><span class="string"> img</span></div><div class="line">        <span class="attribute">width</span>: <span class="number">140</span></div><div class="line">        <span class="attribute">height</span>: <span class="number">140</span></div><div class="line">        <span class="attribute">source</span>: <span class="string">"test.png"</span></div><div class="line">        <span class="attribute">anchors.top</span>: <span class="built_in">parent</span>.top</div><div class="line">        <span class="attribute">anchors.topMargin</span>: <span class="number">20</span></div><div class="line">        <span class="attribute">anchors.left</span>: content.right</div><div class="line">        <span class="attribute">anchors.leftMargin</span>: <span class="number">20</span></div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="title">OpacityMask</span> &#123;</div><div class="line">        <span class="comment">//图片阴影</span></div><div class="line">        <span class="attribute">width</span>: img.width</div><div class="line">        <span class="attribute">height</span>: img.height</div><div class="line">        <span class="comment">//阴影定位</span></div><div class="line">        <span class="attribute">anchors.top</span>: img.bottom</div><div class="line">        <span class="attribute">anchors.topMargin</span>: img.height + offset</div><div class="line">        <span class="attribute">anchors.left</span>: img.left</div><div class="line"></div><div class="line">        <span class="attribute">source</span>: img</div><div class="line">        <span class="attribute">maskSource</span>: <span class="title">Rectangle</span> &#123;</div><div class="line">            <span class="attribute">width</span>: img.width</div><div class="line">            <span class="attribute">height</span>: img.height</div><div class="line">            <span class="attribute">gradient</span>: <span class="title">Gradient</span> &#123;</div><div class="line">                <span class="title">GradientStop</span> &#123; <span class="attribute">position</span>: <span class="number">0.0</span>; <span class="attribute">color</span>: Qt.rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>) &#125;</div><div class="line">                <span class="title">GradientStop</span> &#123; <span class="attribute">position</span>: <span class="number">1.0</span>; <span class="attribute">color</span>: Qt.rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.9</span>) &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="attribute">transform</span>: <span class="title">Scale</span> &#123; <span class="attribute">yScale</span>: <span class="number">-1</span>&#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -515,12 +487,12 @@
   <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
   <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
   <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
-  <p><span>本文标题:</span><a href="/Theories-Of-The-Universe.html">Theories Of The Universe</a></p>
+  <p><span>本文标题:</span><a href="/qml实现倒影效果.html">qml实现倒影效果</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Mashiro_Sorata 的个人博客">Mashiro_Sorata</a></p>
-  <p><span>发布时间:</span>2017年07月30日 - 23:07</p>
+  <p><span>发布时间:</span>2021年07月28日 - 16:07</p>
   <p><span>最后更新:</span>2021年07月28日 - 08:07</p>
-  <p><span>原始链接:</span><a href="/Theories-Of-The-Universe.html" title="Theories Of The Universe">http://mashirosorata.vicp.io/Theories-Of-The-Universe.html</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://mashirosorata.vicp.io/Theories-Of-The-Universe.html"  aria-label="复制成功！"></i></span>
+  <p><span>原始链接:</span><a href="/qml实现倒影效果.html" title="qml实现倒影效果">http://mashirosorata.vicp.io/qml实现倒影效果.html</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://mashirosorata.vicp.io/qml实现倒影效果.html"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>
 </div>
@@ -568,15 +540,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/javascript/" rel="tag"><i class="fa fa-tag"></i> javascript</a>
+            <a href="/tags/qml/" rel="tag"><i class="fa fa-tag"></i> qml</a>
           
-            <a href="/tags/Wallpapaer-Engine/" rel="tag"><i class="fa fa-tag"></i> Wallpapaer Engine</a>
+            <a href="/tags/特效/" rel="tag"><i class="fa fa-tag"></i> 特效</a>
           
-            <a href="/tags/网页壁纸/" rel="tag"><i class="fa fa-tag"></i> 网页壁纸</a>
-          
-            <a href="/tags/动态壁纸/" rel="tag"><i class="fa fa-tag"></i> 动态壁纸</a>
-          
-            <a href="/tags/Steam/" rel="tag"><i class="fa fa-tag"></i> Steam</a>
+            <a href="/tags/代码记录/" rel="tag"><i class="fa fa-tag"></i> 代码记录</a>
           
         </div>
       
@@ -589,15 +557,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/ADV-Plugin——SAO Utils音频可视化插件.html" rel="next" title="ADV-Plugin——SAO Utils音频可视化插件">
+                <i class="fa fa-chevron-left"></i> ADV-Plugin——SAO Utils音频可视化插件
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/HEXO-NEXT主题个性化配置.html" rel="prev" title="HEXO+NEXT主题个性化配置">
-                HEXO+NEXT主题个性化配置 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -911,7 +879,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#网页版Demo"><span class="nav-number">1.</span> <span class="nav-text">网页版Demo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#描述"><span class="nav-number">2.</span> <span class="nav-text">描述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ChangeLog-更新日志"><span class="nav-number">3.</span> <span class="nav-text">ChangeLog(更新日志)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PS-备注"><span class="nav-number">4.</span> <span class="nav-text">PS(备注)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码实现"><span class="nav-number">2.</span> <span class="nav-text">代码实现</span></a></li></ol></div>
             
 
           </div>
