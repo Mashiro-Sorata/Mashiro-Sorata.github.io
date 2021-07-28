@@ -75,13 +75,13 @@
 <meta property="og:site_name" content="SORA">
 <meta property="og:description" content="前言一个月前，在b站无意间刷到一个分享SAO Utils桌面图标挂件和音乐挂件的视频，视频中那个白色的动态频谱可以将系统音频的频谱展示出来。很好，你成功的引起了我的注意。看了下视频简介居然还贴心的附上了下载地址，下载后解压一看，发现事情并不简单，里面都是ini配置文件。纳尼！？还以为是SAO Utils的新插件，原来是雨滴的皮肤！？为了这么一个小小的动态频谱我还得安装一个雨滴？不想再安装一个雨滴，">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://github.com/Mashiro-Sorata/ADV-Plugin/blob/master/Image/ADV_demo.png?raw=true">
-<meta property="og:image" content="https://wx2.sbimg.cn/2020/06/14/VhzVBs.gif">
-<meta property="og:updated_time" content="2021-07-28T08:39:04.774Z">
+<meta property="og:image" content="https://github.com/Mashiro-Sorata/AudioDVServer-Plugin/blob/master/Image/ADV_demo.png?raw=true">
+<meta property="og:image" content="https://t1.picb.cc/uploads/2019/02/18/VhzVBs.gif">
+<meta property="og:updated_time" content="2021-07-28T08:43:22.741Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ADV-Plugin——SAO Utils音频可视化插件">
 <meta name="twitter:description" content="前言一个月前，在b站无意间刷到一个分享SAO Utils桌面图标挂件和音乐挂件的视频，视频中那个白色的动态频谱可以将系统音频的频谱展示出来。很好，你成功的引起了我的注意。看了下视频简介居然还贴心的附上了下载地址，下载后解压一看，发现事情并不简单，里面都是ini配置文件。纳尼！？还以为是SAO Utils的新插件，原来是雨滴的皮肤！？为了这么一个小小的动态频谱我还得安装一个雨滴？不想再安装一个雨滴，">
-<meta name="twitter:image" content="https://github.com/Mashiro-Sorata/ADV-Plugin/blob/master/Image/ADV_demo.png?raw=true">
+<meta name="twitter:image" content="https://github.com/Mashiro-Sorata/AudioDVServer-Plugin/blob/master/Image/ADV_demo.png?raw=true">
 
 
 
@@ -423,7 +423,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  1,590 字
+                  1,406 字
                 </span>
               
 
@@ -439,7 +439,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  6 min
+                  5 min
                 </span>
               
             </div>
@@ -459,46 +459,40 @@
 
       
         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>一个月前，在b站无意间刷到一个分享SAO Utils桌面图标挂件和音乐挂件的视频，视频中那个白色的动态频谱可以将系统音频的频谱展示出来。很好，你成功的引起了我的注意。看了下视频简介居然还贴心的附上了下载地址，下载后解压一看，发现事情并不简单，里面都是ini配置文件。纳尼！？还以为是SAO Utils的新插件，原来是雨滴的皮肤！？为了这么一个小小的动态频谱我还得安装一个雨滴？不想再安装一个雨滴，但是又很想要一个在桌面上任意位置摆放，大小可调的频谱插件。权衡之下，打算自己弄一个SAO Utils插件。但是SAO Utils的SDK中暂时还没有开放GUI界面的接口，而且用C++编写的频谱显示插件的预设样式有限，用户难以自定义。而SAO Utils还有一个强大的桌面网页挂件，这使得用户可以通过编写HTML文件来自定义频谱显示样式，然后通过网页挂件打开让其在桌面上展示出来。那么现在插件的功能确定为捕获系统音频，将经过FFT处理后的频谱数据通过WebSocket协议发送给客户端。网页客户端通过调用频谱数据进行显示。</p>
-<div align="center"><img src="https://github.com/Mashiro-Sorata/ADV-Plugin/blob/master/Image/ADV_demo.png?raw=true"></div><br><a id="more"></a><br><br><h2>视频演示</h2><br><br><div align="center"><iframe width="800" height="600" src="//player.bilibili.com/player.html?aid=285646304&bvid=BV1uf4y1U7Tx&cid=192662498&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></div>
+<p><div align="center"><img src="https://github.com/Mashiro-Sorata/AudioDVServer-Plugin/blob/master/Image/ADV_demo.png?raw=true"></div><br><a id="more"></a></p>
+<h2 id="视频演示"><a href="#视频演示" class="headerlink" title="视频演示"></a>视频演示</h2><iframe src="//player.bilibili.com/player.html?aid=285646304&bvid=BV1uf4y1U7Tx&cid=192662498&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 <hr>
 <h1 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h1><h2 id="开发日志"><a href="#开发日志" class="headerlink" title="开发日志"></a>开发日志</h2><ul>
-<li><p>2020-05-26：<code>V1.2.2</code>版本更新修复了重启插件或切换不可用设备时造成插件出错等问题，对音频捕捉服务增加错误捕获及处理。</p>
-</li>
-<li><p>2020-05-20：<code>V1.2.1</code>版本更新支持<code>EXP 1</code>实验版的SAO Utils。新增调试版插件下载，可输出日志文件。</p>
-</li>
-<li><p>2020-05-19：<code>V1.1.0</code>版本的插件在<code>beta 1</code>、<code>beta 2(steam)</code>版本的SAO Utils中测试过通过。已知在实验性版本<code>Exp 1</code>中会导致<strong>程序崩溃</strong>。<del>与SAO Utils实验版兼容的插件会在后续中推出，敬请期待。</del></p>
-</li>
+<li>2020-05-20：<code>V1.2.1</code>版本更新支持<code>EXP 1</code>实验版的SAO Utils。新增调试版插件下载，可输出日志文件。</li>
+</ul>
+<ul>
+<li>2020-05-19：<code>V1.1.0</code>版本的插件在<code>beta 1</code>、<code>beta 2(steam)</code>版本的SAO Utils中测试过通过。已知在实验性版本<code>Exp 1</code>中会导致<strong>程序崩溃</strong>。<del>与SAO Utils实验版兼容的插件会在后续中推出，敬请期待。</del></li>
 </ul>
 <h2 id="插件下载"><a href="#插件下载" class="headerlink" title="插件下载"></a>插件下载</h2><p>下载最新版本的插件：<a href="https://github.com/Mashiro-Sorata/ADV-Plugin/releases/latest" target="_blank" rel="external">ADV_Plug-in.zip</a>，将下载的 <code>ADV_Plug-in.zip</code> 压缩文件解压。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">文件夹结构如下</div><div class="line">│  readme.txt</div><div class="line">│</div><div class="line">├─ADV_Client</div><div class="line">│      adv.js</div><div class="line">│      index.html</div><div class="line">│</div><div class="line">└─AudioDVServer</div><div class="line">        advConfig.ini</div><div class="line">        module64.dll</div></pre></td></tr></table></figure></p>
 <h2 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h2><p>将解压缩根目录下的<code>AudioDVServer</code>文件夹拷贝至SAO Utils根目录的<code>Plugins</code>文件夹中，重启SAO即可。</p>
 <h2 id="插件配置"><a href="#插件配置" class="headerlink" title="插件配置"></a>插件配置</h2><p>安装完成后打开SAO Utils首选项中的插件管理页面，将名称为<code>AudioDVServer</code>的插件选择启用后点击保存。</p>
 <p>通过更改<code>AudioDVServer</code>文件夹中的<code>advConfig.ini</code>文件来配置插件。当配置数据错误或无配置文件时使用默认值，配置值不区分大小写。</p>
 <ul>
-<li>ip：可选，默认值为<code>local</code>，指代地址<code>127.0.0.1</code>，可更改为<code>any</code>，指代地址<code>0.0.0.0</code>。只支持<code>any</code>与默认参数<code>local</code>，定义插件提供服务的地址。</li>
+<li>ip：可选，默认值为<code>127.0.0.1</code>，可更改为<code>any</code>，指代地址<code>0.0.0.0</code>。只支持<code>any</code>与默认参数<code>local</code>，定义插件提供服务的地址。</li>
 <li>port：可选，默认值为<code>5050</code>，定义插件提供服务的端口号。</li>
 <li>maxClient：可选，默认值为<code>5</code>，定义客户端最大连接数。</li>
 <li>logger：可选，默认值为<code>false</code>，调试版(Debug Version)专有，发行版(Release Version)可设置，但无效。设置为<code>true</code>后可在插件所在目录下输出日志文件<code>ADV_Log.log</code>。</li>
 </ul>
 <p><code>advConfig.ini</code> 文件示例：<br><figure class="highlight ini"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="section">[Server]</span></div><div class="line"><span class="attr">ip</span> = local</div><div class="line"><span class="attr">port</span> = <span class="number">5050</span></div><div class="line"><span class="attr">maxClient</span> = <span class="number">4</span></div><div class="line"><span class="attr">logger</span> = <span class="literal">true</span></div></pre></td></tr></table></figure></p>
 <h2 id="客户端配置"><a href="#客户端配置" class="headerlink" title="客户端配置"></a>客户端配置</h2><p>压缩包内提供了一个频谱显示客户端的示例，可用SAO Utils桌面网页挂件打开。通过设置<code>ADV_Client</code>文件夹内的<code>index.html</code>文件来配置地址，端口号以及显示频谱的样式。必须保证客户端与插件设置的地址与端口号一致。示例文件已配置好，可以直接使用。开发者也可通过编写HTML文件来定义自己的频谱显示客户端。</p>
-<p>可以更改<code>index.html</code>中的以下代码来自定义客户端，值得注意的是<code>IP</code>与<code>PORT</code>需要与插件的设置”一致”：</p>
-<ul>
-<li>如果插件配置文件<code>advConfig.ini</code>中的<code>ip = any</code>, 客户端<code>IP</code>可选<code>&quot;local&quot;</code>，或者是插件所在主机的的局域网<code>ip</code>地址（如<code>&quot;192.168.1.107&quot;</code>）。</li>
-<li>如果插件配置文件<code>advConfig.ini</code>中的<code>ip = local</code>， 客户端<code>IP</code>必须为参数<code>&quot;local&quot;</code>。</li>
-</ul>
+<p>可以更改<code>index.html</code>中的以下代码来自定义客户端，值得注意的是<code>IP</code>与<code>PORT</code>需要与插件的设置一致。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> IP = <span class="string">"local"</span>;</div><div class="line"><span class="keyword">var</span> PORT = <span class="number">5050</span>;</div><div class="line"><span class="comment">//频谱线颜色</span></div><div class="line"><span class="keyword">var</span> LINE_COLOR = <span class="string">"rgba(0,191,255,0.4)"</span>;</div><div class="line"><span class="comment">//分界线的颜色</span></div><div class="line"><span class="keyword">var</span> CENTER_COLOR = <span class="string">"rgba(0,0,0,0.9)"</span>;</div></pre></td></tr></table></figure>
-<h2 id="SAO-Utils-beta版使用注意事项"><a href="#SAO-Utils-beta版使用注意事项" class="headerlink" title="SAO Utils beta版使用注意事项"></a>SAO Utils beta版使用注意事项</h2><p>如果你是SAO Utils beta版用户，请不要频繁刷新网页挂件：与浏览器不同的是，网页挂件刷新后不会立即关闭前一个<code>WebSocket</code>连接，需要等待一段时间后才能释放，而新的连接会被插件计数。所以当频繁刷新次数加上已有的客户端数大于设置的最大客户端连接数时，会造成被刷新的那个客户端无法正常显示。如果出现这种情况，可以通过打开SAO Utils首选项中的插件管理页面重启该插件，或者等待之前的客户端自动断开连接。</p>
+<h2 id="使用注意事项"><a href="#使用注意事项" class="headerlink" title="使用注意事项"></a>使用注意事项</h2><p>请不要频繁刷新网页挂件：与浏览器不同的是，网页挂件刷新后不会立即关闭前一个<code>WebSocket</code>连接，需要等待一段时间后才能释放，而新的连接会被插件计数。所以当频繁刷新次数加上已有的客户端数大于设置的最大客户端连接数时，会造成被刷新的那个客户端无法正常显示。如果出现这种情况，可以通过打开SAO Utils首选项中的插件管理页面重启该插件，或者等待之前的客户端自动断开连接。</p>
 <h2 id="开发接口-API"><a href="#开发接口-API" class="headerlink" title="开发接口/API"></a>开发接口/API</h2><p><code>ADV_Client</code>文件夹内的<code>adv.js</code>封装了一个<code>ADV_Plugin</code>类，并提供了一个<code>ondata()</code>接口方便数据的引用。</p>
-<p>引用方法：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> IP = <span class="string">"local"</span>; <span class="comment">// "192.168.1.107"</span></div><div class="line"><span class="keyword">var</span> PORT = <span class="number">5050</span>;</div><div class="line"><span class="keyword">var</span> adv = <span class="keyword">new</span> ADV_Plugin(IP, PORT);</div><div class="line">adv.ondata = <span class="function"><span class="keyword">function</span>(<span class="params">audioData</span>)</span>&#123; <span class="comment">//do something with audioData...&#125;;</span></div></pre></td></tr></table></figure></p>
-<p>参数<code>IP</code>可选值有<code>&quot;local&quot;</code>，或者是插件所在主机的的局域网<code>ip</code>地址（如<code>&quot;192.168.1.107&quot;</code>）。参数<code>&quot;local&quot;</code>会被解析为<code>&quot;localhost&quot;</code>。</p>
+<p>引用方法：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> adv = <span class="keyword">new</span> ADV_Plugin(<span class="string">"ANY"</span>,<span class="number">5050</span>);</div><div class="line">adv.ondata = <span class="function"><span class="keyword">function</span>(<span class="params">audioData</span>)</span>&#123; <span class="comment">//do something with audioData...&#125;;</span></div></pre></td></tr></table></figure></p>
 <p>每当客户端收到插件发送的频谱数据就会触发<code>ondata</code>事件。<br>其中<code>audioData</code>是数据长度为<code>128</code>的数组，前面<code>64</code>个数据为左声道FFT数据，后面<code>64</code>个数据为右声道FFT数据。每一个声道的FFT数据位从低到高对应频谱频率的由低到高。</p>
 <hr>
 <h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>最后附上<a href="https://github.com/Mashiro-Sorata/ADV-Plugin" target="_blank" rel="external">项目地址</a>，欢迎开issue提问或者建议。</p>
 <p>License为<a href="https://github.com/Mashiro-Sorata/ADV-Plugin/blob/master/LICENSE" target="_blank" rel="external">MIT</a>，所以大胆的fork吧~</p>
 <p>因为平时时间不太充裕，所以测试平台也只在本机(Win10 1903)上测试过，如果出现Bug的话欢迎指出。如果你喜欢本插件的话，还请为这个项目加一个Star啦~</p>
 <hr>
-<p><img src="https://wx2.sbimg.cn/2020/06/14/VhzVBs.gif" alt="post"></p>
+<p><img src="https://t1.picb.cc/uploads/2019/02/18/VhzVBs.gif" alt="post"></p>
 <p>版权声明：版权所有权属于Mashiro_Sorata，转载请注明出处，谢谢！</p>
 
       
@@ -921,7 +915,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">视频演示</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用说明"><span class="nav-number">2.</span> <span class="nav-text">使用说明</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#开发日志"><span class="nav-number">2.1.</span> <span class="nav-text">开发日志</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插件下载"><span class="nav-number">2.2.</span> <span class="nav-text">插件下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插件安装"><span class="nav-number">2.3.</span> <span class="nav-text">插件安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插件配置"><span class="nav-number">2.4.</span> <span class="nav-text">插件配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#客户端配置"><span class="nav-number">2.5.</span> <span class="nav-text">客户端配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SAO-Utils-beta版使用注意事项"><span class="nav-number">2.6.</span> <span class="nav-text">SAO Utils beta版使用注意事项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开发接口-API"><span class="nav-number">2.7.</span> <span class="nav-text">开发接口/API</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#最后"><span class="nav-number">3.</span> <span class="nav-text">最后</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#视频演示"><span class="nav-number">1.1.</span> <span class="nav-text">视频演示</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用说明"><span class="nav-number">2.</span> <span class="nav-text">使用说明</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#开发日志"><span class="nav-number">2.1.</span> <span class="nav-text">开发日志</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插件下载"><span class="nav-number">2.2.</span> <span class="nav-text">插件下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插件安装"><span class="nav-number">2.3.</span> <span class="nav-text">插件安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插件配置"><span class="nav-number">2.4.</span> <span class="nav-text">插件配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#客户端配置"><span class="nav-number">2.5.</span> <span class="nav-text">客户端配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用注意事项"><span class="nav-number">2.6.</span> <span class="nav-text">使用注意事项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开发接口-API"><span class="nav-number">2.7.</span> <span class="nav-text">开发接口/API</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#最后"><span class="nav-number">3.</span> <span class="nav-text">最后</span></a></li></ol></div>
             
 
           </div>
@@ -975,7 +969,7 @@
 -->
 
 <div class="theme-info">
-  <span class="post-count">博客全站共7.2k字</span>
+  <span class="post-count">博客全站共7.0k字</span>
 </div>
 
         
